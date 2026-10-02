@@ -1,8 +1,12 @@
+import joblib
 import pandas as pd
 
 from sentence_transformers import SentenceTransformer
 
-from sklearn.model_selection import train_test_split
+from src.preprocessing import (
+    load_and_clean_data,
+    split_data,
+)
 from sklearn.pipeline import Pipeline
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
@@ -39,59 +43,11 @@ C_VALUES = [
     100,
 ]
 
-
 # ============================================================
-# 2. LOAD DATASETS
-# ============================================================
-
-dataframes = []
-
-for file in DATASETS:
-
-    df = pd.read_excel(file)
-
-    # Keep only the columns needed for intent classification
-    df = df[["Phrase", "Intent"]]
-
-    dataframes.append(df)
-
-
-# Combine all datasets
-data = pd.concat(
-    dataframes,
-    ignore_index=True,
-)
-
-
-# ============================================================
-# 3. BASIC CLEANING
+# 2. LOAD AND PREPROCESS DATA
 # ============================================================
 
-data["Phrase"] = (
-    data["Phrase"]
-    .astype(str)
-    .str.strip()
-)
-
-data["Intent"] = (
-    data["Intent"]
-    .astype(str)
-    .str.strip()
-)
-
-
-# Remove empty rows
-data = data[
-    (data["Phrase"] != "")
-    & (data["Intent"] != "")
-]
-
-
-# Remove exact duplicate phrase/intent pairs
-data = data.drop_duplicates(
-    subset=["Phrase", "Intent"]
-)
-
+data = load_and_clean_data()
 
 print("=" * 60)
 print("DATASET")
@@ -109,35 +65,17 @@ print(
 
 
 # ============================================================
-# 4. TRAIN / VALIDATION / TEST SPLIT
+# 3. TRAIN / VALIDATION / TEST SPLIT
 # ============================================================
 
-X = data["Phrase"].astype(str).tolist()
-y = data["Intent"].astype(str).tolist()
-
-
-# First split:
-# 80% training
-# 20% temporary
-X_train, X_temp, y_train, y_temp = train_test_split(
-    X,
-    y,
-    test_size=0.20,
-    random_state=42,
-    stratify=y,
-)
-
-
-# Second split:
-# 10% validation
-# 10% test
-X_val, X_test, y_val, y_test = train_test_split(
-    X_temp,
-    y_temp,
-    test_size=0.50,
-    random_state=42,
-    stratify=y_temp,
-)
+(
+    X_train,
+    X_val,
+    X_test,
+    y_train,
+    y_val,
+    y_test,
+) = split_data(data)
 
 
 print("\n" + "=" * 60)
@@ -148,9 +86,8 @@ print("Training:", len(X_train))
 print("Validation:", len(X_val))
 print("Test:", len(X_test))
 
-
 # ============================================================
-# 5. LOAD MULTILINGUAL MINILM
+# 4. LOAD MULTILINGUAL MINILM
 # ============================================================
 
 print("\nLoading MiniLM...")
@@ -161,7 +98,7 @@ model = SentenceTransformer(
 
 
 # ============================================================
-# 6. CREATE EMBEDDINGS
+# 5. CREATE EMBEDDINGS
 # ============================================================
 
 print("\nCreating embeddings...")
@@ -189,7 +126,7 @@ print(
 
 
 # ============================================================
-# 7. EXPERIMENT 1 — COMPARE CLASSIFIER FAMILIES
+# 6. EXPERIMENT 1 — COMPARE CLASSIFIER FAMILIES
 # ============================================================
 
 classifiers = {
@@ -404,7 +341,7 @@ print(
 
 
 # ============================================================
-# 8. EXPERIMENT 2 — LOGISTIC REGRESSION C SWEEP
+# 7. EXPERIMENT 2 — LOGISTIC REGRESSION C SWEEP
 # ============================================================
 
 c_results = []
@@ -514,7 +451,7 @@ print(
 
 
 # ============================================================
-# 9. SELECT FINAL CONFIGURATION
+# 8. SELECT FINAL CONFIGURATION
 # ============================================================
 
 best_c_row = c_results_df.iloc[0]
@@ -556,7 +493,7 @@ print(
 
 
 # ============================================================
-# 10. FINAL TEST EVALUATION
+# 9. FINAL TEST EVALUATION
 # ============================================================
 
 print("\n" + "=" * 60)
@@ -593,6 +530,19 @@ print(
     f"Test accuracy: {test_accuracy:.4f}"
 )
 
+# ============================================================
+# 10. SAVE FINAL CLASSIFIER
+# ============================================================
+
+MODEL_PATH = "models/intent_classifier.joblib"
+
+joblib.dump(
+    final_classifier,
+    MODEL_PATH,
+)
+
+print("\nFinal classifier saved to:")
+print(MODEL_PATH)
 
 # ============================================================
 # 11. CLASSIFICATION REPORT
