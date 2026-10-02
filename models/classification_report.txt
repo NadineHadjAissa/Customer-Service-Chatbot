@@ -1,0 +1,57 @@
+                             precision    recall  f1-score   support
+
+           amount_breakdown       1.00      1.00      1.00         2
+          bill_not_received       1.00      1.00      1.00         2
+      bill_payment_deadline       1.00      1.00      1.00         2
+       bill_payment_methods       0.67      1.00      0.80         2
+              catch_up_bill       0.00      0.00      0.00         2
+            connection_cost       1.00      1.00      1.00         2
+    connection_cost_dispute       0.50      1.00      0.67         2
+           connection_delay       1.00      1.00      1.00         2
+       connection_documents       0.67      1.00      0.80         2
+     connection_eligibility       1.00      0.50      0.67         2
+   connection_not_completed       0.00      0.00      0.00         2
+         connection_payment       1.00      1.00      1.00         2
+         connection_problem       1.00      0.50      0.67         2
+       connection_procedure       1.00      1.00      1.00         2
+       connection_rejection       1.00      1.00      1.00         2
+          connection_status       1.00      1.00      1.00         2
+           connection_works       0.50      1.00      0.67         2
+    consumption_calculation       1.00      0.50      0.67         2
+          damaged_appliance       1.00      1.00      1.00         2
+              disconnection       1.00      1.00      1.00         2
+               dispute_bill       1.00      1.00      1.00         2
+      dispute_catch_up_bill       0.50      1.00      0.67         2
+  dispute_estimated_reading       0.50      0.50      0.50         2
+          electrical_danger       1.00      1.00      1.00         2
+     electricity_connection       1.00      1.00      1.00         2
+ electricity_gas_connection       1.00      1.00      1.00         2
+         electricity_outage       0.67      1.00      0.80         2
+             gas_connection       1.00      1.00      1.00         2
+              gas_emergency       1.00      1.00      1.00         2
+                 gas_outage       1.00      1.00      1.00         2
+    high_or_abnormal_amount       1.00      0.50      0.67         2
+     low_voltage_connection       1.00      1.00      1.00         2
+              meter_problem       1.00      1.00      1.00         2
+missing_connection_document       1.00      1.00      1.00         1
+        neighborhood_outage       1.00      1.00      1.00         2
+       network_availability       1.00      1.00      1.00         2
+             new_connection       1.00      1.00      1.00         2
+new_construction_connection       1.00      1.00      1.00         2
+        online_bill_payment       1.00      0.50      0.67         2
+     paid_but_unpaid_status       1.00      1.00      1.00         2
+            payment_problem       0.67      1.00      0.80         2
+              rem_r_meaning       1.00      1.00      1.00         2
+           report_breakdown       1.00      1.00      1.00         2
+                restoration       1.00      1.00      1.00         2
+  restoration_after_payment       1.00      1.00      1.00         2
+            technical_study       0.67      1.00      0.80         2
+            understand_bill       1.00      1.00      1.00         2
+                unpaid_bill       1.00      1.00      1.00         2
+update_customer_information       1.00      0.50      0.67         2
+            voltage_problem       1.00      0.50      0.67         2
+        wrong_meter_reading       1.00      1.00      1.00         1
+
+                   accuracy                           0.88       100
+                  macro avg       0.89      0.88      0.87       100
+               weighted avg       0.89      0.88      0.86       100
