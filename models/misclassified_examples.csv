@@ -1,0 +1,13 @@
+﻿Phrase,Actual,Predicted
+علاش جاتني فاتورة تسوية؟,catch_up_bill,dispute_catch_up_bill
+"bonjour, le montant زاد بزاف مقارنة بالعادة",high_or_abnormal_amount,connection_cost_dispute
+كاين خلاص عبر الأنترنت؟. merci.,online_bill_payment,bill_payment_methods
+"bonjour, الخدمة تاع الراكوردمو ماكملتش",connection_not_completed,connection_works
+الخدمة تاع الراكوردمو ماكملتش. merci.,connection_not_completed,connection_works
+"bonjour, علاش قاسو الاستهلاك تاعي بالتخمين؟",dispute_estimated_reading,connection_cost_dispute
+depuis le raccordement j'ai des soucis d'électricité. merci.,connection_problem,electricity_outage
+كيفاش تتحسب الاستهلاك تاعي؟. merci.,consumption_calculation,technical_study
+"bonjour, علاش جاتني فاتورة تسوية؟",catch_up_bill,dispute_catch_up_bill
+الضو يهبط ويطلع. merci.,voltage_problem,payment_problem
+واش الطلب تاعي يتقبل؟. merci.,connection_eligibility,connection_documents
+نحب نصحح mes informations,update_customer_information,dispute_estimated_reading
