@@ -7,21 +7,22 @@ source_url: https://www.sonelgaz.dz/fr/category/faq
 
 ## Non-réception de la facture
 
-If the customer does not receive their electricity or gas bill, they should contact their commercial agency and bring an old consumption bill.
+Si le client ne reçoit pas sa facture d'électricité ou de gaz, il doit contacter son agence commerciale et se munir d'une ancienne facture de consommation.
 
 ## Modification des informations client
 
-If information on the bill needs to be changed, the customer should contact the commercial agency and provide the required supporting documents.
+Si les informations figurant sur la facture doivent être modifiées, le client doit contacter son agence commerciale et fournir les justificatifs nécessaires.
 
-Examples of supporting documents mentioned by Sonelgaz include:
-- property deed
-- acquisition decision
-- rental contract
-- identity document
+Parmi les justificatifs mentionnés par Sonelgaz :
+
+- acte de propriété
+- décision d'acquisition
+- contrat de location
+- pièce d'identité
 
 ## Problème concernant la facture
 
-For questions or problems concerning the customer's bill, the customer should contact the relevant Sonelgaz commercial agency.
+Pour toute question ou tout problème concernant la facture, le client doit contacter l'agence commerciale Sonelgaz concernée.
 
 ## Questions this document can answer
 

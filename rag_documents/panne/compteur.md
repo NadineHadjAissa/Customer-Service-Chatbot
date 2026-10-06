@@ -7,17 +7,17 @@ source_url: https://www.sonelgaz.dz/fr/category/faq
 
 ## Compteur défectueux ou problème de fonctionnement
 
-Customers must not open or manipulate the electricity or gas meter or distributor equipment themselves.
+Le client ne doit pas ouvrir ni manipuler lui-même le compteur d'électricité ou de gaz, ni les équipements de distribution.
 
-If the customer has doubts about the correct operation of the meter, they should contact the commercial agency or the dépannage service.
+Si le client doute du bon fonctionnement de son compteur, il doit contacter l'agence commerciale ou le service de dépannage.
 
-An intervention team can check the equipment and, where necessary, replace defective equipment.
+Une équipe d'intervention peut vérifier l'équipement et, si nécessaire, remplacer l'équipement défectueux.
 
 ## Compteur inaccessible
 
-If the meter cannot be accessed for an index reading, Sonelgaz can determine quarterly consumption based on the customer's consumption history.
+Si le compteur ne peut pas être accessible pour relever l'index, Sonelgaz peut déterminer la consommation trimestrielle en fonction de l'historique de consommation du client.
 
-The customer can also provide the meter index to the commercial agency.
+Le client peut également communiquer l'index du compteur à l'agence commerciale.
 
 ## Questions this document can answer
 

@@ -8,13 +8,13 @@ This scenario handles customer requests related to Sonelgaz electricity and gas 
 
 The chatbot identifies the customer's request and guides them toward:
 
-* understanding their bill;
-* understanding their consumption and charges;
-* disputing a bill;
-* paying a bill;
-* resolving unpaid bills or disconnection;
-* reporting a missing bill;
-* updating customer information.
+- understanding their bill;
+- understanding their consumption and charges;
+- disputing a bill;
+- paying a bill;
+- resolving unpaid bills or disconnection;
+- reporting a missing bill;
+- updating customer information.
 
 ---
 

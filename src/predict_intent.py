@@ -1,6 +1,11 @@
+
 import joblib
+import numpy as np
 
 from sentence_transformers import SentenceTransformer
+from src.preprocessing import normalize_text
+
+from src.intent_features import extract_intent_features
 
 
 # ============================================================
@@ -38,19 +43,68 @@ classifier = joblib.load(
 
 def predict_intent(text):
     """
-    Convert a user sentence into a MiniLM embedding
-    and predict its intent.
+    Convert a user sentence into:
+        MiniLM embedding + intent features
+
+    Then return the top 3 predicted intents
+    with their probabilities.
     """
+
+    # --------------------------------------------------------
+    # 1. MiniLM embedding
+    # --------------------------------------------------------
+
+    text = normalize_text(text)
 
     embedding = embedding_model.encode(
         [text]
     )
 
-    prediction = classifier.predict(
-        embedding
+    # --------------------------------------------------------
+    # 2. Intent-specific features
+    # --------------------------------------------------------
+
+    intent_features = extract_intent_features(
+        [text]
     )
 
-    return prediction[0]
+    # --------------------------------------------------------
+    # 3. Combine both
+    # --------------------------------------------------------
+
+    embedding = np.hstack(
+        [
+            embedding,
+            intent_features,
+        ]
+    )
+
+    # --------------------------------------------------------
+    # 4. Predict probabilities
+    # --------------------------------------------------------
+
+    probabilities = classifier.predict_proba(
+        embedding
+    )[0]
+
+    # --------------------------------------------------------
+    # 5. Get top 3
+    # --------------------------------------------------------
+
+    top_indices = probabilities.argsort()[-3:][::-1]
+
+    results = []
+
+    for i in top_indices:
+
+        results.append(
+            (
+                classifier.classes_[i],
+                probabilities[i],
+            )
+        )
+
+    return results
 
 
 # ============================================================
@@ -67,16 +121,24 @@ if __name__ == "__main__":
         text = input("Enter a message: ")
 
         if text.lower() == "exit":
+
             print("\nGoodbye!")
             break
 
-        intent = predict_intent(
+        results = predict_intent(
             text
         )
 
-        print(
-            "Predicted intent:",
-            intent
-        )
+        print("\nTop 3 predictions:")
+
+        for rank, (intent, probability) in enumerate(
+            results,
+            start=1,
+        ):
+
+            print(
+                f"  {rank}. {intent}: "
+                f"{probability:.3f}"
+            )
 
         print()

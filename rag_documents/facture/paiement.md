@@ -6,25 +6,25 @@ source: Sonelgaz — Foire aux questions + official 2025 payment announcement
 
 ## Paiement selon la FAQ Sonelgaz
 
-The Sonelgaz FAQ lists several payment methods:
+La FAQ de Sonelgaz indique plusieurs moyens de paiement :
 
-- Payment in cash at the commercial agency.
-- Payment by postal or bank cheque at the commercial agency.
-- Bank or CCP transfer using the account information shown on the bill.
-- Payment at post offices.
-- Payment when the Sonelgaz bill-delivery agent visits.
-- Automatic debit from a CCP account.
+- Paiement en espèces auprès de l'agence commerciale.
+- Paiement par chèque postal ou bancaire auprès de l'agence commerciale.
+- Virement bancaire ou CCP en utilisant les coordonnées indiquées sur la facture.
+- Paiement auprès des bureaux de poste.
+- Paiement lors du passage de l'agent chargé de la distribution des factures Sonelgaz.
+- Prélèvement automatique à partir d'un compte CCP.
 
 source: Sonelgaz — Foire aux questions
 source_url: https://www.sonelgaz.dz/fr/category/faq
 
 ## Paiement électronique — BaridiMob
 
-On 14 July 2025, Sonelgaz announced a framework agreement with Algérie Poste.
+Le 14 juillet 2025, Sonelgaz a annoncé la signature d'une convention-cadre avec Algérie Poste.
 
-According to the announcement, Sonelgaz-Distribution customers who have an EDAHABIA card can pay their electricity and gas bills remotely through the BaridiMob application.
+Selon cette annonce, les clients de Sonelgaz-Distribution disposant d'une carte EDAHABIA peuvent payer leurs factures d'électricité et de gaz à distance via l'application BaridiMob.
 
-The announcement also describes mechanisms for automatic payment from postal current accounts.
+L'annonce décrit également des mécanismes de paiement automatique à partir de comptes courants postaux.
 
 source: Sonelgaz — Généralisation du paiement électronique
 source_url: https://www.sonelgaz.dz/fr/8380/generalisation-du-paiement-electroniqueune-convention-cadre-signee-entre-sonelgaz-et-algerie-poste

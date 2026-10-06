@@ -8,15 +8,15 @@ This scenario handles customer requests related to connecting a property or inst
 
 The chatbot identifies the customer's request and guides them toward:
 
-* understanding the connection procedure;
-* identifying the type of connection;
-* asking about eligibility and conditions;
-* preparing the required documents;
-* submitting a connection request;
-* understanding the technical study;
-* understanding connection costs and payment;
-* following the progress of a request;
-* reporting problems with an existing connection request.
+- understanding the connection procedure;
+- identifying the type of connection;
+- asking about eligibility and conditions;
+- preparing the required documents;
+- submitting a connection request;
+- understanding the technical study;
+- understanding connection costs and payment;
+- following the progress of a request;
+- reporting problems with an existing connection request.
 
 ---
 

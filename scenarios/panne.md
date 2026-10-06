@@ -8,13 +8,13 @@ This scenario handles customer requests related to electricity and gas breakdown
 
 The chatbot identifies the customer's problem and guides them toward:
 
-* reporting an electricity outage;
-* reporting a gas outage;
-* reporting a meter problem;
-* reporting voltage problems;
-* reporting damage to electrical appliances;
-* checking interruption and restoration information;
-* reporting dangerous situations.
+- reporting an electricity outage;
+- reporting a gas outage;
+- reporting a meter problem;
+- reporting voltage problems;
+- reporting damage to electrical appliances;
+- checking interruption and restoration information;
+- reporting dangerous situations.
 
 ---
 

@@ -4,35 +4,35 @@ topic: raccordement
 language: fr
 verification_status: TO_VERIFY
 
-## Required documents
+## Documents requis
 
-A current official Sonelgaz source specifying the complete list of documents required for a new electricity or gas connection has not yet been added.
+Aucune source officielle Sonelgaz actuelle précisant la liste complète des documents nécessaires pour un nouveau raccordement à l'électricité ou au gaz n'a encore été ajoutée.
 
-Do not use an unofficial checklist as an authoritative Sonelgaz requirement.
+Ne pas utiliser une liste provenant d'une source non officielle comme liste de documents requis par Sonelgaz.
 
-## Information to collect
+## Informations à collecter
 
-When an official customer procedure is found, document:
+Lorsqu'une procédure officielle destinée aux clients sera trouvée, documenter :
 
-- identity documents
-- proof of ownership or occupancy
-- construction/property documents
-- technical documents
-- application form
-- any required administrative authorization
-- documents specific to electricity connection
-- documents specific to gas connection
+- pièces d'identité
+- justificatif de propriété ou d'occupation
+- documents relatifs à la construction ou au bien immobilier
+- documents techniques
+- formulaire de demande
+- toute autorisation administrative requise
+- documents spécifiques au raccordement électrique
+- documents spécifiques au raccordement au gaz
 
 ## Important
 
-The list above is a list of information categories to investigate. It is NOT an official Sonelgaz document checklist.
+La liste ci-dessus correspond à des catégories d'informations à vérifier. Il ne s'agit PAS d'une liste officielle de documents requis par Sonelgaz.
 
-The chatbot must not present these items as mandatory until they are verified against a current official Sonelgaz source.
+Le chatbot ne doit pas présenter ces éléments comme obligatoires tant qu'ils n'ont pas été vérifiés à partir d'une source officielle Sonelgaz actuelle.
 
-## RAG rule
+## Règle RAG
 
-If a user asks:
+Si un utilisateur demande :
 
 "Quels documents faut-il pour un raccordement ?"
 
-and no verified official checklist is available, the chatbot should not invent one. It should direct the user to the relevant Sonelgaz commercial agency for the current requirements.
+et qu'aucune liste officielle vérifiée n'est disponible, le chatbot ne doit pas en inventer une. Il doit orienter l'utilisateur vers l'agence commerciale Sonelgaz concernée afin d'obtenir les exigences actuelles.

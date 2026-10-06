@@ -6,28 +6,28 @@ verification_status: TO_VERIFY
 
 ## Raccordement Clientèle Nouvelle
 
-Sonelgaz identifies "Raccordement Clientèle Nouvelle" (RCN) as part of its electricity and gas distribution development programs.
+Sonelgaz identifie le « Raccordement Clientèle Nouvelle » (RCN) comme faisant partie de ses programmes de développement de la distribution d'électricité et de gaz.
 
 source: Sonelgaz — Plan de développement 2021–2030
 source_url: https://www.sonelgaz.dz/fr/835/plan-de-developpement-2021-2030
 
-## Current customer procedure
+## Procédure actuelle pour les clients
 
 TO_VERIFY
 
-The following information must be obtained from a current official Sonelgaz customer-service source before being used by the chatbot:
+Les informations suivantes doivent être obtenues à partir d'une source officielle Sonelgaz actuelle destinée aux clients avant d'être utilisées par le chatbot :
 
-- application procedure
-- where to submit the application
-- required documents
-- technical conditions
-- connection fees
-- expected deadlines
-- electricity connection procedure
-- gas connection procedure
+- procédure de demande
+- lieu de dépôt de la demande
+- documents requis
+- conditions techniques
+- frais de raccordement
+- délais prévus
+- procédure de raccordement à l'électricité
+- procédure de raccordement au gaz
 
-## RAG rule
+## Règle RAG
 
-Do not invent a raccordement procedure.
+Ne pas inventer une procédure de raccordement.
 
-If the retrieved knowledge does not contain the required information, the chatbot should state that the exact procedure needs to be confirmed with the relevant Sonelgaz agency.
+Si les informations récupérées ne contiennent pas les éléments nécessaires, le chatbot doit indiquer que la procédure exacte doit être confirmée auprès de l'agence Sonelgaz concernée.

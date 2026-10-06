@@ -1,5 +1,6 @@
 import joblib
 import pandas as pd
+import numpy as np
 
 from sentence_transformers import SentenceTransformer
 
@@ -7,22 +8,17 @@ from src.preprocessing import (
     load_and_clean_data,
     split_data,
 )
-from sklearn.pipeline import Pipeline
+
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn.pipeline import Pipeline
 from sklearn.metrics import accuracy_score, classification_report
-
+from src.intent_features import extract_intent_features
 
 # ============================================================
 # 1. CONFIGURATION
 # ============================================================
-
-DATASETS = [
-    "data/dataset_facture.xlsx",
-    "data/dataset_panne.xlsx",
-    "data/dataset_raccordement.xlsx",
-]
 
 MODEL_NAME = (
     "sentence-transformers/"
@@ -42,6 +38,9 @@ C_VALUES = [
     50,
     100,
 ]
+
+MODEL_PATH = "models/intent_classifier.joblib"
+
 
 # ============================================================
 # 2. LOAD AND PREPROCESS DATA
@@ -86,6 +85,7 @@ print("Training:", len(X_train))
 print("Validation:", len(X_val))
 print("Test:", len(X_test))
 
+
 # ============================================================
 # 4. LOAD MULTILINGUAL MINILM
 # ============================================================
@@ -118,7 +118,21 @@ X_test_embeddings = model.encode(
     show_progress_bar=True,
 )
 
+X_train_features = extract_intent_features(X_train)
+X_val_features = extract_intent_features(X_val)
+X_test_features = extract_intent_features(X_test)
 
+X_train_embeddings = np.hstack(
+    [X_train_embeddings, X_train_features]
+)
+
+X_val_embeddings = np.hstack(
+    [X_val_embeddings, X_val_features]
+)
+
+X_test_embeddings = np.hstack(
+    [X_test_embeddings, X_test_features]
+)
 print(
     "\nEmbedding shape:",
     X_train_embeddings.shape
@@ -130,10 +144,6 @@ print(
 # ============================================================
 
 classifiers = {
-
-    # --------------------------------------------------------
-    # Logistic Regression
-    # --------------------------------------------------------
 
     "LogisticRegression_C1": Pipeline([
         (
@@ -165,11 +175,6 @@ classifiers = {
         )
     ]),
 
-
-    # --------------------------------------------------------
-    # Linear SVM
-    # --------------------------------------------------------
-
     "SVM_linear_C1": Pipeline([
         (
             "classifier",
@@ -190,11 +195,6 @@ classifiers = {
         )
     ]),
 
-
-    # --------------------------------------------------------
-    # RBF SVM
-    # --------------------------------------------------------
-
     "SVM_rbf_C1": Pipeline([
         (
             "classifier",
@@ -214,11 +214,6 @@ classifiers = {
             ),
         )
     ]),
-
-
-    # --------------------------------------------------------
-    # KNN
-    # --------------------------------------------------------
 
     "KNN_3": Pipeline([
         (
@@ -252,27 +247,19 @@ for name, classifier in classifiers.items():
 
     print(f"\nTraining: {name}")
 
-
-    # Train
     classifier.fit(
         X_train_embeddings,
         y_train,
     )
 
-
-    # Training predictions
     train_predictions = classifier.predict(
         X_train_embeddings
     )
 
-
-    # Validation predictions
     val_predictions = classifier.predict(
         X_val_embeddings
     )
 
-
-    # Accuracies
     train_accuracy = accuracy_score(
         y_train,
         train_predictions,
@@ -283,10 +270,7 @@ for name, classifier in classifiers.items():
         val_predictions,
     )
 
-
-    # Training / validation gap
     gap = train_accuracy - val_accuracy
-
 
     classifier_results.append({
         "model": name,
@@ -294,7 +278,6 @@ for name, classifier in classifiers.items():
         "validation_accuracy": val_accuracy,
         "train_val_gap": gap,
     })
-
 
     print(
         f"Training accuracy:   {train_accuracy:.4f}"
@@ -309,7 +292,6 @@ for name, classifier in classifiers.items():
     )
 
 
-# Convert results to DataFrame
 classifier_results_df = pd.DataFrame(
     classifier_results
 )
@@ -356,33 +338,24 @@ for C in C_VALUES:
 
     print(f"\nTesting C = {C}")
 
-
     classifier = LogisticRegression(
         C=C,
         max_iter=3000,
     )
 
-
-    # Train
     classifier.fit(
         X_train_embeddings,
         y_train,
     )
 
-
-    # Training predictions
     train_predictions = classifier.predict(
         X_train_embeddings
     )
 
-
-    # Validation predictions
     val_predictions = classifier.predict(
         X_val_embeddings
     )
 
-
-    # Accuracies
     train_accuracy = accuracy_score(
         y_train,
         train_predictions,
@@ -393,10 +366,7 @@ for C in C_VALUES:
         val_predictions,
     )
 
-
-    # Training / validation gap
     gap = train_accuracy - val_accuracy
-
 
     c_results.append({
         "C": C,
@@ -404,7 +374,6 @@ for C in C_VALUES:
         "validation_accuracy": val_accuracy,
         "train_val_gap": gap,
     })
-
 
     print(
         f"Training accuracy:   {train_accuracy:.4f}"
@@ -419,7 +388,6 @@ for C in C_VALUES:
     )
 
 
-# Convert results to DataFrame
 c_results_df = pd.DataFrame(
     c_results
 )
@@ -501,7 +469,6 @@ print("FINAL TEST EVALUATION")
 print("=" * 60)
 
 
-# Train the selected configuration
 final_classifier = LogisticRegression(
     C=best_C,
     max_iter=3000,
@@ -514,7 +481,6 @@ final_classifier.fit(
 )
 
 
-# Predict on the untouched test set
 test_predictions = final_classifier.predict(
     X_test_embeddings
 )
@@ -530,11 +496,10 @@ print(
     f"Test accuracy: {test_accuracy:.4f}"
 )
 
+
 # ============================================================
 # 10. SAVE FINAL CLASSIFIER
 # ============================================================
-
-MODEL_PATH = "models/intent_classifier.joblib"
 
 joblib.dump(
     final_classifier,
@@ -543,6 +508,7 @@ joblib.dump(
 
 print("\nFinal classifier saved to:")
 print(MODEL_PATH)
+
 
 # ============================================================
 # 11. CLASSIFICATION REPORT
@@ -561,54 +527,47 @@ print(
 )
 
 # ============================================================
-# EXPERIMENT RESULTS — 2026-09-26
+# 12. MOST COMMON MISCLASSIFICATIONS
 # ============================================================
-#
-# Dataset:
-# - 1000 examples
-# - 51 intents
-# - Train: 800
-# - Validation: 100
-# - Test: 100
-#
-# Embedding model:
-# sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
-# Embedding dimension: 384
-#
-# Classifier comparison (validation accuracy):
-# - Logistic Regression C=10: 96%
-# - Linear SVM C=3:            95%
-# - Logistic Regression C=3:   94%
-# - Linear SVM C=1:            94%
-# - Logistic Regression C=1:   93%
-# - RBF SVM C=3:               93%
-# - RBF SVM C=1:               80%
-# - KNN k=3:                   79%
-# - KNN k=5:                   72%
-#
-# Logistic Regression C sweep:
-# - C=0.1: 76%
-# - C=0.5: 92%
-# - C=1:   93%
-# - C=3:   94%
-# - C=5:   95%
-# - C=10:  96%
-# - C=15:  96%
-# - C=20:  96%
-# - C=30:  96%
-# - C=50:  96%
-# - C=100: 95%
-#
-# Selected configuration:
-# - MiniLM + Logistic Regression
-# - C=10
-#
-# Final evaluation:
-# - Training accuracy:   100%
-# - Validation accuracy: 96%
-# - Test accuracy:       96%
-# - Train/validation gap: 4%
-#
-# Note:
-# The test set was kept separate from model selection.
-# ============================================================
+
+from collections import Counter
+
+misclassifications = Counter()
+
+for true_label, predicted_label in zip(
+    y_test,
+    test_predictions,
+):
+    if true_label != predicted_label:
+        misclassifications[
+            (true_label, predicted_label)
+        ] += 1
+
+
+print("\n" + "=" * 60)
+print("MOST COMMON MISCLASSIFICATIONS")
+print("=" * 60)
+
+for (true_label, predicted_label), count in (
+    misclassifications.most_common(30)
+):
+    print(
+        f"{count:>3}  "
+        f"{true_label}  -->  {predicted_label}"
+    )
+
+print("\n" + "=" * 60)
+print("MISCLASSIFIED TEST EXAMPLES")
+print("=" * 60)
+
+for phrase, true_label, predicted_label in zip(
+    X_test,
+    y_test,
+    test_predictions,
+):
+    if true_label != predicted_label:
+        print(
+            f"\nPhrase: {phrase}"
+            f"\nTrue: {true_label}"
+            f"\nPredicted: {predicted_label}"
+        )

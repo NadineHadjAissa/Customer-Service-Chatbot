@@ -7,24 +7,25 @@ source_url: https://www.sonelgaz.dz/fr/category/faq
 
 ## Perturbation de l'alimentation électrique
 
-Information concerning incidents and disturbances affecting the customer's electricity supply should be handled according to Sonelgaz's official procedures.
+Les informations concernant les incidents et les perturbations affectant l'alimentation électrique du client doivent être traitées conformément aux procédures officielles de Sonelgaz.
 
 ## Dommages aux appareils après une perturbation de tension
 
-If electrical equipment is damaged following a voltage disturbance, the customer should declare the incident to the commercial agency.
+Si un appareil électrique est endommagé à la suite d'une perturbation de tension, le client doit déclarer l'incident auprès de l'agence commerciale.
 
-According to the Sonelgaz FAQ:
-- the incident should be declared within 48 hours;
-- the customer should provide the latest electricity/gas consumption bill;
-- repair documentation for the damaged equipment should be submitted within 7 days from the incident declaration.
+Selon la FAQ de Sonelgaz :
 
-The resulting file may be transmitted to Sonelgaz's insurer for examination.
+- l'incident doit être déclaré dans un délai de 48 heures ;
+- le client doit fournir la dernière facture de consommation d'électricité ou de gaz ;
+- les documents relatifs à la réparation de l'appareil endommagé doivent être fournis dans un délai de 7 jours à compter de la déclaration de l'incident.
+
+Le dossier constitué peut être transmis à l'assureur de Sonelgaz pour examen.
 
 ## Fuite de gaz
 
-For a gas leak, customers should follow Sonelgaz's official prevention and safety instructions.
+En cas de fuite de gaz, les clients doivent suivre les consignes officielles de prévention et de sécurité de Sonelgaz.
 
-Do not invent emergency telephone numbers. Add an official current contact source before using this document for emergency-contact answers.
+Ne pas inventer de numéro de téléphone d'urgence. Ajouter une source officielle actuelle concernant les coordonnées avant d'utiliser ce document pour répondre aux questions concernant les contacts d'urgence.
 
 ## Questions this document can answer
 
