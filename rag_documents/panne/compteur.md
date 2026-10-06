@@ -2,28 +2,48 @@
 
 topic: compteur
 language: fr
-source: Sonelgaz — Foire aux questions
+source: Sonelgaz — FAQ et scénarios conversationnels du projet
 source_url: https://www.sonelgaz.dz/fr/category/faq
 
-## Compteur défectueux ou problème de fonctionnement
+## meter_problem
 
-Le client ne doit pas ouvrir ni manipuler lui-même le compteur d'électricité ou de gaz, ni les équipements de distribution.
+Si votre compteur fonctionne anormalement, vous pouvez signaler le problème afin qu'il soit vérifié.
 
-Si le client doute du bon fonctionnement de son compteur, il doit contacter l'agence commerciale ou le service de dépannage.
+### Compteur qui fonctionne mal
 
-Une équipe d'intervention peut vérifier l'équipement et, si nécessaire, remplacer l'équipement défectueux.
+Si votre compteur fonctionne mal ou semble présenter un fonctionnement anormal, signalez le problème afin qu'il puisse être contrôlé par le service compétent.
 
-## Compteur inaccessible
+### Compteur affichant une erreur
 
-Si le compteur ne peut pas être accessible pour relever l'index, Sonelgaz peut déterminer la consommation trimestrielle en fonction de l'historique de consommation du client.
+Si votre compteur affiche un message ou un code d'erreur, indiquez le message affiché lors du signalement.
 
-Le client peut également communiquer l'index du compteur à l'agence commerciale.
+### Compteur bloqué
+
+Si votre compteur est bloqué ou ne fonctionne plus correctement, vous pouvez demander une vérification du compteur.
+
+### Compteur défectueux
+
+Si vous pensez que votre compteur est défectueux, signalez le problème afin qu'il puisse être contrôlé par le service compétent.
+
+### Vérification ou remplacement du compteur
+
+Si vous souhaitez faire vérifier ou remplacer un compteur qui semble défectueux, vous devez signaler le problème afin qu'il soit examiné par le service compétent.
+
+Le chatbot ne peut pas déterminer à distance si le compteur doit effectivement être remplacé.
 
 ## Questions this document can answer
 
-- Mon compteur ne fonctionne pas.
-- Mon compteur est défectueux.
-- Je pense que mon compteur a un problème.
-- Puis-je ouvrir mon compteur ?
-- Le compteur n'est pas accessible.
-- Comment transmettre l'index de mon compteur ?
+- Mon compteur fonctionne mal.
+- Mon compteur ne fonctionne plus.
+- Mon compteur affiche une erreur.
+- Mon compteur affiche un code d'erreur.
+- Il y a un message d'erreur sur mon compteur.
+- Mon compteur est bloqué.
+- Je pense que mon compteur est défectueux.
+- Mon compteur semble avoir un problème.
+- Je veux faire vérifier mon compteur.
+- Je veux faire contrôler mon compteur.
+- Comment faire vérifier mon compteur ?
+- Comment remplacer mon compteur ?
+- Je veux remplacer mon compteur.
+- Mon compteur ne fonctionne plus correctement.

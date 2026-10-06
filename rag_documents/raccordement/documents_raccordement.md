@@ -1,38 +1,40 @@
-# Sonelgaz — Documents nécessaires au raccordement
+# Sonelgaz — Documents de raccordement
 
 topic: raccordement
 language: fr
-verification_status: TO_VERIFY
+source: Sonelgaz — Scénarios conversationnels du projet
+source_url: https://www.sonelgaz.dz/fr/category/faq
 
-## Documents requis
+## connection_documents
 
-Aucune source officielle Sonelgaz actuelle précisant la liste complète des documents nécessaires pour un nouveau raccordement à l'électricité ou au gaz n'a encore été ajoutée.
+Les documents nécessaires dépendent du type de raccordement et de la situation du demandeur.
 
-Ne pas utiliser une liste provenant d'une source non officielle comme liste de documents requis par Sonelgaz.
+Le dossier peut notamment nécessiter des documents d'identification, des documents relatifs au logement ou à la propriété et les documents administratifs ou techniques demandés par le service compétent.
 
-## Informations à collecter
+Pour une nouvelle construction, préparez également les documents relatifs au projet et au logement ainsi que les documents administratifs et techniques demandés.
 
-Lorsqu'une procédure officielle destinée aux clients sera trouvée, documenter :
+Vérifiez la liste exacte auprès de l'agence ou du service chargé du raccordement.
 
-- pièces d'identité
-- justificatif de propriété ou d'occupation
-- documents relatifs à la construction ou au bien immobilier
-- documents techniques
-- formulaire de demande
-- toute autorisation administrative requise
-- documents spécifiques au raccordement électrique
-- documents spécifiques au raccordement au gaz
+## missing_connection_document
 
-## Important
+Si un document demandé manque dans votre dossier, vous devez le fournir afin que votre demande puisse être traitée.
 
-La liste ci-dessus correspond à des catégories d'informations à vérifier. Il ne s'agit PAS d'une liste officielle de documents requis par Sonelgaz.
+Contactez le service compétent pour confirmer le document manquant.
 
-Le chatbot ne doit pas présenter ces éléments comme obligatoires tant qu'ils n'ont pas été vérifiés à partir d'une source officielle Sonelgaz actuelle.
+## Escalation
 
-## Règle RAG
+Pour confirmer la liste exacte des documents nécessaires à votre situation, veuillez contacter l'agence ou le service chargé du raccordement.
 
-Si un utilisateur demande :
+Le chatbot ne doit pas inventer ou confirmer une liste de documents sans information vérifiée.
 
-"Quels documents faut-il pour un raccordement ?"
+## Questions this document can answer
 
-et qu'aucune liste officielle vérifiée n'est disponible, le chatbot ne doit pas en inventer une. Il doit orienter l'utilisateur vers l'agence commerciale Sonelgaz concernée afin d'obtenir les exigences actuelles.
+Quels documents faut-il pour un raccordement ?
+
+Quels papiers faut-il pour raccorder une maison ?
+
+Quels documents sont nécessaires pour une nouvelle construction ?
+
+Il me manque un document pour mon raccordement.
+
+Quel document manque dans mon dossier ?

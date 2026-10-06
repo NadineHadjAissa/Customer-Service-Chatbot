@@ -2,40 +2,40 @@
 
 topic: paiement
 language: fr
-source: Sonelgaz — Foire aux questions + official 2025 payment announcement
-
-## Paiement selon la FAQ Sonelgaz
-
-La FAQ de Sonelgaz indique plusieurs moyens de paiement :
-
-- Paiement en espèces auprès de l'agence commerciale.
-- Paiement par chèque postal ou bancaire auprès de l'agence commerciale.
-- Virement bancaire ou CCP en utilisant les coordonnées indiquées sur la facture.
-- Paiement auprès des bureaux de poste.
-- Paiement lors du passage de l'agent chargé de la distribution des factures Sonelgaz.
-- Prélèvement automatique à partir d'un compte CCP.
-
 source: Sonelgaz — Foire aux questions
 source_url: https://www.sonelgaz.dz/fr/category/faq
 
+## Paiement selon la FAQ Sonelgaz
+
+Plusieurs moyens officiels permettent de régler une facture Sonelgaz.
+
+Le paiement peut notamment être effectué :
+
+- en espèces auprès de l'agence commerciale ;
+- par chèque postal ou bancaire auprès de l'agence commerciale ;
+- par les informations de paiement indiquées sur la facture ;
+- auprès des bureaux de poste ;
+- lors du passage de l'agent chargé de la distribution des factures ;
+- par prélèvement automatique lorsque ce service est disponible.
+
 ## Paiement électronique — BaridiMob
 
-Le 14 juillet 2025, Sonelgaz a annoncé la signature d'une convention-cadre avec Algérie Poste.
+Le paiement électronique de la facture peut être effectué à l'aide des services de paiement à distance proposés par Sonelgaz, notamment via BaridiMob.
 
-Selon cette annonce, les clients de Sonelgaz-Distribution disposant d'une carte EDAHABIA peuvent payer leurs factures d'électricité et de gaz à distance via l'application BaridiMob.
+## Problème de paiement
 
-L'annonce décrit également des mécanismes de paiement automatique à partir de comptes courants postaux.
+Si un paiement n'a pas abouti, le client doit vérifier les informations saisies et le moyen de paiement utilisé.
 
-source: Sonelgaz — Généralisation du paiement électronique
-source_url: https://www.sonelgaz.dz/fr/8380/generalisation-du-paiement-electroniqueune-convention-cadre-signee-entre-sonelgaz-et-algerie-poste
-source_date: 2025-07-14
+Si le problème persiste, il doit contacter le service compétent afin de faire vérifier sa situation.
 
 ## Questions this document can answer
 
-- Comment payer ma facture Sonelgaz ?
-- Où puis-je payer ma facture ?
-- Est-ce que je peux payer à la poste ?
-- Est-ce que je peux payer avec BaridiMob ?
-- Est-ce que je peux payer avec EDAHABIA ?
-- Puis-je payer par virement ?
-- Puis-je payer automatiquement ma facture ?
+- Comment payer ma facture ?
+- Quels sont les moyens de paiement ?
+- Je veux payer ma facture.
+- Kifach nkhalles la facture ?
+- Nقدر نخلص الفاتورة كيفاش؟
+- Je veux payer ma facture en ligne.
+- Nقدر نخلص la facture من التطبيق؟
+- Le paiement de ma facture ne fonctionne pas.
+- J'ai un problème avec mon paiement.

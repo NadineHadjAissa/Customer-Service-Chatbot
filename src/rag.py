@@ -13,44 +13,258 @@ RAG_DOCUMENTS_DIR = Path("rag_documents")
 # INTENT → KNOWLEDGE MAPPING
 # ============================================================
 
+# ============================================================
+# INTENT → KNOWLEDGE MAPPING
+# ============================================================
+
 INTENT_DOCUMENTS = {
+
+    # ============================================================
+    # FACTURE
+    # ============================================================
 
     "bill_not_received": [
         Path("rag_documents/facture/faq_facture.md"),
-    ],
-
-    "bill_payment_methods": [
-        Path("rag_documents/facture/paiement.md"),
-    ],
-
-    "online_bill_payment": [
-        Path("rag_documents/facture/paiement.md"),
     ],
 
     "understand_bill": [
         Path("rag_documents/facture/faq_facture.md"),
     ],
 
+    "consumption_calculation": [
+        Path("rag_documents/facture/faq_facture.md"),
+    ],
+
+    "amount_breakdown": [
+        Path("rag_documents/facture/faq_facture.md"),
+    ],
+
+    "rem_r_meaning": [
+        Path("rag_documents/facture/faq_facture.md"),
+    ],
+
+    "catch_up_bill": [
+        Path("rag_documents/facture/faq_facture.md"),
+    ],
+
+    "dispute_bill": [
+        Path("rag_documents/facture/faq_facture.md"),
+    ],
+
+    "high_or_abnormal_amount": [
+        Path("rag_documents/facture/faq_facture.md"),
+    ],
+
+    "wrong_meter_reading": [
+        Path("rag_documents/facture/faq_facture.md"),
+    ],
+
+    "dispute_estimated_reading": [
+        Path("rag_documents/facture/faq_facture.md"),
+    ],
+
+    "dispute_catch_up_bill": [
+        Path("rag_documents/facture/faq_facture.md"),
+    ],
+
+    "paid_but_unpaid_status": [
+        Path("rag_documents/facture/faq_facture.md"),
+    ],
+
+
+    # ============================================================
+    # PAIEMENT
+    # ============================================================
+
+    "bill_payment_methods": [
+        Path("rag_documents/facture/faq_facture.md"),
+        Path("rag_documents/facture/paiement.md"),
+    ],
+
+    "bill_payment_deadline": [
+        Path("rag_documents/facture/faq_facture.md"),
+    ],
+
+    "online_bill_payment": [
+        Path("rag_documents/facture/faq_facture.md"),
+        Path("rag_documents/facture/paiement.md"),
+    ],
+
+    "payment_problem": [
+        Path("rag_documents/facture/faq_facture.md"),
+        Path("rag_documents/facture/paiement.md"),
+    ],
+
+    "unpaid_bill": [
+        Path("rag_documents/facture/faq_facture.md"),
+    ],
+
+
+    # ============================================================
+    # DISCONNECTION / RESTORATION
+    # ============================================================
+
+    "disconnection": [
+        Path("rag_documents/facture/faq_facture.md"),
+    ],
+
+    "restoration": [
+        Path("rag_documents/panne/faq_panne.md"),
+    ],
+
+    "restoration_after_payment": [
+        Path("rag_documents/facture/faq_facture.md"),
+    ],
+
+
+    # ============================================================
+    # CUSTOMER INFORMATION
+    # ============================================================
+
     "update_customer_information": [
         Path("rag_documents/facture/faq_facture.md"),
     ],
+
+
+    # ============================================================
+    # GENERIC BILL QUESTION
+    # ============================================================
+
+    "amount_question": [
+        Path("rag_documents/facture/faq_facture.md"),
+    ],
+
+
+    # ============================================================
+    # PANNE / DÉPANNAGE
+    # ============================================================
 
     "electricity_outage": [
         Path("rag_documents/panne/faq_panne.md"),
     ],
 
-    "payment_problem": [],
-
-    "bill_payment_deadline": [],
-
-    "unpaid_bill": [],
-
-        "damaged_appliance": [
+    "neighborhood_outage": [
         Path("rag_documents/panne/faq_panne.md"),
     ],
 
+    "gas_outage": [
+        Path("rag_documents/panne/faq_panne.md"),
+    ],
+
+    "voltage_problem": [
+        Path("rag_documents/panne/faq_panne.md"),
+    ],
+
+    "damaged_appliance": [
+        Path("rag_documents/panne/faq_panne.md"),
+    ],
+
+    "report_breakdown": [
+        Path("rag_documents/panne/faq_panne.md"),
+    ],
+
+    "electrical_danger": [
+        Path("rag_documents/panne/faq_panne.md"),
+    ],
+
+    "gas_emergency": [
+        Path("rag_documents/panne/faq_panne.md"),
+    ],
+
+
+    # ============================================================
+    # COMPTEUR
+    # ============================================================
+
     "meter_problem": [
         Path("rag_documents/panne/compteur.md"),
+    ],
+        # ============================================================
+    # RACCORDEMENT
+    # ============================================================
+
+    "connection_procedure": [
+        Path("rag_documents/raccordement/procedure_raccordement.md"),
+    ],
+
+    "new_connection": [
+        Path("rag_documents/raccordement/procedure_raccordement.md"),
+    ],
+
+    "new_construction_connection": [
+        Path("rag_documents/raccordement/procedure_raccordement.md"),
+    ],
+
+    "electricity_connection": [
+        Path("rag_documents/raccordement/procedure_raccordement.md"),
+    ],
+
+    "low_voltage_connection": [
+        Path("rag_documents/raccordement/procedure_raccordement.md"),
+    ],
+
+    "gas_connection": [
+        Path("rag_documents/raccordement/procedure_raccordement.md"),
+    ],
+
+    "electricity_gas_connection": [
+        Path("rag_documents/raccordement/procedure_raccordement.md"),
+    ],
+
+    "connection_documents": [
+        Path("rag_documents/raccordement/documents_raccordement.md"),
+    ],
+
+    "missing_connection_document": [
+        Path("rag_documents/raccordement/documents_raccordement.md"),
+    ],
+
+    "connection_eligibility": [
+        Path("rag_documents/raccordement/procedure_raccordement.md"),
+    ],
+
+    "network_availability": [
+        Path("rag_documents/raccordement/procedure_raccordement.md"),
+    ],
+
+    "technical_study": [
+        Path("rag_documents/raccordement/procedure_raccordement.md"),
+    ],
+
+    "connection_works": [
+        Path("rag_documents/raccordement/procedure_raccordement.md"),
+    ],
+
+    "connection_cost": [
+        Path("rag_documents/raccordement/procedure_raccordement.md"),
+    ],
+
+    "connection_payment": [
+        Path("rag_documents/raccordement/procedure_raccordement.md"),
+    ],
+
+    "connection_cost_dispute": [
+        Path("rag_documents/raccordement/procedure_raccordement.md"),
+    ],
+
+    "connection_status": [
+        Path("rag_documents/raccordement/procedure_raccordement.md"),
+    ],
+
+    "connection_delay": [
+        Path("rag_documents/raccordement/procedure_raccordement.md"),
+    ],
+
+    "connection_rejection": [
+        Path("rag_documents/raccordement/procedure_raccordement.md"),
+    ],
+
+    "connection_not_completed": [
+        Path("rag_documents/raccordement/procedure_raccordement.md"),
+    ],
+
+    "connection_problem": [
+        Path("rag_documents/raccordement/procedure_raccordement.md"),
     ],
 }
 
@@ -61,45 +275,256 @@ INTENT_DOCUMENTS = {
 
 INTENT_SECTIONS = {
 
+    # ============================================================
+    # FACTURE
+    # ============================================================
+
     "bill_not_received": [
-        "Non-réception de la facture",
-    ],
-
-    "bill_payment_methods": [
-        "Paiement selon la FAQ Sonelgaz",
-    ],
-
-    "online_bill_payment": [
-        "Paiement électronique — BaridiMob",
+        "bill_not_received",
     ],
 
     "understand_bill": [
-        "Problème concernant la facture",
+        "understand_bill",
     ],
+
+    "consumption_calculation": [
+        "consumption_calculation",
+    ],
+
+    "amount_breakdown": [
+        "amount_breakdown",
+    ],
+
+    "rem_r_meaning": [
+        "rem_r_meaning",
+    ],
+
+    "catch_up_bill": [
+        "catch_up_bill",
+    ],
+
+    "dispute_bill": [
+        "dispute_bill",
+    ],
+
+    "high_or_abnormal_amount": [
+        "high_or_abnormal_amount",
+    ],
+
+    "wrong_meter_reading": [
+        "wrong_meter_reading",
+    ],
+
+    "dispute_estimated_reading": [
+        "dispute_estimated_reading",
+    ],
+
+    "dispute_catch_up_bill": [
+        "dispute_catch_up_bill",
+    ],
+
+    "paid_but_unpaid_status": [
+        "paid_but_unpaid_status",
+    ],
+
+
+    # ============================================================
+    # PAIEMENT
+    # ============================================================
+
+    "bill_payment_methods": [
+        "bill_payment_methods",
+    ],
+
+    "bill_payment_deadline": [
+        "bill_payment_deadline",
+    ],
+
+    "online_bill_payment": [
+        "online_bill_payment",
+    ],
+
+    "payment_problem": [
+        "payment_problem",
+    ],
+
+    "unpaid_bill": [
+        "unpaid_bill",
+    ],
+
+
+    # ============================================================
+    # DISCONNECTION / RESTORATION
+    # ============================================================
+
+    "disconnection": [
+        "disconnection",
+    ],
+
+    "restoration": [
+        "restoration",
+    ],
+
+    "restoration_after_payment": [
+        "restoration_after_payment",
+    ],
+
+
+    # ============================================================
+    # CUSTOMER INFORMATION
+    # ============================================================
 
     "update_customer_information": [
-        "Modification des informations client",
+        "update_customer_information",
     ],
+
+
+    # ============================================================
+    # GENERIC
+    # ============================================================
+
+    "amount_question": [
+        "amount_question",
+    ],
+
+
+    # ============================================================
+    # PANNE / DÉPANNAGE
+    # ============================================================
 
     "electricity_outage": [
-        "Perturbation de l'alimentation électrique",
+        "electricity_outage",
     ],
 
-    "payment_problem": [],
+    "neighborhood_outage": [
+        "neighborhood_outage",
+    ],
 
-    "bill_payment_deadline": [],
+    "gas_outage": [
+        "gas_outage",
+    ],
 
-    "unpaid_bill": [],
+    "voltage_problem": [
+        "voltage_problem",
+    ],
 
     "damaged_appliance": [
-        "Dommages aux appareils après une perturbation de tension",
+        "damaged_appliance",
     ],
+
+    "report_breakdown": [
+        "report_breakdown",
+    ],
+
+    "restoration": [
+        "restoration",
+    ],
+
+    "electrical_danger": [
+        "electrical_danger",
+    ],
+
+    "gas_emergency": [
+        "gas_emergency",
+    ],
+
+
+    # ============================================================
+    # COMPTEUR
+    # ============================================================
 
     "meter_problem": [
-        "Compteur défectueux ou problème de fonctionnement",
+        "meter_problem",
+    ],
+
+        # ============================================================
+    # RACCORDEMENT
+    # ============================================================
+
+    "connection_procedure": [
+        "connection_procedure",
+    ],
+
+    "new_connection": [
+        "new_connection",
+    ],
+
+    "new_construction_connection": [
+        "new_construction_connection",
+    ],
+
+    "electricity_connection": [
+        "electricity_connection",
+    ],
+
+    "low_voltage_connection": [
+        "low_voltage_connection",
+    ],
+
+    "gas_connection": [
+        "gas_connection",
+    ],
+
+    "electricity_gas_connection": [
+        "electricity_gas_connection",
+    ],
+
+    "connection_documents": [
+        "connection_documents",
+    ],
+
+    "missing_connection_document": [
+        "missing_connection_document",
+    ],
+
+    "connection_eligibility": [
+        "connection_eligibility",
+    ],
+
+    "network_availability": [
+        "network_availability",
+    ],
+
+    "technical_study": [
+        "technical_study",
+    ],
+
+    "connection_works": [
+        "connection_works",
+    ],
+
+    "connection_cost": [
+        "connection_cost",
+    ],
+
+    "connection_payment": [
+        "connection_payment",
+    ],
+
+    "connection_cost_dispute": [
+        "connection_cost_dispute",
+    ],
+
+    "connection_status": [
+        "connection_status",
+    ],
+
+    "connection_delay": [
+        "connection_delay",
+    ],
+
+    "connection_rejection": [
+        "connection_rejection",
+    ],
+
+    "connection_not_completed": [
+        "connection_not_completed",
+    ],
+
+    "connection_problem": [
+        "connection_problem",
     ],
 }
-
 
 # ============================================================
 # LOAD DOCUMENTS
@@ -162,9 +587,9 @@ def extract_metadata(content):
         if not line:
             continue
 
-        # Stop once the first Markdown heading begins.
+        # Ignore Markdown headings.
         if line.startswith("#"):
-            break
+            continue
 
         match = re.match(
             r"^([A-Za-z_]+):\s*(.+)$",
@@ -179,7 +604,6 @@ def extract_metadata(content):
             metadata[key] = value
 
     return metadata
-
 
 # ============================================================
 # SPLIT DOCUMENT INTO SECTIONS
@@ -281,7 +705,10 @@ def retrieve_response(intent, knowledge_base=None):
 
     document_paths = get_documents_for_intent(intent)
 
+    # --------------------------------------------------------
     # No document mapped to this intent
+    # --------------------------------------------------------
+
     if not document_paths:
 
         return {
@@ -297,7 +724,10 @@ def retrieve_response(intent, knowledge_base=None):
             "sections": [],
         }
 
+    # --------------------------------------------------------
     # Sections allowed for this intent
+    # --------------------------------------------------------
+
     allowed_sections = INTENT_SECTIONS.get(
         intent,
         []
@@ -328,7 +758,7 @@ def retrieve_response(intent, knowledge_base=None):
 
             title = section["title"]
 
-            # Never return the question-list section
+            # Never return question-list sections.
             if title.lower().startswith("questions"):
                 continue
 
@@ -375,13 +805,19 @@ def retrieve_response(intent, knowledge_base=None):
     for result in results:
 
         response_parts.append(
-            f"{result['content']}"
+            result["content"]
         )
 
     response = "\n\n".join(
         response_parts
     )
-
+    # Remove Markdown heading markers from the final response.
+    response = re.sub(
+        r"^#{1,6}\s+",
+        "",
+        response,
+        flags=re.MULTILINE,
+    )
     # --------------------------------------------------------
     # Return structured result
     # --------------------------------------------------------
@@ -426,10 +862,26 @@ if __name__ == "__main__":
     print("\nTest retrieval:")
 
     test_intents = [
+        # Facture
         "bill_not_received",
-        "how_to_pay",
+        "bill_payment_methods",
+        "online_bill_payment",
+        "understand_bill",
+        "update_customer_information",
         "payment_problem",
         "unpaid_bill",
+
+        # Panne / dépannage
+        "electricity_outage",
+        "neighborhood_outage",
+        "gas_outage",
+        "meter_problem",
+        "voltage_problem",
+        "damaged_appliance",
+        "report_breakdown",
+        "restoration",
+        "electrical_danger",
+        "gas_emergency",
     ]
 
     for test_intent in test_intents:
