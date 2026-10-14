@@ -1,6 +1,18 @@
-from src.predict_intent import predict_intent
-from src.rag import retrieve_response
 
+from src.predict_intent import predict_intent
+from src.rag import build_knowledge_base, retrieve_response
+
+
+# ============================================================
+# LOAD KNOWLEDGE BASE ONCE
+# ============================================================
+
+KNOWLEDGE_BASE = build_knowledge_base()
+
+
+# ============================================================
+# CHATBOT RESPONSE
+# ============================================================
 
 def chatbot_response(user_message):
     # 1. Predict the intent
@@ -8,24 +20,77 @@ def chatbot_response(user_message):
 
     print("DEBUG prediction:", prediction)
 
+    if not prediction:
+        return (
+            "Je n'ai pas pu comprendre votre demande. "
+            "Pouvez-vous la reformuler ?"
+        )
+
     intent = prediction[0][0]
 
-    # 2. Retrieve knowledge for that intent
-    rag_result = retrieve_response(intent)
+    # 2. Handle greetings
+    if intent == "greeting":
+        return (
+            "Bonjour ! Je peux vous aider concernant les "
+            "factures, paiements, compteurs, pannes et "
+            "demandes de raccordement Sonelgaz. "
+            "Comment puis-je vous aider ?"
+        )
 
-    # 3. Return a response
+    # 3. Handle out-of-scope messages
+    if intent == "out_of_scope":
+        return (
+            "Je suis spécialisé dans les services Sonelgaz : "
+            "factures, paiements, compteurs, pannes et "
+            "raccordements. Pouvez-vous reformuler votre "
+            "question en lien avec ces services ?"
+        )
+
+    # 4. Retrieve knowledge using the original question
+    rag_result = retrieve_response(
+        intent,
+        knowledge_base=KNOWLEDGE_BASE,
+        user_message=user_message,
+    )
+
+    # 5. Return the retrieved response
     if rag_result["found"]:
         return rag_result["response"]
 
     return (
-        "Je suis désolé, mais je ne dispose pas actuellement "
-        "d'informations vérifiées pour répondre à cette demande."
+        "Je suis désolé, mais je ne dispose actuellement "
+        "pas d'informations vérifiées pour répondre à "
+        "cette demande."
     )
 
 
+# ============================================================
+# INTERACTIVE CHAT
+# ============================================================
+
 if __name__ == "__main__":
-    message = input("Vous : ")
+    print("Sonelgaz chatbot ready!")
+    print("Type 'quitter' or 'exit' to stop.")
 
-    response = chatbot_response(message)
+    while True:
+        try:
+            message = input("\nVous : ").strip()
 
-    print("\nBot :", response)
+            if message.lower() in {
+                "quitter",
+                "exit",
+                "quit",
+            }:
+                print("Bot : Au revoir !")
+                break
+
+            if not message:
+                continue
+
+            response = chatbot_response(message)
+
+            print("\nBot :", response)
+
+        except (KeyboardInterrupt, EOFError):
+            print("\nBot : Au revoir !")
+            break

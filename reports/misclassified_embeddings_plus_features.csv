@@ -1,0 +1,60 @@
+message,true_intent,predicted_intent
+comment contacter le service de dépannage ?,report_breakdown,connection_works
+علاش قراءة العداد ما توافقش الفاتورة؟,wrong_meter_reading,bill_amount_issue
+علاه المبلغ الإجمالي مرتفع لهاذ الدرجة؟,understand_bill,bill_amount_issue
+كيفاش تحسب مبلغ الرتڨاج؟,catch_up_bill,understand_bill
+kifach nraccordi svp ??,connection_procedure,new_connection
+tarih akher ajal ta3 paiement maktoub fel facture?,bill_payment_deadline,paid_but_unpaid_status
+comen payer raccordemant,connection_payment,connection_cost
+les travaux تاعي ماكملوش,connection_not_completed,connection_works
+raccordemant gaz svp,gas_connection,gas_emergency
+علاش لازم نخلص هاد الرتاج؟,catch_up_bill,connection_procedure
+nheb n3ref menin ja kol montant,amount_breakdown,new_connection
+"slm, chnouwa el wathaiq li matloubin ?",connection_documents,connection_status
+شحال من نهار بقاولي pour payer؟,bill_payment_deadline,payment_problem
+je pense كاين erreur في montant ta3 taswiya.,catch_up_bill,bill_amount_issue
+الفترة اللي حسبتوها للرتاج ماشي صحيحة.,catch_up_bill,bill_payment_deadline
+raccordemant gaz,gas_connection,gas_emergency
+n9der nkhalas men ba3d akher ajal?,bill_payment_deadline,unpaid_bill
+t9dr t3aweni nfham la facture,understand_bill,bill_amount_issue
+لوكان غير نفهم فاتورتي مليح,understand_bill,bill_amount_issue
+le paiement en ligne ما راهوش يخدم.,payment_problem,online_bill_payment
+had lmontant ma ybanlich s7i7,bill_amount_issue,understand_bill
+dossier twal bzf svp,connection_delay,understand_bill
+"bonjour, raccordemant electrique",electricity_connection,network_availability
+il y a une erreur dans le relevé de mon compteur.,wrong_meter_reading,meter_problem
+kifeh l7a9tou lhad montant total,understand_bill,amount_breakdown
+واش كاين une date limite واضحة في facture؟,bill_payment_deadline,understand_bill
+poteau ta3 kahraba rahou yti7,electrical_danger,bill_amount_issue
+el khlas ta3i ma najahch.,payment_problem,electricity_connection
+واش كاين moyens de paiement آخرين؟,bill_payment_methods,connection_payment
+kayen khata2 fel lecture ta3 compteur ta3i,wrong_meter_reading,consumption_calculation
+إذا نعطيكم relevés تقدروا تحسبولي consommation؟,consumption_calculation,dispute_estimated_reading
+تقدروا تشوفوا إذا كاين خطأ؟,bill_amount_issue,wrong_meter_reading
+"bonjour, la tension est faible chez moi",voltage_problem,low_voltage_connection
+mazel ma rja3ch gaz,gas_outage,gas_connection
+mon compteur ne s'allume plus,meter_problem,connection_problem
+علاش السعر تاع الفاتورة طلع؟,bill_amount_issue,understand_bill
+bi ay tari9a n9der nkhalas facture?,bill_payment_methods,wrong_meter_reading
+الراكوردمو تاعي bt ولا لا؟,low_voltage_connection,connection_eligibility
+حساب الرتاج ما يوافقش الاستهلاك تاعي.,catch_up_bill,dispute_estimated_reading
+comment obtenir le détail du montant facturé pour le raccordement ?,connection_cost_dispute,amount_breakdown
+ba3d el travaux el courant ma jach,connection_problem,technical_study
+3la wesh porte le rattrapage؟,catch_up_bill,connection_procedure
+إذا معليش تعاونّي نفهم الفاتورة,understand_bill,amount_breakdown
+combien dois-je payer pour ma consommation ?,amount_breakdown,consumption_calculation
+واش الطلب تاعي يتقبل؟,connection_eligibility,connection_status
+ma fhemtch la facture,understand_bill,bill_not_received
+التلفزيون تاعي حرق بسبب الضو,damaged_appliance,understand_bill
+واش معناها فاتورة التدارك؟,catch_up_bill,understand_bill
+comment utilisez-vous le relevé du compteur ?,consumption_calculation,wrong_meter_reading
+نحب نعرف علاش facture مازالت impayée رغم باللي خلصتها.,paid_but_unpaid_status,unpaid_bill
+la facture ta3i mazal ma khlasthech.,unpaid_bill,bill_amount_issue
+raccordement??? vite svp,connection_procedure,connection_cost
+"dossier ta3i incomplet, ndir ki ?",missing_connection_document,connection_rejection
+وين نقدر نشوف المعلومات اللي عندها علاقة بالغاز؟,understand_bill,amount_breakdown
+n9ra kifeh facture ta3 l'électricité,understand_bill,bill_payment_methods
+wach ma3natha rem fel facture,rem_r_meaning,bill_amount_issue
+t9der tfahmni kol partie men facture ta3i؟,amount_breakdown,bill_amount_issue
+kifech yet7seb le montant ta3 r.e.m؟,rem_r_meaning,understand_bill
+wech men unité t7sebto biha lconsommation,consumption_calculation,amount_breakdown

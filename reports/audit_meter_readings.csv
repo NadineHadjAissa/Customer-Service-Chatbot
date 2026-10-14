@@ -1,0 +1,249 @@
+Phrase,Intent,Langue
+3andi lecture 7a9i9iya ta3 compteur,dispute_estimated_reading,Darja
+"3andi lecture s7i7a ta3 compteur, 3lach st3meltou ta9dir?",dispute_estimated_reading,Darja
+3la wach bnito had ta9dir?,dispute_estimated_reading,Darja
+3lach 7sebtouli b ta9dir w ma 7sebtouch lecture s7i7a?,dispute_estimated_reading,Darja
+3lach akher lecture ta3 compteur ma 7sebtouhach?,dispute_estimated_reading,Darja
+3lach consommation ta3i t7sebt b ta9dir?,dispute_estimated_reading,Darja
+3lach dertouli consommation ta9diriya?,dispute_estimated_reading,Darja
+3lach facture fiha consommation ta9diriya?,dispute_estimated_reading,Darja
+3lach lecture ta3 compteur ta3i ta9diriya?,dispute_estimated_reading,Darja
+3lach ma 9ritouch compteur b lecture 7a9i9iya?,dispute_estimated_reading,Darja
+3lach st3meltou ta9dir w compteur kan y9dar yt9ra?,dispute_estimated_reading,Darja
+consommation li fel facture ghir ta9diriya,dispute_estimated_reading,Darja
+consommation ta3i t7sebt b ta9dir,dispute_estimated_reading,Darja
+kifeh dertou had ta9dir?,dispute_estimated_reading,Darja
+lecture ta9diriya ma ttab9ch compteur ta3i,dispute_estimated_reading,Darja
+ma nwaf9ch 3la consommation ta9diriya li fel facture,dispute_estimated_reading,Darja
+ma nwaf9ch 3la lecture ta9diriya,dispute_estimated_reading,Darja
+mafhamtch 3lach 9dertou consommation ta3i,dispute_estimated_reading,Darja
+nheb nbalagh belli consommation t7sebt b ta9dir,dispute_estimated_reading,Darja
+nheb nbedel ta9dir b lecture s7i7a,dispute_estimated_reading,Darja
+nheb nsa7a7 had ta9dir,dispute_estimated_reading,Darja
+t9drou t7sebouli lecture s7i7a ta3i?,dispute_estimated_reading,Darja
+t9drou traja3ouli 3lach lecture ta9diriya?,dispute_estimated_reading,Darja
+t9drou tsa7a7ouli consommation ta9diriya b lecture s7i7a?,dispute_estimated_reading,Darja
+ta9dir ma ytab9ch consommation l7a9i9iya ta3i,dispute_estimated_reading,Darja
+الاستهلاك اللي في الفاتورة غير تقديري.,dispute_estimated_reading,Darja
+الاستهلاك تاعي تحسب بالتقدير.,dispute_estimated_reading,Darja
+التقدير ما يوافقش الاستهلاك الحقيقي تاعي.,dispute_estimated_reading,Darja
+القراءة التقديرية ما توافقش العداد تاعي.,dispute_estimated_reading,Darja
+تقدروا تحسبولي القراءة الحقيقية تاعي؟,dispute_estimated_reading,Darja
+تقدروا تراجعولي علاش القراءة تقديرية؟,dispute_estimated_reading,Darja
+تقدروا تصلحولي الاستهلاك التقديري بالقراءة الصحيحة؟,dispute_estimated_reading,Darja
+علاش آخر قراءة تاع العداد ما حسبتوهاش؟,dispute_estimated_reading,Darja
+علاش استعملتو التقدير والعداد كان ساهل يتقرا؟,dispute_estimated_reading,Darja
+علاش الاستهلاك تاعي تحسب بالتقدير؟,dispute_estimated_reading,Darja
+علاش الفاتورة فيها استهلاك تقديري؟,dispute_estimated_reading,Darja
+علاش حسبتولي بالتقدير وما حسبتوش القراءة الحقيقية؟,dispute_estimated_reading,Darja
+علاش درتولي استهلاك تقديري؟,dispute_estimated_reading,Darja
+علاش قراءة العداد تاعتي تقديرية؟,dispute_estimated_reading,Darja
+علاش ما قريتوش العداد قراءة حقيقية؟,dispute_estimated_reading,Darja
+على واش بنيتو هاد التقدير؟,dispute_estimated_reading,Darja
+عندي القراءة الحقيقية تاع العداد، علاش استعملتو التقدير؟,dispute_estimated_reading,Darja
+عندي قراءة حقيقية للكونتور.,dispute_estimated_reading,Darja
+كيفاش درتو هاد التقدير؟,dispute_estimated_reading,Darja
+ما فهمتش علاش قدرتو الاستهلاك تاعي.,dispute_estimated_reading,Darja
+ما نوافقش على الاستهلاك التقديري اللي في الفاتورة.,dispute_estimated_reading,Darja
+ما نوافقش على القراءة التقديرية.,dispute_estimated_reading,Darja
+نحب نبدل التقدير بالقراءة الحقيقية.,dispute_estimated_reading,Darja
+نحب نبلغ باللي الاستهلاك تحسب بالتقدير.,dispute_estimated_reading,Darja
+نحب نصحح هاد التقدير.,dispute_estimated_reading,Darja
+Comment cette estimation a-t-elle été faite ?,dispute_estimated_reading,FR
+J'ai une lecture réelle de mon compteur.,dispute_estimated_reading,FR
+"J'avais un relevé réel, pourquoi avez-vous utilisé une estimation ?",dispute_estimated_reading,FR
+Je conteste la consommation estimée sur ma facture.,dispute_estimated_reading,FR
+Je ne comprends pas pourquoi vous avez estimé ma consommation.,dispute_estimated_reading,FR
+Je ne suis pas d'accord avec le relevé estimé.,dispute_estimated_reading,FR
+Je veux remplacer l'estimation par le relevé réel.,dispute_estimated_reading,FR
+Je veux signaler que la consommation a été estimée.,dispute_estimated_reading,FR
+Je voudrais faire corriger cette estimation.,dispute_estimated_reading,FR
+L'estimation ne correspond pas à ma consommation réelle.,dispute_estimated_reading,FR
+La consommation indiquée est seulement une estimation.,dispute_estimated_reading,FR
+Le relevé estimé ne correspond pas à mon compteur.,dispute_estimated_reading,FR
+Ma consommation a été calculée sur une estimation.,dispute_estimated_reading,FR
+Pourquoi avez-vous estimé ma consommation au lieu de prendre le relevé réel ?,dispute_estimated_reading,FR
+Pourquoi avez-vous utilisé une estimation alors que mon compteur était accessible ?,dispute_estimated_reading,FR
+Pourquoi avez-vous utilisé une estimation de ma consommation ?,dispute_estimated_reading,FR
+Pourquoi la dernière lecture de mon compteur n'a-t-elle pas été prise en compte ?,dispute_estimated_reading,FR
+Pourquoi le relevé de mon compteur est-il estimé ?,dispute_estimated_reading,FR
+Pourquoi ma consommation a-t-elle été estimée ?,dispute_estimated_reading,FR
+Pourquoi ma facture utilise-t-elle une consommation estimée ?,dispute_estimated_reading,FR
+Pourquoi mon compteur n'a-t-il pas été relevé réellement ?,dispute_estimated_reading,FR
+Pouvez-vous corriger la consommation estimée avec mon vrai relevé ?,dispute_estimated_reading,FR
+Pouvez-vous prendre en compte mon relevé réel ?,dispute_estimated_reading,FR
+Pouvez-vous vérifier pourquoi mon relevé est estimé ?,dispute_estimated_reading,FR
+Sur quoi se base cette estimation ?,dispute_estimated_reading,FR
+3lach l'estimation ta3 facture ما توافقش consommation réelle؟,dispute_estimated_reading,Mixed
+J'ai une lecture حقيقية تاع compteur، علاش استعملتو estimation؟,dispute_estimated_reading,Mixed
+Je conteste l'estimation اللي داروها ليا.,dispute_estimated_reading,Mixed
+Je ne comprends pas علاش قدرتو consommation ta3i.,dispute_estimated_reading,Mixed
+Je veux corriger هاد التقدير.,dispute_estimated_reading,Mixed
+Je veux remplacer l'estimation بالقراءة الجديدة.,dispute_estimated_reading,Mixed
+La consommation اللي في facture غير estimée.,dispute_estimated_reading,Mixed
+Ma consommation تحسبت بالتقدير رغم عندي relevé réel.,dispute_estimated_reading,Mixed
+Ma facture مبنية على estimation وما فهمتش علاش.,dispute_estimated_reading,Mixed
+Ma nwaf9ch على la lecture estimée.,dispute_estimated_reading,Mixed
+Pourquoi consommation ta3i تحسبت بالتقدير؟,dispute_estimated_reading,Mixed
+Pourquoi le relevé ta3i تقديري؟,dispute_estimated_reading,Mixed
+Pourquoi استعملتو estimation والعداد كان ساهل يتقرا؟,dispute_estimated_reading,Mixed
+Pourquoi ما خذيتوش la lecture réelle ta3 compteur؟,dispute_estimated_reading,Mixed
+Pouvez-vous vérifier علاش le relevé تقديري؟,dispute_estimated_reading,Mixed
+Pouvez-vous تحسبولي le relevé réel؟,dispute_estimated_reading,Mixed
+Sur quoi بنيتو هاد estimation؟,dispute_estimated_reading,Mixed
+الاستهلاك estimé طالع بزاف مقارنة بالréel.,dispute_estimated_reading,Mixed
+التقدير اللي في facture ماشي كيف الاستهلاك الحقيقي.,dispute_estimated_reading,Mixed
+التقدير ما يوافقش ma consommation réelle.,dispute_estimated_reading,Mixed
+تقدروا تراجعولي pourquoi l'estimation استعملت؟,dispute_estimated_reading,Mixed
+تقدروا تصححولي consommation estimée بالقراءة الصحيحة؟,dispute_estimated_reading,Mixed
+علاش consommation ta3i estimée وماشي réelle؟,dispute_estimated_reading,Mixed
+علاش la dernière lecture تاع compteur ما حسبتوهاش؟,dispute_estimated_reading,Mixed
+علاش ma facture فيها une consommation estimée؟,dispute_estimated_reading,Mixed
+علاش استعملتو estimation بدل القراءة الحقيقية؟,dispute_estimated_reading,Mixed
+علاش ما قريتوش le compteur réellement؟,dispute_estimated_reading,Mixed
+عندي la dernière lecture ta3 compteur، بصح ما حسبتوهاش.,dispute_estimated_reading,Mixed
+عندي relevé réel بصح facture فيها estimation.,dispute_estimated_reading,Mixed
+كيفاش ديرتو cette estimation؟,dispute_estimated_reading,Mixed
+نحب نبدل l'estimation بالقراءة الحقيقية.,dispute_estimated_reading,Mixed
+نحب نبلغ باللي la consommation تحسبت بالتقدير.,dispute_estimated_reading,Mixed
+نحب نمدلكم le relevé réel باش تصححوا consommation.,dispute_estimated_reading,Mixed
+واش نقدر نبدل consommation estimée بالقراءة الحقيقية؟,dispute_estimated_reading,Mixed
+3andi mochkil fel compteur,meter_problem,Arabizi
+compteur fih mochkil,meter_problem,Arabizi
+compteur ma ych3alch,meter_problem,Arabizi
+compteur ma ykhdemch,meter_problem,Arabizi
+compteur rahou habes,meter_problem,Arabizi
+compteur y3aredli erreur,meter_problem,Arabizi
+الكونتور خدامش,meter_problem,Darja
+الكونتور راهو حابس,meter_problem,Darja
+الكونتور فيه مشكل,meter_problem,Darja
+الكونتور ما عادش يخدم,meter_problem,Darja
+الكونتور ما يضويش,meter_problem,Darja
+كاين خطأ في الكونتور,meter_problem,Darja
+"Bonjour, le compteur est bloqué",meter_problem,FR
+J'ai un problème avec mon compteur,meter_problem,FR
+L'écran de mon compteur ne fonctionne plus,meter_problem,FR
+Le compteur affiche une erreur,meter_problem,FR
+Le compteur affiche une erreur. Merci.,meter_problem,FR
+Le compteur est bloqué,meter_problem,FR
+Mon compteur affiche un message d'erreur,meter_problem,FR
+Mon compteur ne fonctionne pas,meter_problem,FR
+Mon compteur ne répond plus,meter_problem,FR
+Mon compteur ne s'allume plus,meter_problem,FR
+compteur ne fonctionne plus,meter_problem,FR
+mon compteur clignote,meter_problem,FR
+mon compteur fait du bruit,meter_problem,FR
+Le compteur خدامش,meter_problem,Mixed
+Le compteur طايح,meter_problem,Mixed
+compteur ta3i yclignoti,meter_problem,Mixed
+compteur ta3i ydir bruit,meter_problem,Mixed
+l'écran تاع الكونتور ما يخدمش,meter_problem,Mixed
+mon compteur راهو bloqué,meter_problem,Mixed
+3lach lecture ta3 compteur ma ttab9ch facture?,wrong_meter_reading,Darja
+3lach lecture ta3 lcompteur ghalta?,wrong_meter_reading,Darja
+3lach ra9em ta3 compteur mokhtalef fel facture?,wrong_meter_reading,Darja
+compteur ta3i ybayan ra9em mokhtalef 3la li fel facture,wrong_meter_reading,Darja
+compteur ybayan 9ima mokhtalfa 3la li fel facture,wrong_meter_reading,Darja
+kayen ghalta fel relevé ta3 compteur,wrong_meter_reading,Darja
+kayen khata2 fel lecture ta3 compteur ta3i,wrong_meter_reading,Darja
+l'ar9am li maktoubin fel facture machi kif li fel compteur,wrong_meter_reading,Darja
+l9ima li t7sebt ma ttab9ch l9ima l7a9i9iya ta3 compteur,wrong_meter_reading,Darja
+lecture l7aliya ta3 compteur machi hiya li fel facture,wrong_meter_reading,Darja
+lecture ta3 lcompteur machi s7i7a,wrong_meter_reading,Darja
+lindex li fel facture ghalet,wrong_meter_reading,Darja
+nethenn belli darou lecture ghalta lel compteur,wrong_meter_reading,Darja
+nethenn kayen mochkil fel lecture ta3 compteur,wrong_meter_reading,Darja
+nheb nbalagh 3la ghalta fel lecture ta3 compteur,wrong_meter_reading,Darja
+nheb nsa7a7 ra9em li maktoub fel facture,wrong_meter_reading,Darja
+ra9em li 9rawh ma ytab9ch ra9em li nchoufou fel compteur,wrong_meter_reading,Darja
+ra9em li darou fel lecture habet bzf 3la compteur,wrong_meter_reading,Darja
+ra9em li fel facture ma ytab9ch ra9em li fel compteur,wrong_meter_reading,Darja
+ra9em li fel facture mokhtalef 3la ra9em ta3 compteur,wrong_meter_reading,Darja
+relevé li darou lel compteur machi s7i7,wrong_meter_reading,Darja
+t9drou tet2akdou men lecture ta3 compteur?,wrong_meter_reading,Darja
+t9drou traja3ouli lindex li fel facture?,wrong_meter_reading,Darja
+t9drou tsa7a7ouli lecture ta3 compteur?,wrong_meter_reading,Darja
+ybanli belli compteur ta3i t9ra ghalet,wrong_meter_reading,Darja
+الأرقام اللي مكتوبين في الفاتورة ماشي كيف اللي في العداد.,wrong_meter_reading,Darja
+الرقم اللي داروه في القراءة هابط بزاف مقارنة بالعداد.,wrong_meter_reading,Darja
+الرقم اللي في الفاتورة ما يوافقش الرقم اللي في العداد.,wrong_meter_reading,Darja
+الرقم اللي في الفاتورة مختلف على رقم الكونتور.,wrong_meter_reading,Darja
+الرقم اللي قراوه ما يوافقش الرقم اللي نشوفو في العداد.,wrong_meter_reading,Darja
+العداد يبين قيمة مختلفة على اللي راهي في الفاتورة.,wrong_meter_reading,Darja
+الـ index اللي في الفاتورة غالط.,wrong_meter_reading,Darja
+الـ relevé اللي داروه للعداد ماشي صحيح.,wrong_meter_reading,Darja
+القراءة الحالية تاع العداد ماشي هي اللي في الفاتورة.,wrong_meter_reading,Darja
+القراءة تاع العداد طالعة بزاف.,wrong_meter_reading,Darja
+القراءة تاع الكونتور ماشي صحيحة.,wrong_meter_reading,Darja
+القيمة اللي تحسبت ما توافقش القيمة الحقيقية تاع العداد.,wrong_meter_reading,Darja
+الكونتور تاعي يبين رقم مختلف على اللي في الفاتورة.,wrong_meter_reading,Darja
+تقدروا تتأكدو من قراءة العداد؟,wrong_meter_reading,Darja
+تقدروا تراجعولي الـ index اللي في الفاتورة؟,wrong_meter_reading,Darja
+تقدروا تصلحولي قراءة العداد؟,wrong_meter_reading,Darja
+علاش الرقم تاع العداد مختلف في الفاتورة؟,wrong_meter_reading,Darja
+علاش قراءة العداد غالطة؟,wrong_meter_reading,Darja
+علاش قراءة العداد ما توافقش الفاتورة؟,wrong_meter_reading,Darja
+كاين خطأ في قراءة الكونتور تاعي.,wrong_meter_reading,Darja
+كاين غلطة في relevé تاع العداد.,wrong_meter_reading,Darja
+نحب نبلغ على غلطة في قراءة الكونتور.,wrong_meter_reading,Darja
+نحب نصحح الرقم اللي مكتوب في الفاتورة.,wrong_meter_reading,Darja
+نظن باللي دارو قراءة غالطة للعداد.,wrong_meter_reading,Darja
+نظن كاين مشكل في قراءة العداد.,wrong_meter_reading,Darja
+يبانلي باللي العداد تاعي تقرا غالط.,wrong_meter_reading,Darja
+Il me semble que mon compteur a été mal relevé.,wrong_meter_reading,FR
+Il y a une erreur dans le relevé de mon compteur.,wrong_meter_reading,FR
+Je crois qu'il y a une erreur dans la lecture du compteur.,wrong_meter_reading,FR
+Je pense que la lecture de mon compteur est incorrecte.,wrong_meter_reading,FR
+Je veux faire corriger l'index indiqué sur ma facture.,wrong_meter_reading,FR
+Je voudrais signaler une erreur de lecture de mon compteur.,wrong_meter_reading,FR
+L'index indiqué sur ma facture ne correspond pas à mon compteur.,wrong_meter_reading,FR
+L'index relevé ne correspond pas à celui que je vois sur mon compteur.,wrong_meter_reading,FR
+L'index sur ma facture n'est pas le bon.,wrong_meter_reading,FR
+La lecture de mon compteur est fausse.,wrong_meter_reading,FR
+La valeur relevée ne correspond pas à la valeur réelle de mon compteur.,wrong_meter_reading,FR
+Le chiffre du compteur indiqué sur la facture est faux.,wrong_meter_reading,FR
+Le compteur affiche une valeur différente de celle indiquée sur ma facture.,wrong_meter_reading,FR
+Le nombre indiqué sur la facture est différent du compteur.,wrong_meter_reading,FR
+Le relevé actuel de mon compteur n'est pas celui qui apparaît sur la facture.,wrong_meter_reading,FR
+Le relevé affiché sur ma facture est différent de celui de mon compteur.,wrong_meter_reading,FR
+Le relevé de mon compteur est incorrect.,wrong_meter_reading,FR
+Le relevé indiqué est beaucoup trop bas par rapport à mon compteur.,wrong_meter_reading,FR
+Le relevé pris sur mon compteur n'est pas correct.,wrong_meter_reading,FR
+Les chiffres indiqués ne correspondent pas à ceux de mon compteur.,wrong_meter_reading,FR
+Pourquoi l'index de mon compteur est-il différent sur ma facture ?,wrong_meter_reading,FR
+Pourquoi le relevé de mon compteur ne correspond-il pas à la facture ?,wrong_meter_reading,FR
+Pouvez-vous corriger le relevé de mon compteur ?,wrong_meter_reading,FR
+Pouvez-vous vérifier l'index indiqué sur ma facture ?,wrong_meter_reading,FR
+Pouvez-vous vérifier le relevé de mon compteur ?,wrong_meter_reading,FR
+Je crois كاين غلطة في قراءة compteur.,wrong_meter_reading,Mixed
+Je pense باللي دارو une mauvaise lecture للعداد.,wrong_meter_reading,Mixed
+Je veux faire corriger l'index تاع الفاتورة.,wrong_meter_reading,Mixed
+Je veux signaler غلطة في relevé ta3 compteur.,wrong_meter_reading,Mixed
+L'index اللي في الفاتورة ما يوافقش اللي في العداد.,wrong_meter_reading,Mixed
+La lecture تاع compteur غالطة.,wrong_meter_reading,Mixed
+Le chiffre indiqué في facture هابط بزاف على اللي في compteur.,wrong_meter_reading,Mixed
+Le chiffre اللي في facture غالط مقارنة بالcompteur.,wrong_meter_reading,Mixed
+Le compteur تاعي يبين رقم مختلف على اللي في facture.,wrong_meter_reading,Mixed
+Le relevé تاع العداد ماشي صحيح.,wrong_meter_reading,Mixed
+Ma lecture ta3 compteur ماشي كيفكيف مع la facture.,wrong_meter_reading,Mixed
+Pourquoi le relevé تاع compteur ما يوافقش الفاتورة؟,wrong_meter_reading,Mixed
+Pourquoi الرقم اللي في facture مختلف على compteur؟,wrong_meter_reading,Mixed
+Pourquoi قراءة compteur ta3i غالطة؟,wrong_meter_reading,Mixed
+Pouvez-vous corriger قراءة lcompteur؟,wrong_meter_reading,Mixed
+Pouvez-vous تراجعولي l'index اللي في facture؟,wrong_meter_reading,Mixed
+الرقم اللي قراوه ما يوافقش le numéro réel ta3 compteur.,wrong_meter_reading,Mixed
+العداد يبين une valeur مختلفة على اللي في facture.,wrong_meter_reading,Mixed
+الـ relevé اللي داروه للcompteur ماشي correct.,wrong_meter_reading,Mixed
+القراءة الحالية تاع compteur ماشي هي اللي في facture.,wrong_meter_reading,Mixed
+تقدروا contrôler le relevé؟ راهو ماشي صحيح.,wrong_meter_reading,Mixed
+تقدروا vérifier قراءة العداد؟,wrong_meter_reading,Mixed
+علاش l'index ta3 compteur مختلف في الفاتورة؟,wrong_meter_reading,Mixed
+علاش le numéro ta3 compteur مختلف على اللي في facture؟,wrong_meter_reading,Mixed
+علاش le relevé طالع بزاف مقارنة بالcompteur؟,wrong_meter_reading,Mixed
+كاين erreur في les chiffres اللي في facture.,wrong_meter_reading,Mixed
+كاين un problème في l'index اللي في facture.,wrong_meter_reading,Mixed
+كاين une erreur في relevé تاع compteur.,wrong_meter_reading,Mixed
+نحب نبلغ على une erreur في lecture ta3 compteur.,wrong_meter_reading,Mixed
+نحب نصحح le numéro اللي مكتوب في الفاتورة.,wrong_meter_reading,Mixed
+نحب نعرف علاش l'index ما يوافقش compteur ta3i.,wrong_meter_reading,Mixed
+نظن باللي le compteur تقرا غالط.,wrong_meter_reading,Mixed

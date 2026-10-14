@@ -1,61 +1,34 @@
-import pandas as pd
-from sklearn.model_selection import train_test_split
 
 import re
 import unicodedata
+
+import pandas as pd
+from sklearn.model_selection import train_test_split
+
 
 # ============================================================
 # TEXT NORMALIZATION
 # ============================================================
 
 def normalize_text(text):
-    """
-    Normalize a user message before prediction.
-    """
+    """Normalize a user message without changing its meaning."""
 
     text = str(text).strip().lower()
 
     # Normalize Unicode characters
-    text = unicodedata.normalize(
-        "NFC",
-        text
-    )
+    text = unicodedata.normalize("NFC", text)
 
-    # Normalize common apostrophe variants
+    # Normalize apostrophe variants
     text = text.replace("’", "'")
     text = text.replace("`", "'")
+    text = text.replace("´", "'")
 
-    # --------------------------------------------------------
     # Common French typing variations
-    # --------------------------------------------------------
+    text = re.sub(r"\brecu\b", "reçu", text)
+    text = re.sub(r"\barrivee\b", "arrivée", text)
 
-    text = re.sub(
-        r"\bje\s+nest\s+pas\b",
-        "je n'ai pas",
-        text
-    )
-
-    text = re.sub(
-        r"\brecu\b",
-        "reçu",
-        text
-    )
-
-    text = re.sub(
-        r"\barrivee\b",
-        "arrivée",
-        text
-    )
-
-    # --------------------------------------------------------
     # Collapse repeated whitespace
-    # --------------------------------------------------------
-
-    text = re.sub(
-        r"\s+",
-        " ",
-        text
-    )
+    text = re.sub(r"\s+", " ", text)
 
     return text
 
@@ -63,12 +36,18 @@ def normalize_text(text):
 # ============================================================
 # CONFIGURATION
 # ============================================================
-
 DATASETS = [
-    "data/dataset_facture.xlsx",
-    "data/dataset_panne.xlsx",
-    "data/dataset_raccordement.xlsx",
+    "data/processed/merged_intents_augmented.xlsx",
 ]
+
+VALID_LANGUAGES = {
+    "fr": "French",
+    "french": "French",
+    "darja": "Darja",
+    "darija": "Darja",
+    "arabizi": "Arabizi",
+    "mixed": "Mixed",
+}
 
 
 # ============================================================
@@ -76,51 +55,40 @@ DATASETS = [
 # ============================================================
 
 def load_and_clean_data():
-    """
-    Load all datasets, keep the required columns,
-    clean the text, normalize language labels,
-    remove empty rows and duplicates.
-    """
+    """Load, normalize and combine all intent datasets."""
 
     dataframes = []
 
     for file in DATASETS:
-
         df = pd.read_excel(file)
 
-        # The Excel files use "Langue"
-        df = df[["Phrase", "Intent", "Langue"]]
+        required_columns = ["Phrase", "Intent", "Langue"]
 
-        # Rename internally to "Language"
-        df = df.rename(
-            columns={"Langue": "Language"}
-        )
+        missing_columns = [
+            col for col in required_columns
+            if col not in df.columns
+        ]
+
+        if missing_columns:
+            raise ValueError(
+                f"{file} is missing columns: {missing_columns}"
+            )
+
+        df = df[required_columns].copy()
+        df = df.rename(columns={"Langue": "Language"})
 
         dataframes.append(df)
 
-    # --------------------------------------------------------
-    # Combine all datasets
-    # --------------------------------------------------------
+    # Combine datasets
+    data = pd.concat(dataframes, ignore_index=True)
 
-    data = pd.concat(
-        dataframes,
-        ignore_index=True,
-    )
-
-    # --------------------------------------------------------
-    # Clean Phrase
-    # --------------------------------------------------------
-
+    # Clean text and intent
     data["Phrase"] = (
         data["Phrase"]
         .fillna("")
         .astype(str)
         .str.strip()
     )
-
-    # --------------------------------------------------------
-    # Clean Intent
-    # --------------------------------------------------------
 
     data["Intent"] = (
         data["Intent"]
@@ -129,104 +97,31 @@ def load_and_clean_data():
         .str.strip()
     )
 
-    # --------------------------------------------------------
-    # Clean Language
-    # --------------------------------------------------------
-
+    # Normalize language labels
     data["Language"] = (
         data["Language"]
         .fillna("")
         .astype(str)
         .str.strip()
+        .str.lower()
+        .map(VALID_LANGUAGES)
+        .fillna("")
     )
 
-    # --------------------------------------------------------
-    # Standardize language labels
-    # --------------------------------------------------------
+    # Normalize phrases consistently
+    data["Phrase"] = data["Phrase"].apply(normalize_text)
 
-    # FR -> French
-    data.loc[
-        data["Language"].str.lower() == "fr",
-        "Language"
-    ] = "French"
-
-    # Arabizi -> Daridja written in Latin script
-    data.loc[
-        data["Language"].str.lower() == "arabizi",
-        "Language"
-    ] = "Daridja_Latin"
-
-    # Mixed stays Mixed
-    data.loc[
-        data["Language"].str.lower() == "mixed",
-        "Language"
-    ] = "Mixed"
-
-    # --------------------------------------------------------
-    # Detect Arabic script
-    # --------------------------------------------------------
-
-    arabic_mask = data["Phrase"].str.contains(
-        r"[\u0600-\u06FF]",
-        regex=True,
-        na=False,
-    )
-
-    # --------------------------------------------------------
-    # Split Darja into Arabic-script / Latin-script
-    # --------------------------------------------------------
-
-    darja_mask = (
-        data["Language"].str.lower() == "darja"
-    )
-
-    # Darja written in Arabic script
-    data.loc[
-        darja_mask & arabic_mask,
-        "Language"
-    ] = "Daridja_Arabic"
-
-    # Darja written using Latin transliteration
-    data.loc[
-        darja_mask & ~arabic_mask,
-        "Language"
-    ] = "Daridja_Latin"
-
-    # --------------------------------------------------------
-    # Infer missing language labels
-    # --------------------------------------------------------
-
-    missing_language = data["Language"] == ""
-
-    # Missing + Arabic script -> Daridja Arabic
-    data.loc[
-        missing_language & arabic_mask,
-        "Language"
-    ] = "Daridja_Arabic"
-
-    # Missing + Latin script -> Daridja Latin
-    data.loc[
-        missing_language & ~arabic_mask,
-        "Language"
-    ] = "Daridja_Latin"
-
-    # --------------------------------------------------------
-    # Remove empty rows
-    # --------------------------------------------------------
-
+    # Remove empty phrases, intents and unknown language labels
     data = data[
         (data["Phrase"] != "")
         & (data["Intent"] != "")
         & (data["Language"] != "")
-    ]
+    ].copy()
 
-    # --------------------------------------------------------
-    # Remove exact duplicate rows
-    # --------------------------------------------------------
-
+    # Remove exact duplicates within the same intent and language
     data = data.drop_duplicates(
         subset=["Phrase", "Intent", "Language"]
-    )
+    ).reset_index(drop=True)
 
     return data
 
@@ -237,26 +132,13 @@ def load_and_clean_data():
 
 def split_data(data):
     """
-    Split the dataset into:
+    Split into 80% training, 10% validation and 10% test.
 
-        80% training
-        10% validation
-        10% test
-
-    Stratification uses Intent.
-
-    This avoids failures caused by very small
-    Intent + Language groups.
+    Stratify by intent so each split represents the intent classes.
     """
 
-    X = data["Phrase"].astype(str).tolist()
-    y = data["Intent"].astype(str).tolist()
-
-    # --------------------------------------------------------
-    # First split:
-    # 80% training
-    # 20% temporary
-    # --------------------------------------------------------
+    X = data["Phrase"].astype(str).to_numpy()
+    y = data["Intent"].astype(str).to_numpy()
 
     X_train, X_temp, y_train, y_temp = train_test_split(
         X,
@@ -265,12 +147,6 @@ def split_data(data):
         random_state=42,
         stratify=y,
     )
-
-    # --------------------------------------------------------
-    # Second split:
-    # 10% validation
-    # 10% test
-    # --------------------------------------------------------
 
     X_val, X_test, y_val, y_test = train_test_split(
         X_temp,
@@ -281,10 +157,37 @@ def split_data(data):
     )
 
     return (
-        X_train,
-        X_val,
-        X_test,
-        y_train,
-        y_val,
-        y_test,
+        X_train.tolist(),
+        X_val.tolist(),
+        X_test.tolist(),
+        y_train.tolist(),
+        y_val.tolist(),
+        y_test.tolist(),
     )
+
+
+# ============================================================
+# OPTIONAL DATASET DIAGNOSTICS
+# ============================================================
+
+if __name__ == "__main__":
+    data = load_and_clean_data()
+
+    print("Dataset loaded successfully.")
+    print(f"Total examples: {len(data)}")
+
+    print("\nIntent distribution:")
+    print(data["Intent"].value_counts())
+
+    print("\nLanguage distribution:")
+    print(data["Language"].value_counts())
+
+    print("\nIntent x Language:")
+    print(pd.crosstab(data["Intent"], data["Language"]))
+
+    print("\nDuplicate phrases with different intents:")
+    conflicts = (
+        data.groupby("Phrase")["Intent"]
+        .nunique()
+    )
+    print((conflicts > 1).sum())

@@ -408,49 +408,49 @@ SIGNALS = {
 # FEATURE EXTRACTION
 # ============================================================
 
+FEATURE_NAMES = [
+    "how_to_pay",
+    "online_payment",
+    "payment_problem",
+    "bill_not_received",
+    "unpaid_bill",
+    "voltage_problem",
+    "wrong_meter_reading",
+    "neighborhood_outage",
+]
+
+
 def extract_intent_features(texts):
     """
-    Create explicit intent features.
+    Extract eight binary intent signals.
 
-    Each matched intent signal receives a value of 3.0.
-    Otherwise the feature receives 0.0.
+    Output:
+        NumPy array of shape (number_of_texts, 8)
 
-    Feature order:
-        1. how_to_pay
-        2. online_payment
-        3. payment_problem
-        4. bill_not_received
-        5. unpaid_bill
-        6. voltage_problem
-        7. neighborhood_outage
+    Values:
+        1.0 = at least one pattern matched
+        0.0 = no pattern matched
     """
-
     features = []
 
     for text in texts:
-
         text = str(text).lower().strip()
-
         row = []
 
-        for patterns in SIGNALS.values():
+        for feature_name in FEATURE_NAMES:
+            patterns = SIGNALS[feature_name]
 
             matched = any(
                 re.search(
                     pattern,
                     text,
-                    flags=re.IGNORECASE
+                    flags=re.IGNORECASE,
                 )
                 for pattern in patterns
             )
 
-            row.append(
-                3.0 if matched else 0.0
-            )
+            row.append(1.0 if matched else 0.0)
 
         features.append(row)
 
-    return np.asarray(
-        features,
-        dtype=np.float32
-    )
+    return np.asarray(features, dtype=np.float32)

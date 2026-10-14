@@ -1,0 +1,350 @@
+2026-10-10 15:41:19.709938: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+=================================================================
+DATASET OVERVIEW
+=================================================================
+Total examples: 2914
+Number of intents: 51
+
+Examples per intent:
+Intent
+amount_breakdown               158
+bill_not_received               58
+bill_payment_deadline          101
+bill_payment_methods           114
+catch_up_bill                  136
+connection_cost                 24
+connection_cost_dispute         21
+connection_delay                20
+connection_documents            36
+connection_eligibility          34
+connection_not_completed        20
+connection_payment              35
+connection_problem              33
+connection_procedure            32
+connection_rejection            21
+connection_status               42
+connection_works                23
+consumption_calculation        194
+damaged_appliance               20
+disconnection                   19
+dispute_bill                    99
+dispute_catch_up_bill           97
+dispute_estimated_reading      109
+electrical_danger               26
+electricity_connection          35
+electricity_gas_connection      33
+electricity_outage              26
+gas_connection                  28
+gas_emergency                   26
+gas_outage                      26
+high_or_abnormal_amount        121
+low_voltage_connection          30
+meter_problem                   31
+missing_connection_document     32
+neighborhood_outage             25
+network_availability            35
+new_connection                  28
+new_construction_connection     25
+online_bill_payment            116
+paid_but_unpaid_status         110
+payment_problem                112
+rem_r_meaning                   86
+report_breakdown                25
+restoration                     20
+restoration_after_payment       19
+technical_study                 25
+understand_bill                168
+unpaid_bill                    109
+update_customer_information     19
+voltage_problem                 24
+wrong_meter_reading            108
+Name: count, dtype: int64
+
+Intent x Language:
+Language                     Arabizi  Darja  French  Mixed
+Intent                                                    
+amount_breakdown                   0     72      40     46
+bill_not_received                  5     12      29     12
+bill_payment_deadline              0     42      25     34
+bill_payment_methods               0     48      25     41
+catch_up_bill                      0     68      33     35
+connection_cost                    7      4      11      2
+connection_cost_dispute            6      4       9      2
+connection_delay                   6      4       8      2
+connection_documents              10      6      15      5
+connection_eligibility            10      6      15      3
+connection_not_completed           5      3       9      3
+connection_payment                 9      6      13      7
+connection_problem                 9      6      15      3
+connection_procedure               9      5      14      4
+connection_rejection               5      3      10      3
+connection_status                 13      7      18      4
+connection_works                   7      4      10      2
+consumption_calculation            0     66      56     72
+damaged_appliance                  0      5      11      4
+disconnection                      0      2       9      8
+dispute_bill                       0     50      25     24
+dispute_catch_up_bill              0     42      23     32
+dispute_estimated_reading          0     50      25     34
+electrical_danger                  6      6      11      3
+electricity_connection             9      6      15      5
+electricity_gas_connection        10      9      11      3
+electricity_outage                 0      6      16      4
+gas_connection                     9      5      10      4
+gas_emergency                      6      7      10      3
+gas_outage                         6      7      10      3
+high_or_abnormal_amount            0     49      26     46
+low_voltage_connection            10      3      11      6
+meter_problem                      6      6      13      6
+missing_connection_document        7      6      15      4
+neighborhood_outage                0      6      11      8
+network_availability               9      6      16      4
+new_connection                    10      4      11      3
+new_construction_connection        9      3      10      3
+online_bill_payment                0     43      25     48
+paid_but_unpaid_status             0     46      25     39
+payment_problem                    0     52      30     30
+rem_r_meaning                      0     42      21     23
+report_breakdown                   0      7      12      6
+restoration                        0      6      11      3
+restoration_after_payment          0      2       9      8
+technical_study                    9      3      10      3
+understand_bill                    0     65      35     68
+unpaid_bill                        0     54      30     25
+update_customer_information        0      2       9      8
+voltage_problem                    0      6      13      5
+wrong_meter_reading                0     51      25     32
+
+=================================================================
+DATA QUALITY AUDIT
+=================================================================
+Phrases assigned to multiple intents: 0
+
+Phrase/intent pairs with multiple language labels: 3
+
+=================================================================
+DATA SPLIT
+=================================================================
+Training: 2331
+Validation: 291
+Test: 292
+
+Loading MiniLM...
+
+Encoding training messages...
+Batches:   0%|          | 0/73 [00:00<?, ?it/s]Batches:   1%|▏         | 1/73 [00:02<03:00,  2.50s/it]Batches:   3%|▎         | 2/73 [00:05<03:04,  2.60s/it]Batches:   4%|▍         | 3/73 [00:06<02:34,  2.20s/it]Batches:   5%|▌         | 4/73 [00:09<02:43,  2.37s/it]Batches:   7%|▋         | 5/73 [00:11<02:24,  2.12s/it]Batches:   8%|▊         | 6/73 [00:14<02:44,  2.46s/it]Batches:  10%|▉         | 7/73 [00:17<02:55,  2.66s/it]Batches:  11%|█         | 8/73 [00:18<02:15,  2.08s/it]Batches:  12%|█▏        | 9/73 [00:21<02:31,  2.37s/it]Batches:  14%|█▎        | 10/73 [00:23<02:34,  2.46s/it]Batches:  15%|█▌        | 11/73 [00:26<02:43,  2.63s/it]Batches:  16%|█▋        | 12/73 [00:29<02:34,  2.53s/it]Batches:  18%|█▊        | 13/73 [00:31<02:26,  2.44s/it]Batches:  19%|█▉        | 14/73 [00:34<02:34,  2.61s/it]Batches:  21%|██        | 15/73 [00:37<02:31,  2.62s/it]Batches:  22%|██▏       | 16/73 [00:40<02:36,  2.74s/it]Batches:  23%|██▎       | 17/73 [00:40<02:00,  2.15s/it]Batches:  25%|██▍       | 18/73 [00:43<01:59,  2.17s/it]Batches:  26%|██▌       | 19/73 [00:45<01:58,  2.19s/it]Batches:  27%|██▋       | 20/73 [00:47<01:56,  2.20s/it]Batches:  29%|██▉       | 21/73 [00:49<01:54,  2.21s/it]Batches:  30%|███       | 22/73 [00:51<01:51,  2.19s/it]Batches:  32%|███▏      | 23/73 [00:54<01:49,  2.18s/it]Batches:  33%|███▎      | 24/73 [00:55<01:39,  2.04s/it]Batches:  34%|███▍      | 25/73 [00:58<01:40,  2.10s/it]Batches:  36%|███▌      | 26/73 [01:00<01:39,  2.11s/it]Batches:  37%|███▋      | 27/73 [01:01<01:30,  1.97s/it]Batches:  38%|███▊      | 28/73 [01:04<01:31,  2.03s/it]Batches:  40%|███▉      | 29/73 [01:05<01:27,  1.98s/it]Batches:  41%|████      | 30/73 [01:07<01:23,  1.93s/it]Batches:  42%|████▏     | 31/73 [01:09<01:17,  1.85s/it]Batches:  44%|████▍     | 32/73 [01:11<01:19,  1.94s/it]Batches:  45%|████▌     | 33/73 [01:12<01:08,  1.72s/it]Batches:  47%|████▋     | 34/73 [01:14<01:06,  1.70s/it]Batches:  48%|████▊     | 35/73 [01:16<01:09,  1.84s/it]Batches:  49%|████▉     | 36/73 [01:18<01:05,  1.78s/it]Batches:  51%|█████     | 37/73 [01:19<01:02,  1.74s/it]Batches:  52%|█████▏    | 38/73 [01:21<00:59,  1.71s/it]Batches:  53%|█████▎    | 39/73 [01:23<01:03,  1.87s/it]Batches:  55%|█████▍    | 40/73 [01:25<00:59,  1.80s/it]Batches:  56%|█████▌    | 41/73 [01:26<00:56,  1.75s/it]Batches:  58%|█████▊    | 42/73 [01:28<00:53,  1.72s/it]Batches:  59%|█████▉    | 43/73 [01:30<00:50,  1.70s/it]Batches:  60%|██████    | 44/73 [01:31<00:48,  1.68s/it]Batches:  62%|██████▏   | 45/73 [01:34<00:51,  1.83s/it]Batches:  63%|██████▎   | 46/73 [01:34<00:38,  1.42s/it]Batches:  64%|██████▍   | 47/73 [01:35<00:34,  1.34s/it]Batches:  66%|██████▌   | 48/73 [01:36<00:31,  1.28s/it]Batches:  67%|██████▋   | 49/73 [01:37<00:26,  1.09s/it]Batches:  68%|██████▊   | 50/73 [01:37<00:20,  1.13it/s]Batches:  70%|██████▉   | 51/73 [01:39<00:24,  1.11s/it]Batches:  71%|███████   | 52/73 [01:40<00:23,  1.12s/it]Batches:  73%|███████▎  | 53/73 [01:41<00:19,  1.04it/s]Batches:  74%|███████▍  | 54/73 [01:42<00:22,  1.16s/it]Batches:  75%|███████▌  | 55/73 [01:43<00:16,  1.07it/s]Batches:  77%|███████▋  | 56/73 [01:43<00:13,  1.29it/s]Batches:  78%|███████▊  | 57/73 [01:45<00:16,  1.04s/it]Batches:  79%|███████▉  | 58/73 [01:45<00:12,  1.18it/s]Batches:  81%|████████  | 59/73 [01:46<00:09,  1.40it/s]Batches:  82%|████████▏ | 60/73 [01:46<00:08,  1.49it/s]Batches:  84%|████████▎ | 61/73 [01:47<00:07,  1.55it/s]Batches:  85%|████████▍ | 62/73 [01:47<00:06,  1.75it/s]Batches:  86%|████████▋ | 63/73 [01:48<00:05,  1.74it/s]Batches:  88%|████████▊ | 64/73 [01:48<00:04,  1.86it/s]Batches:  89%|████████▉ | 65/73 [01:49<00:03,  2.04it/s]Batches:  90%|█████████ | 66/73 [01:49<00:03,  2.15it/s]Batches:  92%|█████████▏| 67/73 [01:49<00:02,  2.36it/s]Batches:  93%|█████████▎| 68/73 [01:50<00:01,  2.54it/s]Batches:  95%|█████████▍| 69/73 [01:50<00:01,  2.58it/s]Batches:  96%|█████████▌| 70/73 [01:50<00:01,  2.71it/s]Batches:  97%|█████████▋| 71/73 [01:51<00:00,  2.81it/s]Batches:  99%|█████████▊| 72/73 [01:51<00:00,  2.71it/s]Batches: 100%|██████████| 73/73 [01:52<00:00,  2.62it/s]Batches: 100%|██████████| 73/73 [01:52<00:00,  1.53s/it]
+
+Encoding validation messages...
+Batches:   0%|          | 0/10 [00:00<?, ?it/s]Batches:  10%|█         | 1/10 [00:00<00:07,  1.27it/s]Batches:  20%|██        | 2/10 [00:03<00:16,  2.10s/it]Batches:  30%|███       | 3/10 [00:06<00:15,  2.16s/it]Batches:  40%|████      | 4/10 [00:08<00:12,  2.16s/it]Batches:  50%|█████     | 5/10 [00:09<00:08,  1.79s/it]Batches:  60%|██████    | 6/10 [00:10<00:06,  1.74s/it]Batches:  70%|███████   | 7/10 [00:11<00:04,  1.36s/it]Batches:  80%|████████  | 8/10 [00:11<00:02,  1.06s/it]Batches:  90%|█████████ | 9/10 [00:12<00:00,  1.21it/s]Batches: 100%|██████████| 10/10 [00:12<00:00,  1.56it/s]Batches: 100%|██████████| 10/10 [00:12<00:00,  1.25s/it]
+
+Encoding test messages...
+Batches:   0%|          | 0/10 [00:00<?, ?it/s]Batches:  10%|█         | 1/10 [00:02<00:23,  2.63s/it]Batches:  20%|██        | 2/10 [00:04<00:17,  2.15s/it]Batches:  30%|███       | 3/10 [00:06<00:13,  1.92s/it]Batches:  40%|████      | 4/10 [00:07<00:10,  1.81s/it]Batches:  50%|█████     | 5/10 [00:09<00:09,  1.81s/it]Batches:  60%|██████    | 6/10 [00:10<00:06,  1.58s/it]Batches:  70%|███████   | 7/10 [00:12<00:04,  1.60s/it]Batches:  80%|████████  | 8/10 [00:12<00:02,  1.22s/it]Batches:  90%|█████████ | 9/10 [00:13<00:00,  1.04it/s]Batches: 100%|██████████| 10/10 [00:13<00:00,  1.39it/s]Batches: 100%|██████████| 10/10 [00:13<00:00,  1.33s/it]
+
+Embedding shape: (2331, 384)
+Custom feature shape: (2331, 8)
+Training examples with at least one matched feature: 423 / 2331
+
+Custom feature activation counts:
+how_to_pay: 84
+online_payment: 87
+payment_problem: 107
+bill_not_received: 38
+unpaid_bill: 48
+voltage_problem: 13
+wrong_meter_reading: 54
+neighborhood_outage: 28
+
+=================================================================
+EXPERIMENT: embeddings_only
+=================================================================
+C=0.1   accuracy=0.8247 macro_f1=0.7924
+C=0.5   accuracy=0.8385 macro_f1=0.8101
+C=1     accuracy=0.8351 macro_f1=0.8045
+C=3     accuracy=0.8351 macro_f1=0.8042
+C=5     accuracy=0.8316 macro_f1=0.8079
+C=10    accuracy=0.8213 macro_f1=0.8047
+C=20    accuracy=0.8247 macro_f1=0.7984
+C=50    accuracy=0.8007 macro_f1=0.7772
+
+=================================================================
+EXPERIMENT: embeddings_plus_features
+=================================================================
+C=0.1   accuracy=0.8282 macro_f1=0.8076
+C=0.5   accuracy=0.8351 macro_f1=0.8156
+C=1     accuracy=0.8316 macro_f1=0.8130
+C=3     accuracy=0.8351 macro_f1=0.8189
+C=5     accuracy=0.8351 macro_f1=0.8141
+C=10    accuracy=0.8351 macro_f1=0.8155
+C=20    accuracy=0.8213 macro_f1=0.7948
+C=50    accuracy=0.8076 macro_f1=0.7954
+
+=================================================================
+ALL VALIDATION RESULTS
+=================================================================
+          representation    C  validation_accuracy  validation_macro_f1
+         embeddings_only  0.5             0.838488             0.810117
+         embeddings_only  5.0             0.831615             0.807866
+         embeddings_only 10.0             0.821306             0.804704
+         embeddings_only  1.0             0.835052             0.804484
+         embeddings_only  3.0             0.835052             0.804215
+         embeddings_only 20.0             0.824742             0.798368
+         embeddings_only  0.1             0.824742             0.792448
+         embeddings_only 50.0             0.800687             0.777181
+embeddings_plus_features  3.0             0.835052             0.818866
+embeddings_plus_features  0.5             0.835052             0.815605
+embeddings_plus_features 10.0             0.835052             0.815535
+embeddings_plus_features  5.0             0.835052             0.814056
+embeddings_plus_features  1.0             0.831615             0.812963
+embeddings_plus_features  0.1             0.828179             0.807649
+embeddings_plus_features 50.0             0.807560             0.795384
+embeddings_plus_features 20.0             0.821306             0.794842
+
+Best configuration per representation:
+embeddings_only: C=0.5, validation accuracy=0.8385, validation macro F1=0.8101
+embeddings_plus_features: C=3, validation accuracy=0.8351, validation macro F1=0.8189
+
+=================================================================
+TEST REPORT: embeddings_only
+=================================================================
+Test accuracy: 0.8116
+Test macro F1: 0.8161
+                             precision    recall  f1-score   support
+
+           amount_breakdown       0.91      0.62      0.74        16
+          bill_not_received       0.86      1.00      0.92         6
+      bill_payment_deadline       0.83      1.00      0.91        10
+       bill_payment_methods       0.83      0.83      0.83        12
+              catch_up_bill       0.63      0.86      0.73        14
+            connection_cost       1.00      1.00      1.00         2
+    connection_cost_dispute       1.00      0.50      0.67         2
+           connection_delay       1.00      0.50      0.67         2
+       connection_documents       1.00      0.50      0.67         4
+     connection_eligibility       1.00      0.67      0.80         3
+   connection_not_completed       0.00      0.00      0.00         2
+         connection_payment       1.00      0.75      0.86         4
+         connection_problem       1.00      0.75      0.86         4
+       connection_procedure       1.00      0.67      0.80         3
+       connection_rejection       0.67      1.00      0.80         2
+          connection_status       0.57      1.00      0.73         4
+           connection_works       0.33      0.50      0.40         2
+    consumption_calculation       0.91      1.00      0.95        20
+          damaged_appliance       1.00      1.00      1.00         2
+              disconnection       1.00      1.00      1.00         2
+               dispute_bill       0.50      0.50      0.50        10
+      dispute_catch_up_bill       0.71      0.50      0.59        10
+  dispute_estimated_reading       0.77      0.91      0.83        11
+          electrical_danger       1.00      1.00      1.00         2
+     electricity_connection       1.00      1.00      1.00         4
+ electricity_gas_connection       1.00      1.00      1.00         4
+         electricity_outage       0.67      1.00      0.80         2
+             gas_connection       1.00      1.00      1.00         3
+              gas_emergency       1.00      1.00      1.00         2
+                 gas_outage       0.67      1.00      0.80         2
+    high_or_abnormal_amount       0.82      0.75      0.78        12
+     low_voltage_connection       0.75      1.00      0.86         3
+              meter_problem       0.67      0.67      0.67         3
+missing_connection_document       1.00      1.00      1.00         3
+        neighborhood_outage       1.00      1.00      1.00         2
+       network_availability       1.00      1.00      1.00         4
+             new_connection       1.00      0.33      0.50         3
+new_construction_connection       0.67      1.00      0.80         2
+        online_bill_payment       0.85      0.92      0.88        12
+     paid_but_unpaid_status       1.00      0.73      0.84        11
+            payment_problem       0.91      0.91      0.91        11
+              rem_r_meaning       1.00      1.00      1.00         9
+           report_breakdown       0.50      0.50      0.50         2
+                restoration       1.00      1.00      1.00         2
+  restoration_after_payment       1.00      1.00      1.00         2
+            technical_study       1.00      1.00      1.00         2
+            understand_bill       0.74      0.82      0.78        17
+                unpaid_bill       0.75      0.82      0.78        11
+update_customer_information       1.00      1.00      1.00         2
+            voltage_problem       1.00      1.00      1.00         2
+        wrong_meter_reading       0.50      0.45      0.48        11
+
+                   accuracy                           0.81       292
+                  macro avg       0.84      0.82      0.82       292
+               weighted avg       0.82      0.81      0.81       292
+
+Saved 55 misclassified messages to reports/misclassified_embeddings_only.csv
+Saved confusion summary to reports/confusions_embeddings_only.csv
+
+=================================================================
+TEST REPORT: embeddings_plus_features
+=================================================================
+Test accuracy: 0.8116
+Test macro F1: 0.8076
+                             precision    recall  f1-score   support
+
+           amount_breakdown       0.86      0.75      0.80        16
+          bill_not_received       1.00      1.00      1.00         6
+      bill_payment_deadline       0.83      1.00      0.91        10
+       bill_payment_methods       0.83      0.83      0.83        12
+              catch_up_bill       0.57      0.86      0.69        14
+            connection_cost       1.00      1.00      1.00         2
+    connection_cost_dispute       1.00      0.50      0.67         2
+           connection_delay       1.00      0.50      0.67         2
+       connection_documents       1.00      0.50      0.67         4
+     connection_eligibility       1.00      0.67      0.80         3
+   connection_not_completed       0.00      0.00      0.00         2
+         connection_payment       1.00      0.75      0.86         4
+         connection_problem       1.00      0.75      0.86         4
+       connection_procedure       1.00      0.67      0.80         3
+       connection_rejection       0.67      1.00      0.80         2
+          connection_status       0.57      1.00      0.73         4
+           connection_works       0.33      0.50      0.40         2
+    consumption_calculation       0.91      1.00      0.95        20
+          damaged_appliance       1.00      1.00      1.00         2
+              disconnection       1.00      1.00      1.00         2
+               dispute_bill       0.55      0.60      0.57        10
+      dispute_catch_up_bill       0.75      0.60      0.67        10
+  dispute_estimated_reading       0.83      0.91      0.87        11
+          electrical_danger       1.00      1.00      1.00         2
+     electricity_connection       1.00      1.00      1.00         4
+ electricity_gas_connection       1.00      1.00      1.00         4
+         electricity_outage       0.67      1.00      0.80         2
+             gas_connection       1.00      1.00      1.00         3
+              gas_emergency       1.00      1.00      1.00         2
+                 gas_outage       0.67      1.00      0.80         2
+    high_or_abnormal_amount       0.69      0.75      0.72        12
+     low_voltage_connection       0.75      1.00      0.86         3
+              meter_problem       0.67      0.67      0.67         3
+missing_connection_document       1.00      1.00      1.00         3
+        neighborhood_outage       1.00      1.00      1.00         2
+       network_availability       1.00      1.00      1.00         4
+             new_connection       0.00      0.00      0.00         3
+new_construction_connection       0.50      1.00      0.67         2
+        online_bill_payment       0.91      0.83      0.87        12
+     paid_but_unpaid_status       0.89      0.73      0.80        11
+            payment_problem       0.89      0.73      0.80        11
+              rem_r_meaning       1.00      1.00      1.00         9
+           report_breakdown       0.50      0.50      0.50         2
+                restoration       1.00      1.00      1.00         2
+  restoration_after_payment       1.00      1.00      1.00         2
+            technical_study       1.00      1.00      1.00         2
+            understand_bill       0.87      0.76      0.81        17
+                unpaid_bill       0.82      0.82      0.82        11
+update_customer_information       1.00      1.00      1.00         2
+            voltage_problem       1.00      1.00      1.00         2
+        wrong_meter_reading       0.55      0.55      0.55        11
+
+                   accuracy                           0.81       292
+                  macro avg       0.82      0.82      0.81       292
+               weighted avg       0.82      0.81      0.81       292
+
+Saved 55 misclassified messages to reports/misclassified_embeddings_plus_features.csv
+Saved confusion summary to reports/confusions_embeddings_plus_features.csv
+
+=================================================================
+FINAL COMPARISON
+=================================================================
+          representation   C  test_accuracy  test_macro_f1
+         embeddings_only 0.5       0.811644       0.816141
+embeddings_plus_features 3.0       0.811644       0.807567
+
+Selected representation: embeddings_plus_features
+Selected C: 3
+
+Production model saved to: models/intent_classifier.joblib
+Training complete.

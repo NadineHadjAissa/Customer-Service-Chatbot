@@ -1,20 +1,22 @@
+
+import os
 import joblib
-import pandas as pd
 import numpy as np
+import pandas as pd
 
 from sentence_transformers import SentenceTransformer
-
-from src.preprocessing import (
-    load_and_clean_data,
-    split_data,
-)
-
 from sklearn.linear_model import LogisticRegression
-from sklearn.svm import SVC
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.pipeline import Pipeline
-from sklearn.metrics import accuracy_score, classification_report
+from sklearn.metrics import (
+    accuracy_score,
+    classification_report,
+    f1_score,
+)
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import StandardScaler
+
+from src.preprocessing import load_and_clean_data, split_data
 from src.intent_features import extract_intent_features
+
 
 # ============================================================
 # 1. CONFIGURATION
@@ -25,46 +27,83 @@ MODEL_NAME = (
     "paraphrase-multilingual-MiniLM-L12-v2"
 )
 
-C_VALUES = [
-    0.1,
-    0.5,
-    1,
-    3,
-    5,
-    10,
-    15,
-    20,
-    30,
-    50,
-    100,
-]
+MODEL_PATH = "models/intent_classifier_merged_test.joblib"
 
-MODEL_PATH = "models/intent_classifier.joblib"
+
+C_VALUES = [0.1, 0.5, 1, 3, 5, 10, 20, 50]
+
+RANDOM_STATE = 42
+
+CUSTOM_FEATURE_NAMES = [
+    "how_to_pay",
+    "online_payment",
+    "payment_problem",
+    "bill_not_received",
+    "unpaid_bill",
+    "voltage_problem",
+    "wrong_meter_reading",
+    "neighborhood_outage",
+]
 
 
 # ============================================================
-# 2. LOAD AND PREPROCESS DATA
+# 2. LOAD DATA
 # ============================================================
 
 data = load_and_clean_data()
 
-print("=" * 60)
-print("DATASET")
-print("=" * 60)
+print("=" * 65)
+print("DATASET OVERVIEW")
+print("=" * 65)
 
 print("Total examples:", len(data))
 print("Number of intents:", data["Intent"].nunique())
 
 print("\nExamples per intent:")
+print(data["Intent"].value_counts().sort_index())
+
+print("\nIntent x Language:")
+print(pd.crosstab(data["Intent"], data["Language"]))
+
+
+# ============================================================
+# 3. DATASET QUALITY AUDIT
+# ============================================================
+
+print("\n" + "=" * 65)
+print("DATA QUALITY AUDIT")
+print("=" * 65)
+
+# Find normalized phrases assigned to multiple intents.
+conflicts = data.groupby("Phrase")["Intent"].nunique()
+conflicting_phrases = conflicts[conflicts > 1].index
+
 print(
-    data["Intent"]
-    .value_counts()
-    .sort_index()
+    "Phrases assigned to multiple intents:",
+    len(conflicting_phrases),
+)
+
+if len(conflicting_phrases) > 0:
+    print("\nConflicting examples:")
+    print(
+        data[data["Phrase"].isin(conflicting_phrases)]
+        .sort_values("Phrase")
+        .to_string(index=False)
+    )
+
+# Find identical phrase/intent pairs with multiple language labels.
+cross_language = (
+    data.groupby(["Phrase", "Intent"])["Language"].nunique()
+)
+
+print(
+    "\nPhrase/intent pairs with multiple language labels:",
+    int((cross_language > 1).sum()),
 )
 
 
 # ============================================================
-# 3. TRAIN / VALIDATION / TEST SPLIT
+# 4. TRAIN / VALIDATION / TEST SPLIT
 # ============================================================
 
 (
@@ -76,10 +115,9 @@ print(
     y_test,
 ) = split_data(data)
 
-
-print("\n" + "=" * 60)
+print("\n" + "=" * 65)
 print("DATA SPLIT")
-print("=" * 60)
+print("=" * 65)
 
 print("Training:", len(X_train))
 print("Validation:", len(X_val))
@@ -87,487 +125,365 @@ print("Test:", len(X_test))
 
 
 # ============================================================
-# 4. LOAD MULTILINGUAL MINILM
+# 5. CREATE MINILM EMBEDDINGS
 # ============================================================
 
 print("\nLoading MiniLM...")
 
-model = SentenceTransformer(
-    MODEL_NAME
-)
+embedding_model = SentenceTransformer(MODEL_NAME)
 
+print("\nEncoding training messages...")
 
-# ============================================================
-# 5. CREATE EMBEDDINGS
-# ============================================================
-
-print("\nCreating embeddings...")
-
-X_train_embeddings = model.encode(
+E_train = embedding_model.encode(
     X_train,
     show_progress_bar=True,
+    convert_to_numpy=True,
 )
 
-X_val_embeddings = model.encode(
+print("\nEncoding validation messages...")
+
+E_val = embedding_model.encode(
     X_val,
     show_progress_bar=True,
+    convert_to_numpy=True,
 )
 
-X_test_embeddings = model.encode(
+print("\nEncoding test messages...")
+
+E_test = embedding_model.encode(
     X_test,
     show_progress_bar=True,
+    convert_to_numpy=True,
 )
 
-X_train_features = extract_intent_features(X_train)
-X_val_features = extract_intent_features(X_val)
-X_test_features = extract_intent_features(X_test)
 
-X_train_embeddings = np.hstack(
-    [X_train_embeddings, X_train_features]
-)
+# ============================================================
+# 6. EXTRACT CUSTOM FEATURES
+# ============================================================
 
-X_val_embeddings = np.hstack(
-    [X_val_embeddings, X_val_features]
-)
+F_train = extract_intent_features(X_train)
+F_val = extract_intent_features(X_val)
+F_test = extract_intent_features(X_test)
 
-X_test_embeddings = np.hstack(
-    [X_test_embeddings, X_test_features]
-)
+print("\nEmbedding shape:", E_train.shape)
+print("Custom feature shape:", F_train.shape)
+
 print(
-    "\nEmbedding shape:",
-    X_train_embeddings.shape
+    "Training examples with at least one matched feature:",
+    int((F_train.sum(axis=1) > 0).sum()),
+    "/",
+    len(F_train),
 )
 
+print("\nCustom feature activation counts:")
+
+for index, name in enumerate(CUSTOM_FEATURE_NAMES):
+    print(f"{name}: {int(F_train[:, index].sum())}")
+
 
 # ============================================================
-# 6. EXPERIMENT 1 — COMPARE CLASSIFIER FAMILIES
+# 7. BUILD TWO REPRESENTATIONS
 # ============================================================
 
-classifiers = {
+representations = {
+    "embeddings_only": (
+        E_train,
+        E_val,
+        E_test,
+    ),
 
-    "LogisticRegression_C1": Pipeline([
-        (
-            "classifier",
-            LogisticRegression(
-                C=1,
-                max_iter=3000,
-            ),
-        )
-    ]),
-
-    "LogisticRegression_C3": Pipeline([
-        (
-            "classifier",
-            LogisticRegression(
-                C=3,
-                max_iter=3000,
-            ),
-        )
-    ]),
-
-    "LogisticRegression_C10": Pipeline([
-        (
-            "classifier",
-            LogisticRegression(
-                C=10,
-                max_iter=3000,
-            ),
-        )
-    ]),
-
-    "SVM_linear_C1": Pipeline([
-        (
-            "classifier",
-            SVC(
-                kernel="linear",
-                C=1,
-            ),
-        )
-    ]),
-
-    "SVM_linear_C3": Pipeline([
-        (
-            "classifier",
-            SVC(
-                kernel="linear",
-                C=3,
-            ),
-        )
-    ]),
-
-    "SVM_rbf_C1": Pipeline([
-        (
-            "classifier",
-            SVC(
-                kernel="rbf",
-                C=1,
-            ),
-        )
-    ]),
-
-    "SVM_rbf_C3": Pipeline([
-        (
-            "classifier",
-            SVC(
-                kernel="rbf",
-                C=3,
-            ),
-        )
-    ]),
-
-    "KNN_3": Pipeline([
-        (
-            "classifier",
-            KNeighborsClassifier(
-                n_neighbors=3,
-            ),
-        )
-    ]),
-
-    "KNN_5": Pipeline([
-        (
-            "classifier",
-            KNeighborsClassifier(
-                n_neighbors=5,
-            ),
-        )
-    ]),
+    "embeddings_plus_features": (
+        np.hstack([E_train, F_train]),
+        np.hstack([E_val, F_val]),
+        np.hstack([E_test, F_test]),
+    ),
 }
 
 
-classifier_results = []
+# ============================================================
+# 8. COMPARE REPRESENTATIONS AND TUNE C
+# ============================================================
+
+results = []
+best_models = {}
+
+for representation_name, (Xtr, Xv, Xt) in representations.items():
+
+    print("\n" + "=" * 65)
+    print("EXPERIMENT:", representation_name)
+    print("=" * 65)
+
+    best_f1 = -1.0
+    best_C = None
+    best_model = None
+    best_val_accuracy = 0.0
+
+    for C in C_VALUES:
+
+        classifier = make_pipeline(
+            StandardScaler(),
+            LogisticRegression(
+                C=C,
+                max_iter=3000,
+                random_state=RANDOM_STATE,
+            ),
+        )
+
+        classifier.fit(Xtr, y_train)
+
+        val_predictions = classifier.predict(Xv)
+
+        val_accuracy = accuracy_score(
+            y_val,
+            val_predictions,
+        )
+
+        val_macro_f1 = f1_score(
+            y_val,
+            val_predictions,
+            average="macro",
+            zero_division=0,
+        )
+
+        results.append({
+            "representation": representation_name,
+            "C": C,
+            "validation_accuracy": val_accuracy,
+            "validation_macro_f1": val_macro_f1,
+        })
+
+        print(
+            f"C={C:<5} "
+            f"accuracy={val_accuracy:.4f} "
+            f"macro_f1={val_macro_f1:.4f}"
+        )
+
+        # Choose hyperparameters using validation macro F1 only.
+        if val_macro_f1 > best_f1:
+            best_f1 = val_macro_f1
+            best_C = C
+            best_model = classifier
+            best_val_accuracy = val_accuracy
+
+    best_models[representation_name] = {
+        "classifier": best_model,
+        "C": best_C,
+        "validation_macro_f1": best_f1,
+        "validation_accuracy": best_val_accuracy,
+    }
 
 
-print("\n" + "=" * 60)
-print("EXPERIMENT 1 — CLASSIFIER COMPARISON")
-print("=" * 60)
+# ============================================================
+# 9. DISPLAY VALIDATION RESULTS
+# ============================================================
 
+results_df = pd.DataFrame(results)
 
-for name, classifier in classifiers.items():
+print("\n" + "=" * 65)
+print("ALL VALIDATION RESULTS")
+print("=" * 65)
 
-    print(f"\nTraining: {name}")
+print(
+    results_df.sort_values(
+        ["representation", "validation_macro_f1"],
+        ascending=[True, False],
+    ).to_string(index=False)
+)
 
-    classifier.fit(
-        X_train_embeddings,
-        y_train,
-    )
+print("\nBest configuration per representation:")
 
-    train_predictions = classifier.predict(
-        X_train_embeddings
-    )
-
-    val_predictions = classifier.predict(
-        X_val_embeddings
-    )
-
-    train_accuracy = accuracy_score(
-        y_train,
-        train_predictions,
-    )
-
-    val_accuracy = accuracy_score(
-        y_val,
-        val_predictions,
-    )
-
-    gap = train_accuracy - val_accuracy
-
-    classifier_results.append({
-        "model": name,
-        "train_accuracy": train_accuracy,
-        "validation_accuracy": val_accuracy,
-        "train_val_gap": gap,
-    })
-
+for name, info in best_models.items():
     print(
-        f"Training accuracy:   {train_accuracy:.4f}"
+        f"{name}: C={info['C']}, "
+        f"validation accuracy={info['validation_accuracy']:.4f}, "
+        f"validation macro F1={info['validation_macro_f1']:.4f}"
     )
-
-    print(
-        f"Validation accuracy: {val_accuracy:.4f}"
-    )
-
-    print(
-        f"Train/val gap:       {gap:.4f}"
-    )
-
-
-classifier_results_df = pd.DataFrame(
-    classifier_results
-)
-
-
-classifier_results_df = (
-    classifier_results_df
-    .sort_values(
-        "validation_accuracy",
-        ascending=False,
-    )
-)
-
-
-print("\n" + "=" * 60)
-print("CLASSIFIER COMPARISON RESULTS")
-print("=" * 60)
-
-print(
-    classifier_results_df.to_string(
-        index=False,
-        formatters={
-            "train_accuracy": "{:.4f}".format,
-            "validation_accuracy": "{:.4f}".format,
-            "train_val_gap": "{:.4f}".format,
-        },
-    )
-)
 
 
 # ============================================================
-# 7. EXPERIMENT 2 — LOGISTIC REGRESSION C SWEEP
+# 10. FINAL TEST EVALUATION AND ERROR ANALYSIS
 # ============================================================
 
-c_results = []
+os.makedirs("reports", exist_ok=True)
 
+test_results = []
 
-print("\n" + "=" * 60)
-print("EXPERIMENT 2 — LOGISTIC REGRESSION C SWEEP")
-print("=" * 60)
+for representation_name, (Xtr, Xv, Xt) in representations.items():
 
+    info = best_models[representation_name]
+    classifier = info["classifier"]
 
-for C in C_VALUES:
+    predictions = classifier.predict(Xt)
 
-    print(f"\nTesting C = {C}")
+    y_true = np.asarray(y_test)
+    y_pred = np.asarray(predictions)
+    test_messages = np.asarray(X_test, dtype=object)
 
-    classifier = LogisticRegression(
-        C=C,
-        max_iter=3000,
-    )
+    accuracy = accuracy_score(y_true, y_pred)
 
-    classifier.fit(
-        X_train_embeddings,
-        y_train,
-    )
-
-    train_predictions = classifier.predict(
-        X_train_embeddings
-    )
-
-    val_predictions = classifier.predict(
-        X_val_embeddings
-    )
-
-    train_accuracy = accuracy_score(
-        y_train,
-        train_predictions,
-    )
-
-    val_accuracy = accuracy_score(
-        y_val,
-        val_predictions,
-    )
-
-    gap = train_accuracy - val_accuracy
-
-    c_results.append({
-        "C": C,
-        "train_accuracy": train_accuracy,
-        "validation_accuracy": val_accuracy,
-        "train_val_gap": gap,
-    })
-
-    print(
-        f"Training accuracy:   {train_accuracy:.4f}"
-    )
-
-    print(
-        f"Validation accuracy: {val_accuracy:.4f}"
-    )
-
-    print(
-        f"Train/val gap:       {gap:.4f}"
-    )
-
-
-c_results_df = pd.DataFrame(
-    c_results
-)
-
-
-c_results_df = (
-    c_results_df
-    .sort_values(
-        "validation_accuracy",
-        ascending=False,
-    )
-)
-
-
-print("\n" + "=" * 60)
-print("LOGISTIC REGRESSION C RESULTS")
-print("=" * 60)
-
-print(
-    c_results_df.to_string(
-        index=False,
-        formatters={
-            "train_accuracy": "{:.4f}".format,
-            "validation_accuracy": "{:.4f}".format,
-            "train_val_gap": "{:.4f}".format,
-        },
-    )
-)
-
-
-# ============================================================
-# 8. SELECT FINAL CONFIGURATION
-# ============================================================
-
-best_c_row = c_results_df.iloc[0]
-
-best_C = best_c_row["C"]
-best_validation_accuracy = (
-    best_c_row["validation_accuracy"]
-)
-best_train_accuracy = (
-    best_c_row["train_accuracy"]
-)
-best_gap = (
-    best_c_row["train_val_gap"]
-)
-
-
-print("\n" + "=" * 60)
-print("SELECTED CONFIGURATION")
-print("=" * 60)
-
-print("Embedding model:", MODEL_NAME)
-print("Classifier: Logistic Regression")
-print("C:", best_C)
-
-print(
-    f"Training accuracy: "
-    f"{best_train_accuracy:.4f}"
-)
-
-print(
-    f"Validation accuracy: "
-    f"{best_validation_accuracy:.4f}"
-)
-
-print(
-    f"Train/validation gap: "
-    f"{best_gap:.4f}"
-)
-
-
-# ============================================================
-# 9. FINAL TEST EVALUATION
-# ============================================================
-
-print("\n" + "=" * 60)
-print("FINAL TEST EVALUATION")
-print("=" * 60)
-
-
-final_classifier = LogisticRegression(
-    C=best_C,
-    max_iter=3000,
-)
-
-
-final_classifier.fit(
-    X_train_embeddings,
-    y_train,
-)
-
-
-test_predictions = final_classifier.predict(
-    X_test_embeddings
-)
-
-
-test_accuracy = accuracy_score(
-    y_test,
-    test_predictions,
-)
-
-
-print(
-    f"Test accuracy: {test_accuracy:.4f}"
-)
-
-
-# ============================================================
-# 10. SAVE FINAL CLASSIFIER
-# ============================================================
-
-joblib.dump(
-    final_classifier,
-    MODEL_PATH,
-)
-
-print("\nFinal classifier saved to:")
-print(MODEL_PATH)
-
-
-# ============================================================
-# 11. CLASSIFICATION REPORT
-# ============================================================
-
-print("\n" + "=" * 60)
-print("FINAL CLASSIFICATION REPORT")
-print("=" * 60)
-
-print(
-    classification_report(
-        y_test,
-        test_predictions,
+    macro_f1 = f1_score(
+        y_true,
+        y_pred,
+        average="macro",
         zero_division=0,
     )
-)
 
-# ============================================================
-# 12. MOST COMMON MISCLASSIFICATIONS
-# ============================================================
+    test_results.append({
+        "representation": representation_name,
+        "C": info["C"],
+        "test_accuracy": accuracy,
+        "test_macro_f1": macro_f1,
+    })
 
-from collections import Counter
+    print("\n" + "=" * 65)
+    print("TEST REPORT:", representation_name)
+    print("=" * 65)
 
-misclassifications = Counter()
+    print(f"Test accuracy: {accuracy:.4f}")
+    print(f"Test macro F1: {macro_f1:.4f}")
 
-for true_label, predicted_label in zip(
-    y_test,
-    test_predictions,
-):
-    if true_label != predicted_label:
-        misclassifications[
-            (true_label, predicted_label)
-        ] += 1
-
-
-print("\n" + "=" * 60)
-print("MOST COMMON MISCLASSIFICATIONS")
-print("=" * 60)
-
-for (true_label, predicted_label), count in (
-    misclassifications.most_common(30)
-):
     print(
-        f"{count:>3}  "
-        f"{true_label}  -->  {predicted_label}"
+        classification_report(
+            y_true,
+            y_pred,
+            zero_division=0,
+        )
     )
 
-print("\n" + "=" * 60)
-print("MISCLASSIFIED TEST EXAMPLES")
-print("=" * 60)
+    # --------------------------------------------------------
+    # Save individual misclassified messages
+    # --------------------------------------------------------
 
-for phrase, true_label, predicted_label in zip(
-    X_test,
-    y_test,
-    test_predictions,
-):
-    if true_label != predicted_label:
-        print(
-            f"\nPhrase: {phrase}"
-            f"\nTrue: {true_label}"
-            f"\nPredicted: {predicted_label}"
+    error_mask = y_true != y_pred
+
+    errors = pd.DataFrame({
+        "message": test_messages[error_mask],
+        "true_intent": y_true[error_mask],
+        "predicted_intent": y_pred[error_mask],
+    })
+
+    error_file = (
+        f"reports/misclassified_{representation_name}.csv"
+    )
+
+    errors.to_csv(error_file, index=False)
+
+    print(
+        f"Saved {len(errors)} misclassified messages to "
+        f"{error_file}"
+    )
+
+    # --------------------------------------------------------
+    # Save summary of intent confusions
+    # --------------------------------------------------------
+
+    if not errors.empty:
+        confusion_summary = (
+            errors.groupby(
+                ["true_intent", "predicted_intent"]
+            )
+            .size()
+            .reset_index(name="count")
+            .sort_values(
+                "count",
+                ascending=False,
+            )
         )
+    else:
+        confusion_summary = pd.DataFrame(
+            columns=[
+                "true_intent",
+                "predicted_intent",
+                "count",
+            ]
+        )
+
+    confusion_file = (
+        f"reports/confusions_{representation_name}.csv"
+    )
+
+    confusion_summary.to_csv(confusion_file, index=False)
+
+    print(f"Saved confusion summary to {confusion_file}")
+
+
+# ============================================================
+# 11. FINAL COMPARISON
+# ============================================================
+
+test_results_df = pd.DataFrame(test_results)
+
+print("\n" + "=" * 65)
+print("FINAL COMPARISON")
+print("=" * 65)
+
+print(test_results_df.to_string(index=False))
+
+
+# ============================================================
+# 12. SELECT MODEL USING VALIDATION PERFORMANCE
+# ============================================================
+
+# Do not select the production model based on test performance.
+best_representation = max(
+    best_models,
+    key=lambda name: best_models[name]["validation_macro_f1"],
+)
+
+selected = best_models[best_representation]
+
+print("\nSelected representation:", best_representation)
+print("Selected C:", selected["C"])
+
+
+# ============================================================
+# 13. RETRAIN SELECTED MODEL ON TRAIN + VALIDATION
+# ============================================================
+
+X_train_val_texts = X_train + X_val
+y_train_val = y_train + y_val
+
+E_train_val = np.vstack([E_train, E_val])
+F_train_val = np.vstack([F_train, F_val])
+
+if best_representation == "embeddings_only":
+    X_train_val = E_train_val
+else:
+    X_train_val = np.hstack([
+        E_train_val,
+        F_train_val,
+    ])
+
+production_classifier = make_pipeline(
+    StandardScaler(),
+    LogisticRegression(
+        C=selected["C"],
+        max_iter=3000,
+        random_state=RANDOM_STATE,
+    ),
+)
+
+production_classifier.fit(
+    X_train_val,
+    y_train_val,
+)
+
+
+# ============================================================
+# 14. SAVE MODEL AND CONFIGURATION
+# ============================================================
+
+os.makedirs("models", exist_ok=True)
+
+artifact = {
+    "classifier": production_classifier,
+    "embedding_model_name": MODEL_NAME,
+    "representation": best_representation,
+    "custom_feature_names": CUSTOM_FEATURE_NAMES,
+    "C": selected["C"],
+}
+
+joblib.dump(artifact, MODEL_PATH)
+
+print("\nProduction model saved to:", MODEL_PATH)
+print("Training complete.")

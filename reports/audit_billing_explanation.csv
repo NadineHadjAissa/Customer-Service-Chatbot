@@ -1,0 +1,521 @@
+Phrase,Intent,Langue
+3lach le total ma ytab9ch les montants,amount_breakdown,Darja
+3lach lmontant total mokhtalef,amount_breakdown,Darja
+bch7al teklef l'électricité w bch7al yeklef gaz,amount_breakdown,Darja
+bch7al yeklef kol élément fel facture ta3i,amount_breakdown,Darja
+ch7al howa lmontant ta3 gaz,amount_breakdown,Darja
+ch7al howa lmontant ta3 l'électricité,amount_breakdown,Darja
+ch7al lazem nkhalas 3la consommation ta3i,amount_breakdown,Darja
+ch7al part ta3 kol frais fel montant total,amount_breakdown,Darja
+ch7al part ta3 l'électricité w ch7al part ta3 gaz,amount_breakdown,Darja
+ch7al yemthel kol part men facture ta3i,amount_breakdown,Darja
+fasserli les montants mokhtalfin ta3 facture ta3i,amount_breakdown,Darja
+habba nefhem kifech yetwazza3 lmontant total,amount_breakdown,Darja
+kifech la7tto lmontant total,amount_breakdown,Darja
+kifech metwazza3a l9ima totale ta3 facture,amount_breakdown,Darja
+kifech yet9assem lmontant bin consommation w frais,amount_breakdown,Darja
+kifech yet9assem lmontant ta3 facture ta3i,amount_breakdown,Darja
+ma fhemtch kifech met9assma facture ta3i,amount_breakdown,Darja
+menin ja lfar9 fel montant total,amount_breakdown,Darja
+nheb n3ref kifech metwazza3a facture,amount_breakdown,Darja
+nheb n3ref kifech yet7seb lmontant total,amount_breakdown,Darja
+nheb n3ref menin ja kol montant,amount_breakdown,Darja
+nheb nchouf tafsil ta3 facture ta3i,amount_breakdown,Darja
+t9der tfahmni kol partie men facture ta3i,amount_breakdown,Darja
+t9der tfasselli lmontant ta3 l'électricité w gaz,amount_breakdown,Darja
+t9der tmedli tafsil ta3 facture ta3i,amount_breakdown,Darja
+t9der twerrili répartition ta3 lmontant total,amount_breakdown,Darja
+wesh homa les montants li lazem nkhalas fel facture,amount_breakdown,Darja
+wesh homa les montants mokhtalfin fel facture ta3i,amount_breakdown,Darja
+wesh homa les sommes li mektoubin fel facture,amount_breakdown,Darja
+wesh homa les éléments li yetkawen menhom lmontant total,amount_breakdown,Darja
+wesh howa tafsil ta3 lmontant fel facture ta3i,amount_breakdown,Darja
+wesh men partie hiya ta3 les frais supplémentaires,amount_breakdown,Darja
+wesh men partie men lmontant hiya ta3 consommation,amount_breakdown,Darja
+اشرحولي المبالغ المختلفين تاع فاتورتي.,amount_breakdown,Darja
+بشحال تكلّف الكهرباء وبشحال يكلّف الغاز؟,amount_breakdown,Darja
+بشحال يكلّف كل عنصر في فاتورتي؟,amount_breakdown,Darja
+تقدر تشرحلي كل جزء من فاتورتي؟,amount_breakdown,Darja
+تقدر تفصللي المبلغ تاع الكهرباء والغاز؟,amount_breakdown,Darja
+تقدر تمدلي التفصيل تاع فاتورتي؟,amount_breakdown,Darja
+تقدر توريني توزيع المبلغ الإجمالي؟,amount_breakdown,Darja
+حابة نفهم كيفاش يتوزع المبلغ الإجمالي.,amount_breakdown,Darja
+شحال حصة الكهرباء وشحال حصة الغاز؟,amount_breakdown,Darja
+شحال حصة كل مصروف في المبلغ الإجمالي؟,amount_breakdown,Darja
+شحال لازم نخلص على الاستهلاك تاعي؟,amount_breakdown,Darja
+شحال هو المبلغ تاع الغاز؟,amount_breakdown,Darja
+شحال هو المبلغ تاع الكهرباء؟,amount_breakdown,Darja
+شحال يمثل كل جزء من فاتورتي؟,amount_breakdown,Darja
+شحال يمثل كل مصروف في فاتورتي؟,amount_breakdown,Darja
+علاش المبلغ الإجمالي مختلف؟,amount_breakdown,Darja
+علاش المجموع ما يطابقش المبالغ المختلفين؟,amount_breakdown,Darja
+كيفاش متقسمين المصاريف المختلفين؟,amount_breakdown,Darja
+كيفاش متوزعة القيمة الإجمالية تاع الفاتورة؟,amount_breakdown,Darja
+كيفاش وصلتو للمبلغ الإجمالي؟,amount_breakdown,Darja
+كيفاش يتقسم المبلغ بين الاستهلاك والمصاريف؟,amount_breakdown,Darja
+كيفاش يتقسم المبلغ تاع فاتورتي؟,amount_breakdown,Darja
+ما فهمتش كيفاش متقسمة فاتورتي.,amount_breakdown,Darja
+منين جا الفرق في المبلغ الإجمالي؟,amount_breakdown,Darja
+نحب نشوف التفصيل تاع فاتورتي.,amount_breakdown,Darja
+نحب نعرف كيفاش متقسمة الفاتورة.,amount_breakdown,Darja
+نحب نعرف كيفاش يتحسب المبلغ الإجمالي.,amount_breakdown,Darja
+نحب نعرف منين جا كل مبلغ.,amount_breakdown,Darja
+واش من جزء راهو تاع المصاريف الزايدة؟,amount_breakdown,Darja
+واش من جزء من المبلغ راهو تاع الاستهلاك؟,amount_breakdown,Darja
+وش هما الرسوم اللي داخلين في المبلغ الإجمالي؟,amount_breakdown,Darja
+وش هما العناصر اللي يتكون منهم المبلغ الإجمالي؟,amount_breakdown,Darja
+وش هما المبالغ المختلفين اللي في فاتورتي؟,amount_breakdown,Darja
+وش هما المبالغ المكتوبين في الفاتورة؟,amount_breakdown,Darja
+وش هما المبالغ لي لازم نخلصهم في فاتورتي؟,amount_breakdown,Darja
+وش هما المصاريف المختلفين اللي يكونو فاتورتي؟,amount_breakdown,Darja
+وش هو التفصيل تاع المبلغ في فاتورتي؟,amount_breakdown,Darja
+وش هي القيمة تاع كل جزء من الفاتورة؟,amount_breakdown,Darja
+وش يمثل كل مبلغ ظاهر في فاتورتي؟,amount_breakdown,Darja
+Combien coûte chaque élément de ma facture ?,amount_breakdown,FR
+Combien coûte l'électricité et combien coûte le gaz ?,amount_breakdown,FR
+Combien dois-je payer pour ma consommation ?,amount_breakdown,FR
+Combien représente chaque frais sur ma facture ?,amount_breakdown,FR
+Combien représente chaque partie de ma facture ?,amount_breakdown,FR
+Comment arrivez-vous au montant total ?,amount_breakdown,FR
+Comment est répartie la somme totale de ma facture ?,amount_breakdown,FR
+Comment le montant est-il réparti entre consommation et frais ?,amount_breakdown,FR
+Comment se décompose le montant de ma facture ?,amount_breakdown,FR
+D'où vient la différence dans le montant total ?,amount_breakdown,FR
+Expliquez-moi les différents montants de ma facture.,amount_breakdown,FR
+Je ne comprends pas comment ma facture est répartie.,amount_breakdown,FR
+Je veux savoir comment le montant total est calculé.,amount_breakdown,FR
+Je veux savoir d'où vient chaque montant.,amount_breakdown,FR
+Je veux voir le détail de ma facture.,amount_breakdown,FR
+Je voudrais comprendre comment le montant total est réparti.,amount_breakdown,FR
+Je voudrais connaître la décomposition de ma facture.,amount_breakdown,FR
+Pourquoi le montant total est-il différent ?,amount_breakdown,FR
+Pourquoi le total ne correspond-il pas aux différents montants ?,amount_breakdown,FR
+Pouvez-vous m'expliquer chaque partie de ma facture ?,amount_breakdown,FR
+Pouvez-vous me donner le détail de ma facture ?,amount_breakdown,FR
+Pouvez-vous me détailler le montant de l'électricité et du gaz ?,amount_breakdown,FR
+Pouvez-vous me montrer la répartition du montant total ?,amount_breakdown,FR
+Que représente chaque montant affiché sur ma facture ?,amount_breakdown,FR
+Quel est le détail du montant de ma facture ?,amount_breakdown,FR
+Quel est le prix de chaque élément de ma facture ?,amount_breakdown,FR
+Quel montant correspond au gaz ?,amount_breakdown,FR
+Quel montant correspond à l'électricité ?,amount_breakdown,FR
+Quelle est la part de chaque frais dans le montant total ?,amount_breakdown,FR
+Quelle est la répartition entre les différents frais ?,amount_breakdown,FR
+Quelle part correspond à l'électricité et quelle part au gaz ?,amount_breakdown,FR
+Quelle partie correspond aux frais supplémentaires ?,amount_breakdown,FR
+Quelle partie du montant correspond à ma consommation ?,amount_breakdown,FR
+Quelle somme correspond à chaque partie de la facture ?,amount_breakdown,FR
+Quelles sont les différentes sommes indiquées sur ma facture ?,amount_breakdown,FR
+Quels sont les différents frais qui composent ma facture ?,amount_breakdown,FR
+Quels sont les différents montants sur ma facture ?,amount_breakdown,FR
+Quels sont les frais compris dans le montant total ?,amount_breakdown,FR
+Quels sont les montants à payer sur ma facture ?,amount_breakdown,FR
+Quels sont les éléments qui composent le montant total ?,amount_breakdown,FR
+3lach le total ما يطابقش les montants؟,amount_breakdown,Mixed
+bch7al yeklef كل élément في facture ta3i؟,amount_breakdown,Mixed
+ch7al howa le montant ta3 gaz؟,amount_breakdown,Mixed
+ch7al lazem nkhalas 3la consommation ta3i؟,amount_breakdown,Mixed
+ch7al représente kol frais fel facture ta3i,amount_breakdown,Mixed
+ch7al yemthel kol montant fel facture ta3i؟,amount_breakdown,Mixed
+ch7al yemthel kol partie ta3 facture ta3i؟,amount_breakdown,Mixed
+kifech la7tto lmontant total؟,amount_breakdown,Mixed
+kifech yet9assem le montant بين consommation و frais؟,amount_breakdown,Mixed
+kifech متقسمين les frais ta3 facture؟,amount_breakdown,Mixed
+ma fhemtch kifech متقسمة facture ta3i,amount_breakdown,Mixed
+nheb n3ref ch7al lazem nkhalas 3la kol partie,amount_breakdown,Mixed
+nheb n3ref kifech متوزعة la facture,amount_breakdown,Mixed
+nheb n3ref kifech يتحسب le montant total,amount_breakdown,Mixed
+t9der tfahmni kol partie men facture ta3i؟,amount_breakdown,Mixed
+tmedli détail ta3 lmontant total؟,amount_breakdown,Mixed
+wach homa les charges li composent lmontant ta3 facture,amount_breakdown,Mixed
+wesh homa les charges li kaynin fel facture ta3i,amount_breakdown,Mixed
+wesh homa les frais li dakhlين fel montant total,amount_breakdown,Mixed
+wesh ymetel kol montant affiché fel facture ta3i,amount_breakdown,Mixed
+اشرحولي les différents montants ta3 facture ta3i,amount_breakdown,Mixed
+بشحال teklef l'électricité وبشحال yeklef gaz؟,amount_breakdown,Mixed
+تقدر tfasselli le montant ta3 l'électricité w gaz؟,amount_breakdown,Mixed
+تقدر tmedli le détail ta3 facture ta3i؟,amount_breakdown,Mixed
+تقدر توريني la répartition ta3 lmontant total؟,amount_breakdown,Mixed
+حابة نفهم kifech yetwazza3 le montant total,amount_breakdown,Mixed
+شحال part تاع الكهرباء وشحال part تاع gaz؟,amount_breakdown,Mixed
+شحال représente كل frais في le montant total؟,amount_breakdown,Mixed
+شحال هو le montant تاع l'électricité؟,amount_breakdown,Mixed
+علاش le montant total مختلف؟,amount_breakdown,Mixed
+كيفاش متوزعة la valeur totale ta3 facture؟,amount_breakdown,Mixed
+كيفاش يتقسم le montant ta3 facture؟,amount_breakdown,Mixed
+منين جا le différence fel montant total؟,amount_breakdown,Mixed
+منين جا كل montant مكتوب في الفاتورة؟,amount_breakdown,Mixed
+نحب نشوف le détail ta3 facture ta3i,amount_breakdown,Mixed
+نحب نعرف منين جا chaque montant,amount_breakdown,Mixed
+واش من partie راهي تاع les frais supplémentaires؟,amount_breakdown,Mixed
+واش من partie من المبلغ راهي تاع consommation؟,amount_breakdown,Mixed
+وش من مبلغ تاع consommation وش من مبلغ تاع frais؟,amount_breakdown,Mixed
+وش هما les frais اللي داخلين في le montant total؟,amount_breakdown,Mixed
+وش هما les montants المختلفين في فاتورتي؟,amount_breakdown,Mixed
+وش هما les montants لي لازم nkhalas fel facture؟,amount_breakdown,Mixed
+وش هما les sommes المكتوبين في la facture؟,amount_breakdown,Mixed
+وش هما les éléments اللي يتكون منهم le montant total؟,amount_breakdown,Mixed
+وش هو التفصيل تاع lmontant في فاتورتي؟,amount_breakdown,Mixed
+وش هي la valeur تاع كل partie من الفاتورة؟,amount_breakdown,Mixed
+3lach consommation ta3i mbedla,consumption_calculation,Darja
+3lach consommation ta3i mchi kifkif,consumption_calculation,Darja
+3lach consommation ta3i mchi nfsha,consumption_calculation,Darja
+ch7al consommation ta3i,consumption_calculation,Darja
+chhal consommation ta3i,consumption_calculation,Darja
+kifach hsebtou consommation men lcompteur,consumption_calculation,Darja
+kifach hsebtou consommation ta3i,consumption_calculation,Darja
+kifach n3ref consommation ta3i,consumption_calculation,Darja
+kifach nhseb consommation ta3i,consumption_calculation,Darja
+kifach t7sebto consommation ta3i,consumption_calculation,Darja
+kifech hsebtou consommation ta3i,consumption_calculation,Darja
+kifech jbedtou consommation men lcompteur,consumption_calculation,Darja
+kifech nhseb consommation ta3i,consumption_calculation,Darja
+kifech t7sebto consommation men 9raya ta3 lcompteur,consumption_calculation,Darja
+kifech t7sebto consommation men lcompteur,consumption_calculation,Darja
+kifech t7sebto consommation ta3i,consumption_calculation,Darja
+kifeh 3lach consommation ta3i mbedla,consumption_calculation,Darja
+kifeh 3reftou consommation men lcompteur,consumption_calculation,Darja
+kifeh 7sebtou had consommation,consumption_calculation,Darja
+kifeh hsebtou consommation ta3i,consumption_calculation,Darja
+kifeh n3ref consommation ta3i,consumption_calculation,Darja
+kifeh naeref consommation ta3i,consumption_calculation,Darja
+kifeh naref consommation ta3i,consumption_calculation,Darja
+kifeh nhseb consommation ta3i,consumption_calculation,Darja
+kifeh t7sebto consommation men el compteur,consumption_calculation,Darja
+kifeh t7sebto consommation men relevé ta3 lcompteur,consumption_calculation,Darja
+kifeh t7sebto consommation ta3i,consumption_calculation,Darja
+kifeh tcher7ou 3lach consommation ta3i mbedla,consumption_calculation,Darja
+kifeh tet7seb consommation ta9diriya,consumption_calculation,Darja
+kifeh tet9as consommation ta3i,consumption_calculation,Darja
+kifeh tfessrou 3lach consommation ta3i mchi kifkif,consumption_calculation,Darja
+wach hiya consommation ta3i,consumption_calculation,Darja
+wesh hiya consommation ta3i,consumption_calculation,Darja
+win n9der nchouf consommation ta3i,consumption_calculation,Darja
+win nchouf consommation ta3i,consumption_calculation,Darja
+win rahi consommation ta3i,consumption_calculation,Darja
+إذا نعطيكم القراءات تقدروا تحسبولي الاستهلاك؟,consumption_calculation,Darja
+الفرق بين القراءتين كيفاش يتحسب؟,consumption_calculation,Darja
+شحال الاستهلاك تاعي؟,consumption_calculation,Darja
+علاش الاستهلاك تاعي تبدل؟,consumption_calculation,Darja
+علاش الاستهلاك تاعي مشي كيفكيف؟,consumption_calculation,Darja
+علاش الحساب عطاني consommation مختلفة؟,consumption_calculation,Darja
+علاش عطاني الحساب هذي consommation؟,consumption_calculation,Darja
+قداه الاستهلاك تاعي؟,consumption_calculation,Darja
+كداه الاستهلاك تاعي؟,consumption_calculation,Darja
+كي ماكانش قراءة للعداد كيفاش تحسبو الاستهلاك؟,consumption_calculation,Darja
+كيف تحسبو الاستهلاك تاعي؟,consumption_calculation,Darja
+كيفاش تتحسب الاستهلاك التقديري؟,consumption_calculation,Darja
+كيفاش تتحسب الاستهلاك تاعي؟,consumption_calculation,Darja
+كيفاش تتحسب الاستهلاك من قراءة العداد؟,consumption_calculation,Darja
+كيفاش تحسبو الاستهلاك تاعي؟,consumption_calculation,Darja
+كيفاش تحسبو الاستهلاك من العداد؟,consumption_calculation,Darja
+كيفاش تحسبو الفرق بين زوج القراءات؟,consumption_calculation,Darja
+كيفاش عرفتوا الاستهلاك من العداد؟,consumption_calculation,Darja
+كيفاش ندير الحساب من القراءات؟,consumption_calculation,Darja
+كيفاش نعرف الاستهلاك تاعي؟,consumption_calculation,Darja
+كيفاه تحسبو الاستهلاك تاعي؟,consumption_calculation,Darja
+ما هو الفرق بين القراءتين؟,consumption_calculation,Darja
+من العداد كيفاش تحسبو الاستهلاك؟,consumption_calculation,Darja
+من الكونتور كيفاش تحسبو الاستهلاك؟,consumption_calculation,Darja
+واش من وحدة تحسبو الاستهلاك؟,consumption_calculation,Darja
+واش هو الفرق بين زوج قراءات؟,consumption_calculation,Darja
+واش هي الاستهلاك تاعي؟,consumption_calculation,Darja
+وش من وحدة هي الاستهلاك؟,consumption_calculation,Darja
+وشمن وحدة تستعملو؟,consumption_calculation,Darja
+وين نشوف الاستهلاك تاعي؟,consumption_calculation,Darja
+Combien ai-je consommé ?,consumption_calculation,FR
+Combien est ma consommation ?,consumption_calculation,FR
+Comment calculer la consommation à partir du relevé ?,consumption_calculation,FR
+Comment calculez-vous la consommation en l'absence de relevé ?,consumption_calculation,FR
+Comment calculez-vous la consommation estimée ?,consumption_calculation,FR
+Comment calculez-vous la consommation à partir du compteur ?,consumption_calculation,FR
+Comment calculez-vous la différence entre deux relevés ?,consumption_calculation,FR
+Comment calculez-vous ma consommation ?,consumption_calculation,FR
+Comment calculez-vous ma consommation à partir du compteur ?,consumption_calculation,FR
+Comment connaître ma consommation ?,consumption_calculation,FR
+Comment déterminez-vous la consommation à partir du compteur ?,consumption_calculation,FR
+Comment déterminez-vous ma consommation ?,consumption_calculation,FR
+Comment est calculée la consommation ?,consumption_calculation,FR
+Comment est calculée la consommation estimée ?,consumption_calculation,FR
+Comment est calculée la différence entre deux relevés ?,consumption_calculation,FR
+Comment est calculée ma consommation ?,consumption_calculation,FR
+Comment est calculée ma consommation estimée ?,consumption_calculation,FR
+Comment est-ce que vous calculez ma consommation ?,consumption_calculation,FR
+Comment estimez-vous ma consommation ?,consumption_calculation,FR
+Comment faire le calcul à partir des relevés ?,consumption_calculation,FR
+Comment faites-vous une estimation de la consommation ?,consumption_calculation,FR
+Comment la consommation est-elle estimée lorsqu'il n'y a pas de relevé ?,consumption_calculation,FR
+Comment le compteur permet de calculer la consommation ?,consumption_calculation,FR
+Comment ma consommation est calculée à partir du relevé du compteur ?,consumption_calculation,FR
+Comment savoir ma consommation ?,consumption_calculation,FR
+Comment trouvez-vous la consommation entre deux relevés ?,consumption_calculation,FR
+Comment utilisez-vous le relevé du compteur ?,consumption_calculation,FR
+Comment vous calculez ma consommation ?,consumption_calculation,FR
+Comment vous déterminez ma consommation ?,consumption_calculation,FR
+Dans quelle unité est mesurée ma consommation ?,consumption_calculation,FR
+Dans quelle unité mesurez-vous la consommation ?,consumption_calculation,FR
+En quelle unité est calculée la consommation ?,consumption_calculation,FR
+Est-ce que vous pouvez faire le calcul à partir du compteur ?,consumption_calculation,FR
+Où puis-je consulter ma consommation ?,consumption_calculation,FR
+Où puis-je voir ma consommation ?,consumption_calculation,FR
+Pourquoi cette consommation est-elle différente ?,consumption_calculation,FR
+Pourquoi la consommation calculée est différente ?,consumption_calculation,FR
+Pourquoi le calcul donne cette consommation ?,consumption_calculation,FR
+Pourquoi le calcul donne-t-il une consommation différente ?,consumption_calculation,FR
+Pourquoi ma consommation a-t-elle changé ?,consumption_calculation,FR
+Pourquoi ma consommation est-elle différente ?,consumption_calculation,FR
+Pourquoi obtenez-vous une consommation différente ?,consumption_calculation,FR
+Pourquoi vous avez calculé cette consommation ?,consumption_calculation,FR
+Pouvez-vous calculer la consommation à partir des relevés ?,consumption_calculation,FR
+Pouvez-vous calculer ma consommation si je vous donne les relevés ?,consumption_calculation,FR
+Pouvez-vous expliquer pourquoi ma consommation est différente ?,consumption_calculation,FR
+Quelle est l'unité de mesure de la consommation ?,consumption_calculation,FR
+Quelle est la consommation de mon compteur ?,consumption_calculation,FR
+Quelle est la différence entre deux relevés ?,consumption_calculation,FR
+Quelle est la différence entre les deux relevés du compteur ?,consumption_calculation,FR
+Quelle est ma consommation ?,consumption_calculation,FR
+Quelle unité utilisez-vous pour mesurer la consommation ?,consumption_calculation,FR
+"Si je vous donne les relevés, pouvez-vous calculer ma consommation ?",consumption_calculation,FR
+Sur quoi se base la consommation estimée ?,consumption_calculation,FR
+Sur quoi vous vous basez pour estimer la consommation ?,consumption_calculation,FR
+"À partir du compteur, comment calculez-vous la consommation ?",consumption_calculation,FR
+3la wach تعتمدوا باش t7sebou consommation,consumption_calculation,Mixed
+3lach ymed had l7sab consommation مختلفة,consumption_calculation,Mixed
+3lech consommation ta3i مختلفة,consumption_calculation,Mixed
+3leh lconsommation ta3i تبدلت,consumption_calculation,Mixed
+chno howa lfar9 bin zouj relevés,consumption_calculation,Mixed
+far9 bin zouj relevés kifeh يتحسب,consumption_calculation,Mixed
+ida n3tikom les relevés t9adro t7sebouli consommation?,consumption_calculation,Mixed
+ida n3tikom relevé ta3 compteur t9adro t7sebouli consommation?,consumption_calculation,Mixed
+ida nmedlkom relevés t9adro t7sebou consommation ta3i?,consumption_calculation,Mixed
+ki makach 9raya ta3 compteur kifeh t7sebto consommation,consumption_calculation,Mixed
+ki makanch relevé kifeh t7sebto consommation,consumption_calculation,Mixed
+kifach hsebtou la consommation ta3i,consumption_calculation,Mixed
+kifach n7seb consommation ila n3tikom les relevés,consumption_calculation,Mixed
+kifach t7sebto consommation ki makach relevé,consumption_calculation,Mixed
+kifach t7sebto lfar9 bin zouj relevés,consumption_calculation,Mixed
+kifech 7sebto consommation à partir du compteur,consumption_calculation,Mixed
+kifech hsebtou la consommation ta3i,consumption_calculation,Mixed
+kifech n3ref la consommation ta3i,consumption_calculation,Mixed
+kifech n7seb lfar9 bin zouj relevés,consumption_calculation,Mixed
+kifech ndir calcul men les relevés,consumption_calculation,Mixed
+kifech t7sebto consommation estimée,consumption_calculation,Mixed
+kifech تحسبو lconsommation ta3i,consumption_calculation,Mixed
+kifeh n7seb consommation men relevé,consumption_calculation,Mixed
+kifeh n7seb lfar9 bin zouj relevés,consumption_calculation,Mixed
+kifeh ndir l7sab men les relevés,consumption_calculation,Mixed
+kifeh t7sebto consommation ta3i ki makanch relevé,consumption_calculation,Mixed
+kifeh تتحسب consommation ta3i,consumption_calculation,Mixed
+kifeh تتحسب la consommation ta3i,consumption_calculation,Mixed
+kifeh يتحسب lfar9 bin zouj relevés,consumption_calculation,Mixed
+quelle unité ta3 consommation,consumption_calculation,Mixed
+wach howa lfar9 bin zouj relevés,consumption_calculation,Mixed
+wach men unité ta3 consommation,consumption_calculation,Mixed
+wech men unité t7sebto biha lconsommation,consumption_calculation,Mixed
+wesh men unité t7sebto biha consommation,consumption_calculation,Mixed
+wina l'unité ta3 consommation,consumption_calculation,Mixed
+إذا نعطيكم relevés تقدروا تحسبولي consommation؟,consumption_calculation,Mixed
+إذا نمدلكم les relevés تقدروا تحسبو consommation ta3i؟,consumption_calculation,Mixed
+بأي وحدة تقاس consommation ta3i؟,consumption_calculation,Mixed
+شحال consommation ta3i؟,consumption_calculation,Mixed
+علاش consommation ta3i ماشي نفسها؟,consumption_calculation,Mixed
+علاش consommation ta3i مبدلة؟,consumption_calculation,Mixed
+علاش خرجتلي consommation مختلفة؟,consumption_calculation,Mixed
+على واش تعتمد consommation estimée؟,consumption_calculation,Mixed
+على واش تعتمدوا باش تحسبو consommation تقديرية؟,consumption_calculation,Mixed
+فسرولي علاش consommation ta3i مختلفة؟,consumption_calculation,Mixed
+كي ماكانش relevé كيفاش تحسبو consommation؟,consumption_calculation,Mixed
+كيفاش nhseb consommation ta3i؟,consumption_calculation,Mixed
+كيفاش تتحسب consommation men lcompteur؟,consumption_calculation,Mixed
+كيفاش تتحسب consommation ta3i؟,consumption_calculation,Mixed
+كيفاش تتقاس consommation؟,consumption_calculation,Mixed
+كيفاش تحسبو consommation estimée؟,consumption_calculation,Mixed
+كيفاش تحسبو consommation ta3i؟,consumption_calculation,Mixed
+كيفاش تحسبو consommation تاعي؟,consumption_calculation,Mixed
+كيفاش تحسبو consommation تقديرية؟,consumption_calculation,Mixed
+كيفاش تحسبو consommation من lcompteur؟,consumption_calculation,Mixed
+كيفاش تحسبو consommation من relevé ta3 lcompteur؟,consumption_calculation,Mixed
+كيفاش تحسبو la consommation ta3i؟,consumption_calculation,Mixed
+كيفاش تحسبوها كي ماكانش relevé؟,consumption_calculation,Mixed
+كيفاش حددتو consommation انطلاقا من الكونتور؟,consumption_calculation,Mixed
+كيفاش حسبتو consommation من الكونتور؟,consumption_calculation,Mixed
+كيفاش خرجت هذي consommation؟,consumption_calculation,Mixed
+كيفاش نحسب consommation تاعي؟,consumption_calculation,Mixed
+كيفاش نحسب consommation من relevés؟,consumption_calculation,Mixed
+كيفاش نحسب الفرق بين زوج relevés؟,consumption_calculation,Mixed
+كيفاش ندير calcul من relevé؟,consumption_calculation,Mixed
+كيفاش نعرف consommation ta3i؟,consumption_calculation,Mixed
+كيفاه تحسبو consommation men el compteur؟,consumption_calculation,Mixed
+كيفاه نعرف consommation ta3i؟,consumption_calculation,Mixed
+كيفاه يتحسب الفرق بين زوج relevés؟,consumption_calculation,Mixed
+واش هو الفرق بين زوج relevés؟,consumption_calculation,Mixed
+واش هي consommation ta3i؟,consumption_calculation,Mixed
+وين نقدر نشوف consommation ta3i؟,consumption_calculation,Mixed
+loukan ghir nfham facture ta3i mlih,understand_bill,Darja
+wesh m3natha ga3 ajza2 fatorti,understand_bill,Darja
+wesh ymetel had lmontant,understand_bill,Darja
+إذا معليش تعاونّي نفهم الفاتورة,understand_bill,Darja
+تشرحولي الرسوم المختلفة؟,understand_bill,Darja
+تشرحولي المعلومات المكتوبة في الفاتورة؟,understand_bill,Darja
+تفهموني الرسوم المختلفة؟,understand_bill,Darja
+تفهموني المعلومات الظاهرة في فاتورتي؟,understand_bill,Darja
+تقدر تعاونّي نفهم فاتورتي؟,understand_bill,Darja
+تقدر تفهمني فاتورتي؟,understand_bill,Darja
+حابة نفهم الفاتورة خير,understand_bill,Darja
+حابة نفهم تفاصيل فاتورتي,understand_bill,Darja
+شرحولي المعلومات تاع الفاتورة,understand_bill,Darja
+شكراً، حابة نفهم تفاصيل الفاتورة,understand_bill,Darja
+علاش المبلغ الإجمالي تاع فاتورتي طالع بزاف؟,understand_bill,Darja
+علاش كاين ضرائب على فاتورتي؟,understand_bill,Darja
+علاش هاد المبلغ يبان على فاتورتي؟,understand_bill,Darja
+علاه المبلغ الإجمالي مرتفع لهاذ الدرجة؟,understand_bill,Darja
+علاه هاد المبلغ يظهر في الفاتورة؟,understand_bill,Darja
+عندي ضرائب في الفاتورة؟,understand_bill,Darja
+فهموني المعلومات تاع فاتورتي,understand_bill,Darja
+كيفاش لقيتو لهاذ المبلغ؟,understand_bill,Darja
+كيفاش نفسر المعلومات تاع فاتورتي؟,understand_bill,Darja
+كيفاش نفهم فاتورتي؟,understand_bill,Darja
+كيفاش نقرا فاتورة الكهرباء؟,understand_bill,Darja
+كيفاش يتحسب المبلغ الإجمالي تاع فاتورتي؟,understand_bill,Darja
+كيفاه حسبوه المبلغ الإجمالي تاع الفاتورة؟,understand_bill,Darja
+كيفاه لحقتو لهاد المبلغ الإجمالي؟,understand_bill,Darja
+كيفاه نفسر المعلومات اللي في الفاتورة؟,understand_bill,Darja
+كيفاه نفهم الفاتورة؟,understand_bill,Darja
+ل واش هادو الرسوم الإضافية؟,understand_bill,Darja
+لواش الرسوم الإضافية؟,understand_bill,Darja
+لواش ترمز الأرقام اللي في فاتورتي؟,understand_bill,Darja
+لواش كل سطر في فاتورتي؟,understand_bill,Darja
+لواش ينطبق هاد المبلغ على فاتورتي؟,understand_bill,Darja
+لوشنو ينطبق هاد المبلغ؟,understand_bill,Darja
+لوكان غير نفهم فاتورتي مليح,understand_bill,Darja
+ما فهمتش الفاتورة,understand_bill,Darja
+ما معنى كل أجزاء الفاتورة؟,understand_bill,Darja
+ما هم الضرائب تاع الفاتورة؟,understand_bill,Darja
+مافهمتش تفاصيل فاتورتي,understand_bill,Darja
+معليش تشرحلي الفاتورة؟,understand_bill,Darja
+مفهمتش تفاصيل الفاتورة,understand_bill,Darja
+مفهمتش فاتورتي,understand_bill,Darja
+نقرا كيفاش فاتورة الكهرباء؟,understand_bill,Darja
+واش يمثل هاذ السعر؟,understand_bill,Darja
+وش معناتها المعلومات المدونة في فاتورتي؟,understand_bill,Darja
+وش معناتها المعلومات تاع الكهرباء والغاز؟,understand_bill,Darja
+وش معناتها كامل أجزاء فاتورتي؟,understand_bill,Darja
+وش معناتو المعلومات المكتوبة في الفاتورة؟,understand_bill,Darja
+وش معناتو كامل أجزاء الفاتورة؟,understand_bill,Darja
+وش من فترة راهي محسوبة في الفاتورة؟,understand_bill,Darja
+وش من فترة محسوبة في هاد الفاتورة؟,understand_bill,Darja
+وش من فترة هي المعنية بهاد الفاتورة؟,understand_bill,Darja
+وش هما التواريخ المحسوبة في الفاتورة؟,understand_bill,Darja
+وش هوما التواريخ المأخوذة بعين الاعتبار في فاتورتي؟,understand_bill,Darja
+وش هوما الضرائب على فاتورتي؟,understand_bill,Darja
+وش هوما المعلومات اللي عندها علاقة بالكهرباء والغاز؟,understand_bill,Darja
+وش هي الفترة اللي تغطيها هاد الفاتورة؟,understand_bill,Darja
+وش يمثل هاد المبلغ؟,understand_bill,Darja
+وش يمثلوا الرسوم المختلفة في فاتورتي؟,understand_bill,Darja
+وين نقدر نشوف المعلومات اللي عندها علاقة بالغاز؟,understand_bill,Darja
+وين نقدر نشوف المعلومات اللي عندها علاقة بالكهرباء؟,understand_bill,Darja
+وين نقدر نلقى المعلومات تاع الغاز؟,understand_bill,Darja
+وين نقدر نلقى المعلومات تاع الكهرباء في فاتورتي؟,understand_bill,Darja
+"Bonjour, je ne comprends pas ma facture.",understand_bill,FR
+"Bonjour, pouvez-vous m'expliquer ma facture ?",understand_bill,FR
+Comment arrivez-vous à ce montant total ?,understand_bill,FR
+Comment comprendre ma facture ?,understand_bill,FR
+Comment interpréter les informations sur ma facture ?,understand_bill,FR
+Comment le montant total de ma facture est-il calculé ?,understand_bill,FR
+Comment lire ma facture d'électricité ?,understand_bill,FR
+J'aimerais mieux comprendre ma facture.,understand_bill,FR
+Je ne comprends pas les détails de ma facture.,understand_bill,FR
+Je ne comprends pas ma facture.,understand_bill,FR
+"Merci, je ne comprends pas les détails de ma facture.",understand_bill,FR
+"Merci, pouvez-vous m'expliquer ma facture ?",understand_bill,FR
+Où puis-je trouver les informations concernant l'électricité sur ma facture ?,understand_bill,FR
+Où puis-je trouver les informations concernant le gaz ?,understand_bill,FR
+Pourquoi ce montant apparaît-il sur ma facture ?,understand_bill,FR
+Pourquoi le montant total de ma facture est-il aussi élevé ?,understand_bill,FR
+Pourquoi y a-t-il des taxes sur ma facture ?,understand_bill,FR
+Pouvez-vous m'aider à comprendre ma facture ?,understand_bill,FR
+Pouvez-vous m'expliquer les différents frais ?,understand_bill,FR
+Pouvez-vous m'expliquer les informations affichées sur ma facture ?,understand_bill,FR
+Pouvez-vous m'expliquer les informations sur ma facture ?,understand_bill,FR
+Pouvez-vous m'expliquer ma facture ?,understand_bill,FR
+Que représente ce montant ?,understand_bill,FR
+Que représentent les différents frais sur ma facture ?,understand_bill,FR
+Que signifient les différentes parties de ma facture ?,understand_bill,FR
+Que signifient les informations concernant l'électricité et le gaz ?,understand_bill,FR
+Que signifient les informations indiquées sur ma facture ?,understand_bill,FR
+Que sont les taxes sur ma facture ?,understand_bill,FR
+Quelle période cette facture couvre-t-elle ?,understand_bill,FR
+Quelle période est concernée par cette facture ?,understand_bill,FR
+Quelles sont les dates prises en compte sur ma facture ?,understand_bill,FR
+À quoi correspond ce montant sur ma facture ?,understand_bill,FR
+À quoi correspond chaque ligne de ma facture ?,understand_bill,FR
+À quoi correspondent les chiffres sur ma facture ?,understand_bill,FR
+À quoi correspondent les frais supplémentaires ?,understand_bill,FR
+3andi des taxes fel facture,understand_bill,Mixed
+3lach had lmontant yban 3la facture ta3i,understand_bill,Mixed
+3lach montant total ta3 facture ta3i tale3 bzef,understand_bill,Mixed
+3leh had lprix yban fel facture,understand_bill,Mixed
+3leh lmontant total ta3 facture مرتفع إلى هاد الدرجة,understand_bill,Mixed
+7abba nfham la facture mlih,understand_bill,Mixed
+"Bonjour, mafhamtch la facture",understand_bill,Mixed
+"Bonjour, تشرحولي المعلومات تاع الفاتورة؟",understand_bill,Mixed
+"Bonjour, كيفاش نفهم الفاتورة؟",understand_bill,Mixed
+"Merci, kifeh nfham les informations ta3 facture",understand_bill,Mixed
+"Merci, mafhamtch détails ta3 facture",understand_bill,Mixed
+achr7ouli les informations li rahom fel facture,understand_bill,Mixed
+achr7ouli les informations ta3 facture,understand_bill,Mixed
+fahmouni les informations ta3 facture,understand_bill,Mixed
+habba nfham détails ta3 facture,understand_bill,Mixed
+ida ma3lich t3aweni nfham facture ta3i,understand_bill,Mixed
+kayen taxes 3la facture ta3i,understand_bill,Mixed
+kifech 7asbouh montant total ta3 la facture,understand_bill,Mixed
+kifech lgitou lhad lmontant,understand_bill,Mixed
+kifech n9ra facture ta3 l'électricité,understand_bill,Mixed
+kifech nfesser l'information ta3 la facture,understand_bill,Mixed
+kifech nfham la facture,understand_bill,Mixed
+kifeh l7a9tou lhad montant total,understand_bill,Mixed
+kifeh nfesser les informations ta3 facture,understand_bill,Mixed
+kifeh nfham facture ta3i,understand_bill,Mixed
+kifeh yt7seb montant total ta3 facture,understand_bill,Mixed
+li wach yntab9 kol band fel facture,understand_bill,Mixed
+li wach yرمزو les numeros fel facture,understand_bill,Mixed
+li wesh had les frais supplémentaires,understand_bill,Mixed
+lwach yntab9 had lprix 3la la facture,understand_bill,Mixed
+lwach yntab9 kol ligne ta3 facture,understand_bill,Mixed
+lwach yntab9ou les frais supplémentaires,understand_bill,Mixed
+lwash yntab9 had lmontant 3la facture ta3i,understand_bill,Mixed
+lwash ترمز les chiffres ta3 facture,understand_bill,Mixed
+ma fhemtch la facture,understand_bill,Mixed
+ma3lich t9dr t3aweni نفهم الفاتورة؟,understand_bill,Mixed
+ma3lich tfasserli la facture,understand_bill,Mixed
+mafhamtch facture ta3i,understand_bill,Mixed
+mafhamtch les détails ta3 facture,understand_bill,Mixed
+n9ra kifeh facture ta3 l'électricité,understand_bill,Mixed
+t9dr t3aweni nfham la facture,understand_bill,Mixed
+t9dr tfahmni facture ta3i,understand_bill,Mixed
+tfahmni les frais ta3 facture,understand_bill,Mixed
+tfahmouni les différents frais,understand_bill,Mixed
+tfahmouni les informations affichées fel facture,understand_bill,Mixed
+wach houma les dates li m7soubin fel facture,understand_bill,Mixed
+wach houma les taxes li fel facture,understand_bill,Mixed
+wach ma3natha kamel les parties ta3 facture,understand_bill,Mixed
+wach ma3natha les frais différents ta3 facture,understand_bill,Mixed
+wach ma3natha les informations li maktoubin fel facture,understand_bill,Mixed
+wch ymetel had lprix,understand_bill,Mixed
+wesh hiya la période li تغطيها la facture,understand_bill,Mixed
+wesh houma les dates li rahom pris en compte fel facture,understand_bill,Mixed
+wesh houma les taxes ta3 facture,understand_bill,Mixed
+wesh ma3natha les informations li mdawna fel facture,understand_bill,Mixed
+wesh ma3natha les informations ta3 l'électricité w gaz,understand_bill,Mixed
+wesh ma9sod les informations concernant l'électricité et le gaz,understand_bill,Mixed
+wesh men période hiya lmo3niya b had facture,understand_bill,Mixed
+wesh men période li rahya fel facture,understand_bill,Mixed
+wesh men période m7souba fel facture,understand_bill,Mixed
+wesh ymetlou les différents frais ta3 facture,understand_bill,Mixed
+win n9der nsib les informations concernant l'électricité fel facture,understand_bill,Mixed
+win n9der nsib les informations concernant le gaz,understand_bill,Mixed
+win n9dr nl9a les informations ta3 gaz,understand_bill,Mixed
+win n9dr nl9a les informations ta3 l'électricité fel facture,understand_bill,Mixed
+لي واش ترمز النمروات في الفاتورة؟,understand_bill,Mixed
+واش معناتها الرسوم المختلفة تاع الفاتورة؟,understand_bill,Mixed
+وش يمثل كل بند في الفاتورة؟,understand_bill,Mixed

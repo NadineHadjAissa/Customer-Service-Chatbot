@@ -1,0 +1,454 @@
+Phrase,Intent,Langue
+3la wesh hiya période ta3 rattrapage,catch_up_bill,Darja
+3lach ba3tولي facture ta3 taswiya,catch_up_bill,Darja
+3lach darouli taswiya fel facture,catch_up_bill,Darja
+3lach facture ta3 rattrapage ta3i tale3a bzf,catch_up_bill,Darja
+3lach jatni had facture ta3 rattrapage,catch_up_bill,Darja
+3lach kayna taswiya fel facture ta3i,catch_up_bill,Darja
+3lach lazem nkhalas bzf fel rattrapage,catch_up_bill,Darja
+3lach lazem nkhalas far9 ta3 rattrapage?,catch_up_bill,Darja
+3lach lazem nkhalas had rattrapage?,catch_up_bill,Darja
+3lach lazem nkhalas lfar9,catch_up_bill,Darja
+3lach montant ta3 rattrapage tal3 bzf?,catch_up_bill,Darja
+3lach montant ta3 rattrapage tale3,catch_up_bill,Darja
+3lach montant ta3 taswiya kbir,catch_up_bill,Darja
+3lach taswiya hadi kbira bzf?,catch_up_bill,Darja
+3lach wasletni facture ta3 rattrapage,catch_up_bill,Darja
+3lach zedtou had montant ta3 rattrapage fel facture?,catch_up_bill,Darja
+3lach zedtou rattrapage fel facture ta3i?,catch_up_bill,Darja
+3lach zedtouli montant ta3 rattrapage,catch_up_bill,Darja
+kifech t7seb montant ta3 rattrapage,catch_up_bill,Darja
+lwach ta3ala9 had facture ta3 rattrapage,catch_up_bill,Darja
+ma fhemtch had facture ta3 rattrapage,catch_up_bill,Darja
+ma3labalich 3lach 7sebtouli had taswiya,catch_up_bill,Darja
+ma3labalich menin ja had rattrapage,catch_up_bill,Darja
+mafhamtch 3lach facture ta3 rattrapage tal3a bzf,catch_up_bill,Darja
+mafhamtch menin ja had montant ta3 rattrapage,catch_up_bill,Darja
+menin jat had facture ta3 rattrapage,catch_up_bill,Darja
+nheb n3ref 3lach 3andi rattrapage nkhalso,catch_up_bill,Darja
+t9der tfahmni facture ta3 rattrapage,catch_up_bill,Darja
+t9der tfahmni had rattrapage,catch_up_bill,Darja
+wach ma3natha facture ta3 taswiya,catch_up_bill,Darja
+wasletni facture ta3 taswiya w ma fhemtch 3lach,catch_up_bill,Darja
+wesh hiya facture ta3 rattrapage,catch_up_bill,Darja
+wesh yemthel montant ta3 rattrapage,catch_up_bill,Darja
+تقدر تشرحلي فاتورة الرتڨاج؟,catch_up_bill,Darja
+تقدر تشرحلي هاد التدارك؟,catch_up_bill,Darja
+علاش بعثتولي فاتورة التدارك؟,catch_up_bill,Darja
+علاش جاتني هاد فاتورة الرتڨاج؟,catch_up_bill,Darja
+علاش دارولي تسوية في الفاتورة؟,catch_up_bill,Darja
+علاش زدتوا الرتاج في الفاتورة تاعي؟,catch_up_bill,Darja
+علاش زدتوا مبلغ الرتڨاج في الفاتورة؟,catch_up_bill,Darja
+علاش زدتولي مبلغ تاع الرتڨاج؟,catch_up_bill,Darja
+علاش فاتورة الرتڨاج تاعي طالعة بزاف؟,catch_up_bill,Darja
+علاش كاينة تسوية في فاتورتي؟,catch_up_bill,Darja
+علاش لازم نخلص بزاف في الرتڨاج؟,catch_up_bill,Darja
+علاش لازم نخلص فرق تاع الرتڨاج؟,catch_up_bill,Darja
+علاش لازم نخلص فرق كبير هكا؟,catch_up_bill,Darja
+علاش لازم نخلص هاد الرتاج؟,catch_up_bill,Darja
+علاش مبلغ التدارك طالع؟,catch_up_bill,Darja
+علاش مبلغ التسوية كبير؟,catch_up_bill,Darja
+علاش مبلغ الرتاج طالع بزاف؟,catch_up_bill,Darja
+علاش هاد التسوية كبيرة بزاف؟,catch_up_bill,Darja
+علاش وصلتني فاتورة رڨلاج؟,catch_up_bill,Darja
+على واش راهي فترة التدارك؟,catch_up_bill,Darja
+كيفاش تحسب مبلغ الرتڨاج؟,catch_up_bill,Darja
+لواش تخص هاد فاتورة التدارك؟,catch_up_bill,Darja
+ما فهمتش علاش فاتورة الرتاج طالعة بزاف.,catch_up_bill,Darja
+ما فهمتش منين جا هاد المبلغ تاع الرتاج.,catch_up_bill,Darja
+ما فهمتش هاد فاتورة الرتڨاج.,catch_up_bill,Darja
+ما نعرفش علاش حسبتولي هاد التسوية.,catch_up_bill,Darja
+ماعلاباليش منين جا هاد الرتڨاج.,catch_up_bill,Darja
+منين جات هاد فاتورة التدارك؟,catch_up_bill,Darja
+نحب نعرف علاش عندي رڨلاج نخلصو.,catch_up_bill,Darja
+نحب نفهم علاش الفاتورة تاعي زادت بسبب الرتڨاج.,catch_up_bill,Darja
+واش معناها فاتورة التدارك؟,catch_up_bill,Darja
+واش هي فاتورة التسوية؟,catch_up_bill,Darja
+وش هي فاتورة الرتڨاج؟,catch_up_bill,Darja
+وش يمثل مبلغ الرتڨاج؟,catch_up_bill,Darja
+وصلتني فاتورة تدارك وما فهمتش علاش.,catch_up_bill,Darja
+C'est quoi une facture de rattrapage ?,catch_up_bill,FR
+Comment le montant de rattrapage a-t-il été calculé ?,catch_up_bill,FR
+D'où vient cette facture de rattrapage ?,catch_up_bill,FR
+J'ai reçu une facture de rattrapage et je ne comprends pas pourquoi.,catch_up_bill,FR
+Je ne comprends pas cette facture de rattrapage.,catch_up_bill,FR
+Je ne comprends pas pourquoi cette facture de rattrapage est aussi élevée.,catch_up_bill,FR
+Je ne sais pas d'où vient ce rattrapage.,catch_up_bill,FR
+Je veux comprendre pourquoi ma facture a augmenté à cause du rattrapage.,catch_up_bill,FR
+Je veux savoir pourquoi j'ai un rattrapage à payer.,catch_up_bill,FR
+Pourquoi ai-je reçu une facture de rattrapage ?,catch_up_bill,FR
+Pourquoi avez-vous ajouté ce rattrapage à ma facture ?,catch_up_bill,FR
+Pourquoi avez-vous ajouté un montant de rattrapage ?,catch_up_bill,FR
+Pourquoi cette facture de rattrapage m'a-t-elle été envoyée ?,catch_up_bill,FR
+Pourquoi cette régularisation est-elle aussi importante ?,catch_up_bill,FR
+Pourquoi cette somme de rattrapage a-t-elle été ajoutée à ma facture ?,catch_up_bill,FR
+Pourquoi dois-je payer autant en rattrapage ?,catch_up_bill,FR
+Pourquoi dois-je payer ce rattrapage ?,catch_up_bill,FR
+Pourquoi dois-je payer une différence aussi importante ?,catch_up_bill,FR
+Pourquoi dois-je payer une différence de rattrapage ?,catch_up_bill,FR
+Pourquoi le montant de la régularisation est-il important ?,catch_up_bill,FR
+Pourquoi le montant du rattrapage est-il aussi élevé ?,catch_up_bill,FR
+Pourquoi le montant du rattrapage est-il élevé ?,catch_up_bill,FR
+Pourquoi m'avez-vous envoyé une facture de rattrapage ?,catch_up_bill,FR
+Pourquoi ma facture a-t-elle été régularisée ?,catch_up_bill,FR
+Pourquoi ma facture de rattrapage est-elle aussi élevée ?,catch_up_bill,FR
+Pourquoi y a-t-il une régularisation sur ma facture ?,catch_up_bill,FR
+Pouvez-vous m'expliquer ce rattrapage ?,catch_up_bill,FR
+Pouvez-vous m'expliquer la facture de rattrapage ?,catch_up_bill,FR
+Qu'est-ce qu'une facture de rattrapage ?,catch_up_bill,FR
+Que représente le montant du rattrapage ?,catch_up_bill,FR
+Que signifie une facture de rattrapage ?,catch_up_bill,FR
+Sur quelle période porte le rattrapage ?,catch_up_bill,FR
+À quoi correspond cette facture de rattrapage ?,catch_up_bill,FR
+3la wesh porte le rattrapage؟,catch_up_bill,Mixed
+3lach ba3tولي une facture de régularisation؟,catch_up_bill,Mixed
+3lach kayna une régularisation fel facture ta3i؟,catch_up_bill,Mixed
+3lach lazem nkhalas autant en rattrapage؟,catch_up_bill,Mixed
+Je ne comprends pas علاش facture ta3 rattrapage طالعة بزاف.,catch_up_bill,Mixed
+Je ne sais pas علاش حسبتولي هاد taswiya.,catch_up_bill,Mixed
+Pourquoi montant ta3 rattrapage طالع بزاف؟,catch_up_bill,Mixed
+Pourquoi زدتوا le rattrapage في facture ta3i؟,catch_up_bill,Mixed
+Pourquoi لازم nkhalas فرق كبير هكا؟,catch_up_bill,Mixed
+ma fhemtch had facture de rattrapage,catch_up_bill,Mixed
+ma3labalich منين جا le rattrapage,catch_up_bill,Mixed
+nheb nfham 3lach facture ta3i zadet بسبب rattrapage,catch_up_bill,Mixed
+nheb nfham pourquoi facture ta3i زادت بسبب le rattrapage,catch_up_bill,Mixed
+wesh yemthel le montant du rattrapage؟,catch_up_bill,Mixed
+تقدر tfahmni ce rattrapage؟,catch_up_bill,Mixed
+تقدر tfahmni la facture de rattrapage؟,catch_up_bill,Mixed
+علاش la régularisation هادي كبيرة بزاف؟,catch_up_bill,Mixed
+علاش le montant du rattrapage طالع؟,catch_up_bill,Mixed
+علاش montant ta3 facture de rattrapage طالع بزاف؟,catch_up_bill,Mixed
+علاش montant ta3 régularisation كبير؟,catch_up_bill,Mixed
+علاش جاتني هاد facture de rattrapage؟,catch_up_bill,Mixed
+علاش دارولي une régularisation fel facture؟,catch_up_bill,Mixed
+علاش زدتوا ce montant de régularisation dans ma facture؟,catch_up_bill,Mixed
+علاش زدتولي un montant de rattrapage؟,catch_up_bill,Mixed
+علاش لازم nkhalas had rattrapage؟,catch_up_bill,Mixed
+علاش لازم nkhalas la différence؟,catch_up_bill,Mixed
+علاش وصلتني une facture de rattrapage؟,catch_up_bill,Mixed
+كيفاش يتحسب le montant de rattrapage؟,catch_up_bill,Mixed
+لواش تخص cette facture de rattrapage؟,catch_up_bill,Mixed
+ما فهمتش d'où vient le montant ta3 rattrapage.,catch_up_bill,Mixed
+منين جات la facture de rattrapage؟,catch_up_bill,Mixed
+نحب نعرف pourquoi 3andi rattrapage à payer,catch_up_bill,Mixed
+واش معناها facture de régularisation؟,catch_up_bill,Mixed
+وش هي facture ta3 rattrapage؟,catch_up_bill,Mixed
+وصلتني facture de rattrapage وما فهمتش علاش,catch_up_bill,Mixed
+3lach lmontant ta3 facture ta3i mokhtalef,dispute_bill,Darja
+facture ta3i fiha erreur,dispute_bill,Darja
+facture ta3i ma tbanlich s7i7a,dispute_bill,Darja
+had lmontant ma ybanlich s7i7,dispute_bill,Darja
+kayen haja ma hiyach مليحة fel facture ta3i,dispute_bill,Darja
+kayen khata fel facture ta3i,dispute_bill,Darja
+ma fhemtch 3lach lazem nkhalas had lmontant,dispute_bill,Darja
+ma nwaf9ch 3la had facture,dispute_bill,Darja
+ma nwaf9ch 3la lmontant ta3 facture ta3i,dispute_bill,Darja
+ma rانيش rani merta7 3la lmontant li mektoub fel facture,dispute_bill,Darja
+n3ared 3la lmontant ta3 facture ta3i,dispute_bill,Darja
+nethenn facture ta3i fiha ghalta,dispute_bill,Darja
+nethenn kayna ghalta fel facture ta3i,dispute_bill,Darja
+nethenn lmontant li tfaوتر ma houch s7i7,dispute_bill,Darja
+nethenn lmontant ta3 facture ta3i ghalet,dispute_bill,Darja
+nheb n3ared 3la had facture,dispute_bill,Darja
+nheb nbalagh 3la haja ghalta fel facture,dispute_bill,Darja
+nheb nbalagh 3la mochkil fel facture ta3i,dispute_bill,Darja
+nheb tراجعولي facture ta3i,dispute_bill,Darja
+nrefed had lmontant li fel facture ta3i,dispute_bill,Darja
+nطلب مراجعة ta3 facture ta3i,dispute_bill,Darja
+t9der tchek facture ta3i? nethenn ghalta,dispute_bill,Darja
+t9der tchek lmontant ta3 facture ta3i,dispute_bill,Darja
+t9der tet2aked ida kayen khata,dispute_bill,Darja
+t9der tkontroli had facture,dispute_bill,Darja
+الفاتورة تاعي فيها خطأ.,dispute_bill,Darja
+تقدروا تتأكدوا من المبلغ تاع فاتورتي؟,dispute_bill,Darja
+تقدروا تراجعولي الفاتورة؟ نظن بلي غالطة.,dispute_bill,Darja
+تقدروا تراقبوا هاد الفاتورة؟,dispute_bill,Darja
+تقدروا تشوفوا إذا كاين خطأ؟,dispute_bill,Darja
+علاش المبلغ تاع فاتورتي مختلف؟,dispute_bill,Darja
+فاتورتي ما تبانليش صحيحة.,dispute_bill,Darja
+كاين حاجة ماشي مليحة في فاتورتي.,dispute_bill,Darja
+كاين خطأ في فاتورتي.,dispute_bill,Darja
+ما رانيش راضي على المبلغ المكتوب في فاتورتي.,dispute_bill,Darja
+ما فهمتش علاش لازم نخلص هاد المبلغ.,dispute_bill,Darja
+ما نوافقش على المبلغ تاع فاتورتي.,dispute_bill,Darja
+ما نوافقش على هاد الفاتورة.,dispute_bill,Darja
+نحب تراجعولي فاتورتي.,dispute_bill,Darja
+نحب نبلغ على حاجة غالطة في فاتورتي.,dispute_bill,Darja
+نحب نبلغ على مشكل في فاتورتي.,dispute_bill,Darja
+نحب نعترض على هاد الفاتورة.,dispute_bill,Darja
+نحتج على المبلغ تاع فاتورتي.,dispute_bill,Darja
+نرفض هاد المبلغ اللي في فاتورتي.,dispute_bill,Darja
+نطلب مراجعة الفاتورة تاعي.,dispute_bill,Darja
+نظن بلي المبلغ المفوتر ماشي صحيح.,dispute_bill,Darja
+نظن بلي المبلغ تاع فاتورتي غالط.,dispute_bill,Darja
+نظن بلي فاتورتي فيها غلطة.,dispute_bill,Darja
+نظن بلي كاين غلطة في الفاتورة تاعي.,dispute_bill,Darja
+هاد المبلغ ما يبانليش صحيح.,dispute_bill,Darja
+Ce montant ne me semble pas correct.,dispute_bill,FR
+Il y a quelque chose qui ne va pas sur ma facture.,dispute_bill,FR
+Il y a une erreur sur ma facture.,dispute_bill,FR
+Je conteste le montant de ma facture.,dispute_bill,FR
+Je demande une vérification de ma facture.,dispute_bill,FR
+Je ne comprends pas pourquoi je dois payer ce montant.,dispute_bill,FR
+Je ne suis pas d'accord avec cette facture.,dispute_bill,FR
+Je ne suis pas d'accord avec le montant de ma facture.,dispute_bill,FR
+Je ne suis pas satisfait du montant indiqué sur ma facture.,dispute_bill,FR
+Je pense qu'il y a une erreur dans ma facture.,dispute_bill,FR
+Je pense que le montant de ma facture est incorrect.,dispute_bill,FR
+Je pense que le montant facturé n'est pas correct.,dispute_bill,FR
+Je pense que ma facture comporte une erreur.,dispute_bill,FR
+Je refuse ce montant sur ma facture.,dispute_bill,FR
+Je veux contester cette facture.,dispute_bill,FR
+Je voudrais faire vérifier ma facture.,dispute_bill,FR
+Je voudrais signaler un problème avec ma facture.,dispute_bill,FR
+Je voudrais signaler une anomalie sur ma facture.,dispute_bill,FR
+Ma facture contient une erreur.,dispute_bill,FR
+Ma facture ne me semble pas correcte.,dispute_bill,FR
+Pourquoi le montant de ma facture est-il différent de ce que je pensais ?,dispute_bill,FR
+Pouvez-vous contrôler cette facture ?,dispute_bill,FR
+Pouvez-vous vérifier le montant de ma facture ?,dispute_bill,FR
+Pouvez-vous vérifier ma facture ? Je pense qu'elle est incorrecte.,dispute_bill,FR
+Pouvez-vous vérifier s'il y a une erreur ?,dispute_bill,FR
+3lach le montant ta3 facture ta3i مختلف؟,dispute_bill,Mixed
+had lmontant ما يبانش correct,dispute_bill,Mixed
+je pense بلي le montant ta3 facture غالط,dispute_bill,Mixed
+ma facture ما تبانليش correcte,dispute_bill,Mixed
+ma nwaf9ch 3la cette facture,dispute_bill,Mixed
+nethenn kayen une erreur fel facture ta3i,dispute_bill,Mixed
+nethenn le montant facturé ماشي صحيح,dispute_bill,Mixed
+nheb n3ref ida kayen erreur fel facture,dispute_bill,Mixed
+nحب faire vérifier ma facture,dispute_bill,Mixed
+t9der contrôler had la facture؟,dispute_bill,Mixed
+t9der tchek ma facture؟ نظن بلي غالطة,dispute_bill,Mixed
+t9der vérifier le montant ta3 facture ta3i؟,dispute_bill,Mixed
+تقدر تتأكد si kayen une erreur؟,dispute_bill,Mixed
+كاين erreur في facture ta3i,dispute_bill,Mixed
+كاين quelque chose qui ne va pas fel facture ta3i,dispute_bill,Mixed
+ما رانيش راضي على le montant indiqué fel facture,dispute_bill,Mixed
+ما فهمتش pourquoi lazem nkhalas had montant,dispute_bill,Mixed
+ما نوافقش على le montant ta3 facture ta3i,dispute_bill,Mixed
+نحب contester cette facture,dispute_bill,Mixed
+نحب signaler un problème avec ma facture,dispute_bill,Mixed
+نحب نبلغ على une anomalie fel facture,dispute_bill,Mixed
+نطلب une vérification ta3 ma facture,dispute_bill,Mixed
+نظن بلي ma facture فيها erreur,dispute_bill,Mixed
+هاد montant ما يبانليش correct,dispute_bill,Mixed
+7sab rattrapage ma ytab9ch consommation ta3i,dispute_catch_up_bill,Darja
+facture ta3 taswiya hadi ma ttab9ch consommation l7a9i9iya ta3i,dispute_catch_up_bill,Darja
+kayen ghalta fi facture ta3 rattrapage ta3i,dispute_catch_up_bill,Darja
+lefar9 li tlbtouh ma ybanlich s7i7,dispute_catch_up_bill,Darja
+lfetra li 7sebtouha lel rattrapage machi s7i7a,dispute_catch_up_bill,Darja
+ma nwaf9ch 3la facture ta3 taswiya hadi,dispute_catch_up_bill,Darja
+ma nwaf9ch 3la montant li tlbtouh fel rattrapage,dispute_catch_up_bill,Darja
+montant ta3 facture ta3 taswiya ybanli ghalet,dispute_catch_up_bill,Darja
+montant ta3 had taswiya machi 3adi,dispute_catch_up_bill,Darja
+n3ared 3la lefar9 li zedtouh fel facture,dispute_catch_up_bill,Darja
+n3ared 3la lfetra li st3meltouha fi 7sab taswiya,dispute_catch_up_bill,Darja
+n3ared 3la montant ta3 taswiya,dispute_catch_up_bill,Darja
+n3ared facture ta3 rattrapage,dispute_catch_up_bill,Darja
+nethenn belli rattrapage t7seb ghalet,dispute_catch_up_bill,Darja
+nethenn kayen khata2 fel 7sab ta3 taswiya,dispute_catch_up_bill,Darja
+nheb nbalagh 3la ghalta fi facture ta3 taswiya,dispute_catch_up_bill,Darja
+nheb nraja3 7sab had taswiya,dispute_catch_up_bill,Darja
+nheb nsa7a7 montant ta3 rattrapage,dispute_catch_up_bill,Darja
+t9drou tet2akdou men montant ta3 taswiya?,dispute_catch_up_bill,Darja
+t9drou traja3ouli 7sab facture ta3 rattrapage?,dispute_catch_up_bill,Darja
+t9drou traja3ouli facture ta3 rattrapage hadi?,dispute_catch_up_bill,Darja
+الفترة اللي حسبتوها للرتاج ماشي صحيحة.,dispute_catch_up_bill,Darja
+الفرق اللي طلبتوه ما يبانليش صحيح.,dispute_catch_up_bill,Darja
+المبلغ تاع فاتورة التسوية يبانلي غالط.,dispute_catch_up_bill,Darja
+المبلغ تاع هاد التسوية ماشي عادي.,dispute_catch_up_bill,Darja
+تقدروا تتأكدو من مبلغ التسوية؟,dispute_catch_up_bill,Darja
+تقدروا تراجعولي حساب فاتورة الرتاج؟,dispute_catch_up_bill,Darja
+تقدروا تراجعولي فاتورة الرتاج هادي؟,dispute_catch_up_bill,Darja
+حساب الرتاج ما يوافقش الاستهلاك تاعي.,dispute_catch_up_bill,Darja
+علاش نرفض فاتورة الرتاج؟,dispute_catch_up_bill,Darja
+فاتورة التسوية هادي ما توافقش الاستهلاك الحقيقي تاعي.,dispute_catch_up_bill,Darja
+كاين غلطة في فاتورة الرتاج تاعي.,dispute_catch_up_bill,Darja
+ما نوافقش على المبلغ اللي طلبتوه في الرتاج.,dispute_catch_up_bill,Darja
+ما نوافقش على فاتورة التسوية هادي.,dispute_catch_up_bill,Darja
+نحب نبلغ على غلطة في فاتورة التسوية.,dispute_catch_up_bill,Darja
+نحب نراجع حساب هاد التسوية.,dispute_catch_up_bill,Darja
+نحب نصحح المبلغ تاع الرتاج.,dispute_catch_up_bill,Darja
+نظن باللي الرتاج تحسب غالط.,dispute_catch_up_bill,Darja
+نظن كاين خطأ في حساب التسوية.,dispute_catch_up_bill,Darja
+نعترض على الفترة اللي استعملتوها في حساب التسوية.,dispute_catch_up_bill,Darja
+نعترض على الفرق اللي زدتوه في الفاتورة.,dispute_catch_up_bill,Darja
+نعترض على المبلغ تاع التسوية.,dispute_catch_up_bill,Darja
+Cette facture de régularisation ne correspond pas à ma consommation réelle.,dispute_catch_up_bill,FR
+Il y a une erreur dans ma facture de rattrapage.,dispute_catch_up_bill,FR
+Je conteste la différence ajoutée sur ma facture.,dispute_catch_up_bill,FR
+Je conteste la période utilisée pour calculer cette régularisation.,dispute_catch_up_bill,FR
+Je conteste le montant de la régularisation.,dispute_catch_up_bill,FR
+Je conteste ma facture de rattrapage.,dispute_catch_up_bill,FR
+Je ne comprends pas d'où vient ce montant de rattrapage.,dispute_catch_up_bill,FR
+Je ne reconnais pas le montant de cette régularisation.,dispute_catch_up_bill,FR
+Je ne suis pas d'accord avec cette facture de régularisation.,dispute_catch_up_bill,FR
+Je ne suis pas d'accord avec le montant demandé pour le rattrapage.,dispute_catch_up_bill,FR
+Je pense qu'il y a une erreur dans le calcul de la régularisation.,dispute_catch_up_bill,FR
+Je pense que le rattrapage a été mal calculé.,dispute_catch_up_bill,FR
+Je trouve le montant de cette régularisation anormal.,dispute_catch_up_bill,FR
+Je veux signaler une erreur sur ma facture de régularisation.,dispute_catch_up_bill,FR
+Je voudrais faire corriger le montant de mon rattrapage.,dispute_catch_up_bill,FR
+Je voudrais faire vérifier le calcul de cette régularisation.,dispute_catch_up_bill,FR
+La différence demandée sur cette facture ne me semble pas correcte.,dispute_catch_up_bill,FR
+La période prise en compte pour le rattrapage ne me semble pas correcte.,dispute_catch_up_bill,FR
+Le calcul du rattrapage ne correspond pas à ma consommation.,dispute_catch_up_bill,FR
+Le montant de la facture de régularisation me semble incorrect.,dispute_catch_up_bill,FR
+Pouvez-vous contrôler le montant de la régularisation ?,dispute_catch_up_bill,FR
+Pouvez-vous revoir cette facture de rattrapage ?,dispute_catch_up_bill,FR
+Pouvez-vous vérifier le calcul de ma facture de rattrapage ?,dispute_catch_up_bill,FR
+Je conteste la période اللي استعملتوها في calcul ta3 taswiya.,dispute_catch_up_bill,Mixed
+Je conteste le différence اللي زدتوه في الفاتورة.,dispute_catch_up_bill,Mixed
+Je conteste فاتورة الرتاج تاعي.,dispute_catch_up_bill,Mixed
+Je pense كاين erreur في montant ta3 taswiya.,dispute_catch_up_bill,Mixed
+Je veux corriger le montant ta3 rattrapage.,dispute_catch_up_bill,Mixed
+Je veux vérifier حساب هاد régularisation.,dispute_catch_up_bill,Mixed
+La facture de régularisation ما توافقش الاستهلاك الحقيقي تاعي.,dispute_catch_up_bill,Mixed
+Le calcul ta3 régularisation ما يبانليش صحيح.,dispute_catch_up_bill,Mixed
+Le montant تاع هاد التسوية ماشي normal.,dispute_catch_up_bill,Mixed
+Ma consommation ما تبررش le montant ta3 rattrapage.,dispute_catch_up_bill,Mixed
+Ma nwaf9ch على le montant اللي طلبتوه في rattrapage.,dispute_catch_up_bill,Mixed
+Pourquoi le rattrapage طالع أكثر من اللازم؟,dispute_catch_up_bill,Mixed
+Pouvez-vous تراجعولي le calcul ta3 facture de rattrapage؟,dispute_catch_up_bill,Mixed
+الرتاج اللي في facture ماشي logique بالنسبة ليا.,dispute_catch_up_bill,Mixed
+الفترة اللي حسبتوها pour le rattrapage ماشي صحيحة.,dispute_catch_up_bill,Mixed
+الفرق اللي طلبتوه في facture ما يبانليش correct.,dispute_catch_up_bill,Mixed
+المبلغ تاع la régularisation يبانلي غالط.,dispute_catch_up_bill,Mixed
+تقدروا vérifier le montant ta3 taswiya؟,dispute_catch_up_bill,Mixed
+حساب le rattrapage ما يوافقش consommation ta3i.,dispute_catch_up_bill,Mixed
+علاش facture ta3 taswiya ما توافقش consommation ta3i؟,dispute_catch_up_bill,Mixed
+علاش le montant de régularisation تبدل هكا؟,dispute_catch_up_bill,Mixed
+عندي مشكل مع montant ta3 facture de rattrapage.,dispute_catch_up_bill,Mixed
+كاين erreur في facture ta3 rattrapage.,dispute_catch_up_bill,Mixed
+ما نوافقش على la facture de régularisation هادي.,dispute_catch_up_bill,Mixed
+نحب نبلغ على erreur في facture de régularisation.,dispute_catch_up_bill,Mixed
+نحب نعارض le montant ta3 taswiya.,dispute_catch_up_bill,Mixed
+نحب نعرف علاش زدتوا هاد الفرق في facture.,dispute_catch_up_bill,Mixed
+نحب نفهم ونراجع le rattrapage اللي في facture.,dispute_catch_up_bill,Mixed
+نحبكم تراجعولي cette facture de rattrapage.,dispute_catch_up_bill,Mixed
+نظن باللي le rattrapage تحسب غالط.,dispute_catch_up_bill,Mixed
+نظن كاين une erreur في حساب التسوية.,dispute_catch_up_bill,Mixed
+واش نقدر نطلب vérification ta3 facture de rattrapage؟,dispute_catch_up_bill,Mixed
+3lach facture hadi aghla men li 9bal?,high_or_abnormal_amount,Darja
+3lach facture ta3i tbedlet w walat ghalya?,high_or_abnormal_amount,Darja
+3lach facture ta3i walat ghalya?,high_or_abnormal_amount,Darja
+3lach facture ta3i zadet bzf?,high_or_abnormal_amount,Darja
+3lach lazem nkhalas had montant lkbir?,high_or_abnormal_amount,Darja
+3lach montant li lazem nkhalasou tal3 bzf?,high_or_abnormal_amount,Darja
+3lach montant ta3 facture tal3 bzf?,high_or_abnormal_amount,Darja
+3lach montant zad m3a chhar li fat?,high_or_abnormal_amount,Darja
+3lach nkhalas aktar men l3ada?,high_or_abnormal_amount,Darja
+3lach prix ta3 facture tla3?,high_or_abnormal_amount,Darja
+facture hadi ma tbanch 3adiya,high_or_abnormal_amount,Darja
+facture hadi tal3a aktar men l3ada,high_or_abnormal_amount,Darja
+facture ta3i ghalya bzf had lmerra,high_or_abnormal_amount,Darja
+facture ta3i had chhar akbar bzf men li fat,high_or_abnormal_amount,Darja
+facture ta3i tal3a bzf malgré consommation 3adiya,high_or_abnormal_amount,Darja
+kayen ghalta khalat montant yطلع haka,high_or_abnormal_amount,Darja
+kifeh 3lach facture ta3i tal3a bzf?,high_or_abnormal_amount,Darja
+lecture ta3 compteur tal3a bzf,high_or_abnormal_amount,Darja
+ma 3omri khlast facture b had montant,high_or_abnormal_amount,Darja
+mafhamtch 3lach facture ta3i tal3a haka,high_or_abnormal_amount,Darja
+montant ta3 facture machi 3adi,high_or_abnormal_amount,Darja
+nl9a montant ta3 facture kbir bzf,high_or_abnormal_amount,Darja
+t9drou tet2akdou men montant? rah kbir bzf,high_or_abnormal_amount,Darja
+t9drou traja3ouli 3lach facture ghalya?,high_or_abnormal_amount,Darja
+wach 3adi tkoun facture b had l9ima?,high_or_abnormal_amount,Darja
+الفاتورة هادي طالعة أكثر من العادة.,high_or_abnormal_amount,Darja
+الفاتورة هادي ما تبانليش عادية.,high_or_abnormal_amount,Darja
+المبلغ تاع الفاتورة ماشي عادي.,high_or_abnormal_amount,Darja
+تقدروا تتأكدو من المبلغ؟ راهو كبير بزاف.,high_or_abnormal_amount,Darja
+تقدروا تراجعولي علاش الفاتورة غالية؟,high_or_abnormal_amount,Darja
+علاش السعر تاع الفاتورة طلع؟,high_or_abnormal_amount,Darja
+علاش الفاتورة تاعي تبدلات وولات غالية؟,high_or_abnormal_amount,Darja
+علاش الفاتورة تاعي ولات غالية؟,high_or_abnormal_amount,Darja
+علاش المبلغ اللي لازم نخلصو طالع بزاف؟,high_or_abnormal_amount,Darja
+علاش المبلغ تاع الفاتورة طالع بزاف؟,high_or_abnormal_amount,Darja
+علاش المبلغ زاد مقارنة مع الشهر اللي فات؟,high_or_abnormal_amount,Darja
+علاش فاتورتي زادت بزاف؟,high_or_abnormal_amount,Darja
+علاش فاتورتي طالعة بزاف؟,high_or_abnormal_amount,Darja
+علاش لازم نخلص هاد المبلغ الكبير؟,high_or_abnormal_amount,Darja
+علاش نخلص أكثر من العادة؟,high_or_abnormal_amount,Darja
+علاش هاد الفاتورة أغلى من الفاتورة اللي قبل؟,high_or_abnormal_amount,Darja
+فاتورتي طالعة بزاف رغم باللي الاستهلاك عادي.,high_or_abnormal_amount,Darja
+فاتورتي غالية بزاف هاد المرة.,high_or_abnormal_amount,Darja
+فاتورتي هاد الشهر أكبر بزاف من اللي فات.,high_or_abnormal_amount,Darja
+كاين غلطة خلات المبلغ يطلع هكا؟,high_or_abnormal_amount,Darja
+ما عمري خلصت فاتورة بهاد المبلغ.,high_or_abnormal_amount,Darja
+ما فهمتش علاش الفاتورة طالعة هكا.,high_or_abnormal_amount,Darja
+نلقى المبلغ تاع الفاتورة كبير بزاف.,high_or_abnormal_amount,Darja
+واش عادي تكون الفاتورة بهاد القيمة؟,high_or_abnormal_amount,Darja
+Cette facture est beaucoup trop élevée par rapport à d'habitude.,high_or_abnormal_amount,FR
+Cette facture me semble anormalement élevée.,high_or_abnormal_amount,FR
+Est-ce normal d'avoir un montant aussi élevé ?,high_or_abnormal_amount,FR
+Je n'avais jamais eu une facture aussi élevée.,high_or_abnormal_amount,FR
+Je ne comprends pas pourquoi ma facture est si élevée.,high_or_abnormal_amount,FR
+Je trouve que ma facture est trop élevée.,high_or_abnormal_amount,FR
+Le montant de cette facture ne semble pas normal.,high_or_abnormal_amount,FR
+Le montant de ma facture est anormalement élevé.,high_or_abnormal_amount,FR
+Le relevé du compteur est beaucoup trop élevé.,high_or_abnormal_amount,FR
+Ma facture a augmenté alors que ma consommation est normale.,high_or_abnormal_amount,FR
+Ma facture est beaucoup plus chère que les précédentes.,high_or_abnormal_amount,FR
+Ma facture est beaucoup plus élevée que d'habitude.,high_or_abnormal_amount,FR
+Ma facture est-elle normale ? Je la trouve très élevée.,high_or_abnormal_amount,FR
+Pourquoi cette facture est-elle beaucoup plus chère que la précédente ?,high_or_abnormal_amount,FR
+Pourquoi dois-je payer autant cette fois-ci ?,high_or_abnormal_amount,FR
+Pourquoi dois-je payer beaucoup plus que le mois dernier ?,high_or_abnormal_amount,FR
+Pourquoi le montant de ma facture est-il aussi élevé ?,high_or_abnormal_amount,FR
+Pourquoi le montant est-il plus élevé que d'habitude ?,high_or_abnormal_amount,FR
+Pourquoi le montant à payer est-il aussi important ?,high_or_abnormal_amount,FR
+Pourquoi le prix de ma facture a-t-il augmenté ?,high_or_abnormal_amount,FR
+Pourquoi ma facture a-t-elle augmenté autant ?,high_or_abnormal_amount,FR
+Pourquoi ma facture a-t-elle autant augmenté ?,high_or_abnormal_amount,FR
+Pourquoi ma facture est-elle aussi élevée ?,high_or_abnormal_amount,FR
+Pouvez-vous vérifier ce montant ? Il me semble trop élevé.,high_or_abnormal_amount,FR
+Pouvez-vous vérifier pourquoi ma facture est aussi élevée ?,high_or_abnormal_amount,FR
+Y a-t-il une erreur qui explique ce montant élevé ?,high_or_abnormal_amount,FR
+3lach facture ta3i tal3a aktar men li 9bal؟,high_or_abnormal_amount,Mixed
+3lach facture ta3i زادت بزاف؟,high_or_abnormal_amount,Mixed
+3lach le montant ta3 facture أكبر من العادة؟,high_or_abnormal_amount,Mixed
+3lach le montant ta3i طالع رغم الاستهلاك عادي؟,high_or_abnormal_amount,Mixed
+Facture ta3i had chhar أكبر بزاف من اللي فات.,high_or_abnormal_amount,Mixed
+Facture ta3i طالعة بزاف رغم باللي consommation عادية.,high_or_abnormal_amount,Mixed
+Facture ta3i ماشي كيف العادة، راهي غالية بزاف.,high_or_abnormal_amount,Mixed
+Je ne comprends pas pourquoi montant ta3i زاد.,high_or_abnormal_amount,Mixed
+Je ne comprends pas علاش الفاتورة طالعة هكا.,high_or_abnormal_amount,Mixed
+Je trouve que facture ta3i طالعـة بزاف.,high_or_abnormal_amount,Mixed
+Je veux vérifier علاش facture ta3i غالية.,high_or_abnormal_amount,Mixed
+Kayen erreur dans le montant ta3 facture؟,high_or_abnormal_amount,Mixed
+La facture ta3i تبدلت بزاف par rapport aux précédentes.,high_or_abnormal_amount,Mixed
+La facture هادي ما تبانليش normale.,high_or_abnormal_amount,Mixed
+Le montant تاع الفاتورة ماشي عادي.,high_or_abnormal_amount,Mixed
+Ma consommation عادية بصح facture غالية بزاف.,high_or_abnormal_amount,Mixed
+Ma facture طلعت بزاف مقارنة مع الشهر اللي فات.,high_or_abnormal_amount,Mixed
+Ma facture غالية بزاف هاد المرة.,high_or_abnormal_amount,Mixed
+"Ma facture ما تبانليش normale, le montant طالع بزاف.",high_or_abnormal_amount,Mixed
+Pourquoi cette facture est غالية بزاف؟,high_or_abnormal_amount,Mixed
+Pourquoi facture ta3i ولات غالية؟,high_or_abnormal_amount,Mixed
+Pourquoi le montant اللي لازم نخلصو طالع بزاف؟,high_or_abnormal_amount,Mixed
+Pourquoi le montant زاد مقارنة مع الشهر اللي فات؟,high_or_abnormal_amount,Mixed
+Pourquoi ma facture زادت alors que consommation عادية؟,high_or_abnormal_amount,Mixed
+Pourquoi ma facture طالعة بزاف ؟,high_or_abnormal_amount,Mixed
+Pourquoi nkhalas plus que d'habitude؟,high_or_abnormal_amount,Mixed
+Pouvez-vous vérifier علاش المبلغ طالع؟,high_or_abnormal_amount,Mixed
+T9drou vérifier le montant؟ راهو كبير بزاف.,high_or_abnormal_amount,Mixed
+Vous pouvez تراجعولي علاش facture غالية؟,high_or_abnormal_amount,Mixed
+الفاتورة هادي est plus élevée que l'habitude.,high_or_abnormal_amount,Mixed
+المبلغ تاع facture ماشي normal.,high_or_abnormal_amount,Mixed
+علاش cette facture أغلى من اللي قبل؟,high_or_abnormal_amount,Mixed
+علاش facture ta3i تبدلات وولات غالية؟,high_or_abnormal_amount,Mixed
+علاش je dois payer autant cette fois-ci؟,high_or_abnormal_amount,Mixed
+علاش le montant ta3 facture طالع بزاف؟,high_or_abnormal_amount,Mixed
+علاش le prix ta3 facture طلع؟,high_or_abnormal_amount,Mixed
+علاش le prix à payer طالع بزاف؟,high_or_abnormal_amount,Mixed
+علاش لازم nkhalas had montant lkbir؟,high_or_abnormal_amount,Mixed
+كاين une erreur خلات le montant يطلع هكا؟,high_or_abnormal_amount,Mixed
+ما عمري خلصت facture بهاد montant.,high_or_abnormal_amount,Mixed
+نحب نعرف علاش le montant كبير هكا.,high_or_abnormal_amount,Mixed
+نلقى le montant ta3 facture كبير بزاف.,high_or_abnormal_amount,Mixed
+واش le montant هذا normal ولا غالط؟,high_or_abnormal_amount,Mixed
+واش عادي يكون le montant بهاد القيمة؟,high_or_abnormal_amount,Mixed
+واش كاين سبب علاش facture طلعت هكا؟,high_or_abnormal_amount,Mixed
+واش نقدروا نشوفو إذا كاين erreur dans la facture؟,high_or_abnormal_amount,Mixed

@@ -1,0 +1,120 @@
+
+import os
+import joblib
+import numpy as np
+
+from sentence_transformers import SentenceTransformer
+from src.preprocessing import normalize_text
+from src.intent_features import extract_intent_features
+from src.domain_filter import (
+    is_sonelgaz_related,
+    is_greeting,
+)
+
+
+# ============================================================
+# CONFIGURATION
+# ============================================================
+
+CLASSIFIER_PATH = os.environ.get(
+    "INTENT_CLASSIFIER_PATH",
+    "models/intent_classifier_merged_test.joblib",
+)
+
+
+# ============================================================
+# LOAD MODEL
+# ============================================================
+
+artifact = joblib.load(CLASSIFIER_PATH)
+
+classifier = artifact["classifier"]
+representation = artifact["representation"]
+
+embedding_model = SentenceTransformer(
+    artifact["embedding_model_name"]
+)
+
+
+# ============================================================
+# PREDICTION
+# ============================================================
+
+def predict_intent(text):
+    """
+    Return the top 3 intent predictions and probabilities.
+
+    Special labels:
+        greeting
+        out_of_scope
+    """
+
+    # Handle empty input.
+    if not text or not text.strip():
+        return [("out_of_scope", 1.0)]
+
+    # Handle greetings before running the classifier.
+    if is_greeting(text):
+        return [("greeting", 1.0)]
+
+    # Reject messages without recognizable domain keywords.
+    if not is_sonelgaz_related(text):
+        return [("out_of_scope", 1.0)]
+
+    # Existing classifier pipeline.
+    text = normalize_text(text)
+
+    embedding = embedding_model.encode(
+        [text],
+        convert_to_numpy=True,
+    )
+
+    if representation == "embeddings_plus_features":
+        features = extract_intent_features([text])
+        X = np.hstack([embedding, features])
+
+    elif representation == "embeddings_only":
+        X = embedding
+
+    else:
+        raise ValueError(
+            f"Unknown model representation: {representation}"
+        )
+
+    probabilities = classifier.predict_proba(X)[0]
+
+    top_indices = np.argsort(probabilities)[::-1][:3]
+
+    return [
+        (
+            classifier.classes_[i],
+            float(probabilities[i]),
+        )
+        for i in top_indices
+    ]
+
+
+# ============================================================
+# INTERACTIVE TEST
+# ============================================================
+
+if __name__ == "__main__":
+    print("Intent classifier is ready!")
+    print("Loaded model:", CLASSIFIER_PATH)
+    print("Representation:", representation)
+    print("Type 'exit' to stop.\n")
+
+    while True:
+        text = input("Enter a message: ")
+
+        if text.strip().lower() in {"exit", "quit", "quitter"}:
+            print("Goodbye!")
+            break
+
+        for rank, (intent, probability) in enumerate(
+            predict_intent(text),
+            start=1,
+        ):
+            print(f"{rank}. {intent}: {probability:.3f}")
+
+        print()
